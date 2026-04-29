@@ -16,8 +16,7 @@ A complete DirectInput input plugin for Project64 with configurable bindings.
 
 ### Prerequisites
 - Visual Studio 2019+ with C++ build tools
-- Windows SDK with DirectInput headers
-- DirectX SDK (for dinput8.lib, dxguid.lib)
+- Windows SDK with DirectInput headers and libraries
 
 ### Build Steps
 ```cmd
@@ -30,12 +29,12 @@ The build script will:
 2. Compile all C source files
 3. Link into `AlardiDInput.dll` with required libraries
 
-The resulting `AlardiDInput.dll` will be in the `build/` directory.
+The resulting `AlardiDInput.dll` is written to the project root.
 
 ### Manual Build
 ```cmd
 cl /c /DWIN32 /D_WINDOWS /W3 /MD /I. *.c
-link /DLL /OUT:AlardiDInput.dll /DEF:exports.def *.obj dinput8.lib dxguid.lib user32.lib comctl32.lib
+link /DLL /OUT:AlardiDInput.dll /DEF:PJ64_DInput\exports.def *.obj dinput8.lib dxguid.lib user32.lib gdi32.lib comctl32.lib ole32.lib
 ```
 
 ## Installation
@@ -53,7 +52,8 @@ The configuration dialog provides:
 - **Control Binding**: Double-click any N64 control to bind it
 - **Real-time Capture**: Press any button/stick/POV to bind it immediately
 - **Clear Functions**: Remove individual bindings or clear all bindings for a port
-- **Live Input Test**: Real-time display of raw DirectInput values and interpreted N64 controls
+- **Stick Preview**: Live N64 stick output grid with raw DirectInput values
+- **Deadzone Slider**: Per-port deadzone tuning with a recommended range
 
 ### Binding Process
 
@@ -78,28 +78,24 @@ This helps debug input issues and verify that bindings are working correctly.
 
 ## Configuration
 
-### Default Mappings
-- **Keyboard Fallback**: Arrow keys for D-pad, WASD for analog, X/Z for A/B, etc.
-- **Configurable**: Use the config dialog to bind any DirectInput input
-
 ### INI File Format
 ```ini
 [Port1]
-A=BTN,0
-B=BTN,1
-StickX=AXIS,LX
-StickY=AXIS,LY
+A=BTN:0
+B=BTN:1
+StickX=AXIS:LX:12000
+StickY=AXIS:LY:12000
 Deadzone=8000
 InvertY=0
 DeviceGUID={12345678-1234-1234-1234-123456789012}
 ```
 
 ### Binding Types
-- `BTN,X` - Button X (0-127)
-- `POV,IDX,DIR` - POV hat IDX in direction (UP=0, RIGHT=1, DOWN=2, LEFT=3)
-- `AXIS,NAME` - Analog axis (LX, LY, LZ, LRX, LRY, LRZ, S0, S1)
-- `AXIS+,NAME` - Positive axis direction
-- `AXIS-,NAME` - Negative axis direction
+- `BTN:X` - Button X (0-127)
+- `POV0:UP` - POV hat direction
+- `AXIS:NAME` - Analog axis (LX, LY, LZ, LRX, LRY, LRZ, S0, S1)
+- `AXIS:NAME+` - Positive axis direction
+- `AXIS:NAME-` - Negative axis direction
 
 ## Architecture
 
@@ -117,12 +113,11 @@ DeviceGUID={12345678-1234-1234-1234-123456789012}
 
 ## Features
 
-- **Complete Configuration UI**: Full dialog with ListView, device selection, and real-time binding
+- **Configuration UI**: Dialog with device selection, binding list, stick preview, and deadzone slider
 - **Real-time Input Capture**: Double-click controls to bind them to any DirectInput input
 - **Device Management**: Select specific devices per controller port
-- **Memory Management**: Proper cleanup of device enumeration data
-- **Anti-ghosting**: Prevents instant binding by requiring neutral state first
-- **Live Input Test Panel**: Real-time display of raw DirectInput values and interpreted N64 controls
+- **Neutral Capture**: Prevents instant binding by requiring neutral state first
+- **Live Input Test Panel**: Real-time raw DirectInput values and interpreted N64 controls
 - **Axis Calibration**: Automatic axis range detection and normalization for consistent stick behavior
 
 ## Limitations
@@ -132,13 +127,11 @@ DeviceGUID={12345678-1234-1234-1234-123456789012}
 
 ## Future Enhancements
 
-1. **Complete Config UI**: Full dialog with ListView and device selection
-2. **Device Auto-Detection**: Automatically select appropriate devices per port
-3. **Rumble Support**: Implement Raw PIF mode for force feedback
-4. **Memory Pak Support**: Virtual memory pak functionality
-5. **Transfer Pak Support**: Game Boy cartridge reading
-6. **Profile System**: Multiple binding profiles
-7. **Advanced Mapping**: Curves, sensitivity, button combinations
+1. **Rumble Support**: Implement Raw PIF mode for force feedback
+2. **Memory Pak Support**: Virtual memory pak functionality
+3. **Transfer Pak Support**: Game Boy cartridge reading
+4. **Profile System**: Multiple binding profiles
+5. **Advanced Mapping**: Curves, sensitivity, button combinations
 
 ## Troubleshooting
 
