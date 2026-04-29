@@ -1,0 +1,45 @@
+#include <windows.h>
+#include "resource.h"
+
+IDD_CONFIG DIALOGEX 0, 0, 430, 330
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "AlardiDInput Configuration"
+FONT 9, "Segoe UI"
+BEGIN
+    LTEXT           "Port:", -1, 10, 10, 28, 10
+    COMBOBOX        IDC_PORT_COMBO, 40, 8, 60, 120, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+
+    LTEXT           "Device:", -1, 110, 10, 36, 10
+    COMBOBOX        IDC_DEVICE_COMBO, 150, 8, 270, 120, CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+
+    CONTROL         "", IDC_BIND_LIST, "SysListView32", WS_TABSTOP | WS_BORDER | LVS_REPORT | LVS_SINGLESEL,
+                    10, 30, 250, 220
+
+    GROUPBOX        "Stick Preview", -1, 270, 30, 150, 155
+    CONTROL         "", IDC_STICK_GRID, "STATIC", WS_CHILD | WS_VISIBLE | WS_BORDER | SS_OWNERDRAW,
+                    285, 50, 120, 120
+    LTEXT           "N64:", -1, 285, 173, 28, 10
+    LTEXT           "", IDC_TEST_N64STICK, 315, 173, 90, 10
+
+    GROUPBOX        "Deadzone", -1, 270, 190, 150, 60
+    CONTROL         "", IDC_DEADZONE_SLIDER, "msctls_trackbar32", WS_TABSTOP | WS_VISIBLE | TBS_AUTOTICKS,
+                    280, 205, 130, 20
+    LTEXT           "", IDC_DEADZONE_VALUE, 280, 226, 65, 10
+    LTEXT           "Recommended: 4000-8000", IDC_DEADZONE_RECOMMEND, 280, 238, 130, 10
+
+    LTEXT           "Double-click a control to bind.", IDC_STATUS_TEXT, 10, 255, 410, 10
+
+    GROUPBOX        "Input Test (Live)", -1, 10, 270, 410, 40
+    LTEXT           "Axes:", -1, 18, 284, 28, 10
+    LTEXT           "", IDC_TEST_RAWAXES, 50, 284, 180, 10
+    LTEXT           "POV:", -1, 240, 284, 28, 10
+    LTEXT           "", IDC_TEST_RAWPOV, 270, 284, 60, 10
+    LTEXT           "Btns:", -1, 18, 296, 28, 10
+    LTEXT           "", IDC_TEST_RAWBTN, 50, 296, 180, 10
+    LTEXT           "N64 Btns:", -1, 240, 296, 45, 10
+    LTEXT           "", IDC_TEST_N64BTN, 285, 296, 125, 10
+
+    PUSHBUTTON      "Clear Binding", IDC_CLEAR_BIND, 10, 312, 90, 18
+    PUSHBUTTON      "Clear All",     IDC_CLEAR_ALL, 105, 312, 60, 18
+    DEFPUSHBUTTON   "Close",         IDOK,          360, 312, 60, 18
+END

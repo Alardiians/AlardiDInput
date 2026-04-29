@@ -1,0 +1,20 @@
+EXPORTS
+  GetDllInfo
+  InitiateControllers
+  CloseDLL
+  RomOpen
+  RomClosed
+  GetKeys
+  ControllerCommand
+  ReadController
+  DllConfig
+  DllAbout
+  WM_KeyDown
+  WM_KeyUp
+  DllTest
+  PluginLoaded
+  SetPluginNotification
+  SetSettingInfo
+  SetSettingInfo2
+  SetSettingInfo3
+  SetSettingNotificationInfo
