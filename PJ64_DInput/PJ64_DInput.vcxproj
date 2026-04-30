@@ -99,11 +99,14 @@
       <PreprocessorDefinitions>WIN32;NDEBUG;PJ64DINPUT_EXPORTS;_WINDOWS;_USRDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
+      <ModuleDefinitionFile>$(ProjectDir)exports.def</ModuleDefinitionFile>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);dinput8.lib;dxguid.lib;user32.lib;gdi32.lib;comctl32.lib;ole32.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -118,6 +121,8 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
+      <ModuleDefinitionFile>$(ProjectDir)exports.def</ModuleDefinitionFile>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);dinput8.lib;dxguid.lib;user32.lib;gdi32.lib;comctl32.lib;ole32.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -134,6 +139,8 @@
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableUAC>false</EnableUAC>
+      <ModuleDefinitionFile>$(ProjectDir)exports.def</ModuleDefinitionFile>
+      <AdditionalDependencies>$(CoreLibraryDependencies);%(AdditionalDependencies);dinput8.lib;dxguid.lib;user32.lib;gdi32.lib;comctl32.lib;ole32.lib</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
