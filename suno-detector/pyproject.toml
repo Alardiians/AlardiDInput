@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "suno-detector"
+version = "0.1.0"
+description = "Detect Suno-generated audio from its Content Credentials and its 10 ms audio pattern"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy",
+    "scipy",
+    "soundfile",
+    "mutagen",
+    "c2pa-python>=0.37",
+    "cbor2",
+    "cryptography",
+    "imageio-ffmpeg",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[project.scripts]
+suno-detect = "suno_detector.__main__:main"
+
+[tool.setuptools]
+packages = ["suno_detector"]
+
+[tool.setuptools.package-data]
+suno_detector = ["data/*"]
