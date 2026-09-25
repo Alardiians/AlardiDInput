@@ -169,7 +169,7 @@ Late-game armored versions. **Gilded plates** are separate HP pools covering mos
 
 ## 7. TITANS (Mech-Scale Enemies — Anvil Siege Frame segments)
 
-Mech segments use their own scale. All titans are designed against the **Anvil Siege Frame** (see `07_Equipment_and_Abilities.md` addendum in `10_Bosses.md` §Mech and `14_Missions/M11`). They never appear in on-foot combat except as distant set-dressing (M10 foreshadowing).
+Mech segments use their own scale. All titans are designed against the **Anvil Siege Frame** (player mech; full spec in `10_Bosses.md` §14; first use in `14_Missions/M11`). They never appear in on-foot combat except as distant set-dressing (M10 foreshadowing).
 
 | ID | Name | Size | HP (vs. Anvil) | Attacks | Weak point | Appears |
 |---|---|---|---|---|---|---|
@@ -178,7 +178,7 @@ Mech segments use their own scale. All titans are designed against the **Anvil S
 | `TTN_VesperCloud` | **Vesper Cloud** | A swarm of 200+ Vespers acting as one entity | 6000 (swarm "mass") | Engulf (DoT), Stinger Rain | None — Anvil flamethrower-noise "Blast Horn" deals ×3 | M11, M23 |
 | `TTN_Seraphim` | **Seraphim Gunship** | 15 m flying Seraph | 8000 | Chime-missile barrages, strafing beam | Wing-pipes ×4 | M26 |
 
-**Anvil Siege Frame (player mech) quick reference** (full spec in `10_Bosses.md` §10):
+**Anvil Siege Frame (player mech) quick reference** (full spec in `10_Bosses.md` §14):
 * 9 m bipedal mech; first-person cockpit; speed 1200 cm/s (world-scale relative), dash 2 charges.
 * Weapons: **Rotary Autocannon** (right arm, sustained), **Rocket Pods** (shoulders, lock-on), **Blast Horn** (left arm: a massive speaker-cannon that fires a cone of noise — the mech's "Distort"), **Pile Driver** melee (right arm, executes staggered titans → repairs the mech).
 * Health: 5000 structure; repairs via Pile Driver executions and repair crates dropped by Static dropships.
