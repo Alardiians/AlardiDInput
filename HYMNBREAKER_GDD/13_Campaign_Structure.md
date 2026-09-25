@@ -33,7 +33,7 @@ Durations are **first playthrough, Amplified, ~70% exploration** (critical path 
 | M25 | **The Staves** | VI | Harmonium | HARM | 75 | — | `M25_The_Staves.md` |
 | M26 | **The Clef** | VI | Harmonium | HARM, SHIP | 80 | — (mech, gauntlet) | `M26_The_Clef.md` |
 | M27 | **The Final Chord** | VI | Heart of the Clef | HARM | 60 | **The Unison** | `M27_The_Final_Chord.md` |
-| | **Total** | | | | **≈ 2,020 min ≈ 33.7 h** | | |
+| | **Total** | | | | **≈ 2,010 min ≈ 33.5 h** | | |
 
 Optional content (Requiem Gates ~2 h, Pit Trials ~2.5 h, 100% secrets ~3 h, Encore missions ~8 h) brings a completionist run to **45–50 h**.
 
@@ -150,7 +150,7 @@ Intensity
 | M25–M27 | No hub access (continuous final assault) | — |
 | Post-game | **State 7 — Home** (the Quietus in dock above Earth, calm) | Free roam, all stations, Encore unlocks |
 
-**Chained missions** (no hub between): M17 → M18, M21 → M22, M23 → M24, M25 → M26 → M27.
+**Chained missions** (no hub between): M13 → M14 (the Quietus is under attack), M17 → M18, M21 → M22, M23 → M24, M25 → M26 → M27.
 
 ---
 

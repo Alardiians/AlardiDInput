@@ -1,0 +1,30 @@
+Name,DisplayName,Tier,Faction,HP,ArmorHP,ShieldHP,FalterPct,FalterDuration,WalkSpeed,RunSpeed,CapsuleRadius,CapsuleHalfHeight,SightRange,HearingRange,Threat,HarrowCost,BreakdownHealth,Res_Kinetic,Res_Explosive,Res_Energy,Res_Blade,Res_Melee,Res_Silence,Res_Sonic,HeadMult,WeakPointMult,NavAgent,FirstMission,Notes
+ENM_Thrall,Thrall,T1,Tuned,60,0,0,0.35,4.0,180,320,38,90,3000,2000,1,1,20,1,1,1,1,1,1,1.0,1.5,1,Nav_Small,M01,Lunge 900 cm/s burst; crawler state when a leg is severed
+ENM_ThrallBloated,Bloated Thrall,T1,Tuned,90,0,0,0,0,200,300,55,95,3000,2000,1.5,0,0,1,1,1,1,1,1,1.0,1.5,1,Nav_Small,M05,No Falter; bursts 120 (r350) on death or when swelling; Harrow = Fling
+ENM_Trooper,Tuned Trooper,T1,Tuned,90,0,0,0.35,4.0,300,450,40,92,3000,2000,1.5,1,20,1,1,1,1,1,1,1.0,1.5,1,Nav_Small,M01,Uses hold points; retreats inside 500 cm
+ENM_TrooperBulwark,Tuned Bulwark,T1,Tuned,110,0,300,0.35,4.0,250,400,45,97,3000,2000,2,1,20,1,1,1,1,1,1,1.0,1.5,1,Nav_Small,M02,"Shield blocks frontal 120 deg; shield takes Energy x3, Hot Rivets x3, Explosive x1.5; Power Chord breaks it; Harrow bounces while shielded"
+ENM_TrooperMarksman,Tuned Marksman,T1,Tuned,80,0,0,0.35,4.0,300,450,40,92,3000,2000,2,1,20,1,1,1,1,1,1,1.0,1.5,1,Nav_Small,M06,Sniper token pool; gold shot is Counter-able (reflect kills it)
+ENM_Chorister,Chorister,T1,Host,140,0,0,0.35,4.0,300,500,38,80,3000,2000,2,1,20,1,1,1,1,1,1,1.5,1.5,1,Nav_Small,M01,Wall-climbs via perches; leaps 900 h / 500 v; dodges when aimed at 0.8 s
+ENM_Vesper,Vesper,T1,Host,50,0,0,0.35,4.0,700,1400,30,30,3000,2000,1,1,20,1,1,1,1,1,1,1.5,1.5,1,Flying,M02,Boids swarm 3-8; Faltering Vespers drop to the ground
+ENM_Wailer,Wailer,T1,Host,30,0,0,0,0,300,900,30,30,3000,2000,0.5,1,0,1,1,1,1,1,1,1.5,1,1,Flying,M03,Kamikaze burst 20 (r250); Shred gives 50% ammo burst
+ENM_Acolyte,Consonance Acolyte,T1,Consonance,100,0,0,0.35,4.0,350,500,40,90,3000,2000,1.5,1,20,1,1,1,1,1,1,1.0,1.5,1,Nav_Small,M07,Voiced squads; morale flee 30% at 50% squad loss
+ENM_Zealot,Consonance Zealot,T1,Consonance,120,0,0,0.35,4.0,400,700,40,90,3000,2000,2,1,20,1,1,1,1,1,1,1.0,1.5,1,Nav_Small,M07,Martyr Hymn below 25% HP
+ENM_Crescendo,Crescendo,T2,Host,1000,0,0,0.2,3.0,300,1600,120,150,4000,2500,6,3,40,1,1,1,1,1,1,1.5,1,2.5,Nav_Medium,M03,Front plate x0.3 from front 60 deg; back bellows x2.5; Crash stun 2 s on wall impact
+ENM_Bellwether,Bellwether,T2,Host,1500,0,0,0.2,3.0,300,550,110,175,4000,2500,7,3,40,1,1,1,1,1,1,1.5,1.5,2,Nav_Medium,M06,Bell weak point active 1.5 s after Toll Slam; Power Chord to ringing bell = Falter
+ENM_Seraph,Seraph,T2,Host,800,0,0,0.2,3.0,350,400,60,150,4000,2500,6,3,40,1,1,1,1,1,1,1.5,1.5,2,Nav_Medium,M04,Wing-pipes 2 x 150 HP; both destroyed = grounded + Falter once
+ENM_Ophan,Ophan,T2,Host,1300,0,0,0.2,3.0,350,900,150,150,4000,2500,6,3,40,1,1,1,1,1,1,1.5,1,2,Flying,M03,Maw open during Drone Beam charge; Frag/Frag Slug/Hush in maw = instant Falter
+ENM_Canon,Canon,T2,Host,1800,0,0,0.2,3.0,200,200,170,200,4000,2500,8,3,40,1,1,1,1,1,1,1.5,1.5,2,Nav_Medium,M04,Bell-mouths 2 x 250 HP; each disables that arm's shells
+ENM_OrganGrinder,Organ Grinder,T2,Instrument,1100,0,0,0.2,3.0,350,550,200,125,4000,2500,7,3,40,1,1,1,1,1,1,1.0,1,2,Nav_Medium,M05,Turret 300 HP (x2 rear arc); turret destroyed = melee mode +30% speed
+ENM_Cantor,Cantor,T2,Host,600,0,0,0.2,3.0,250,250,45,140,4000,2500,5,3,40,1,1,1,1,1,1,1.5,1.5,1,Nav_Small,M02,Lantern 150 HP: destroyed = links break + instant Falter; Blink 1000 cm
+ENM_Siren,Siren,T2,Host,800,0,0,0.2,3.0,600,1400,60,125,4000,2500,6,3,40,1,1,1,1,1,1,1.5,1.5,2,Nav_Small,M07,Throat x2 during Siren Call; Harrow Reel-In during Call = Falter
+ENM_Fugue,Fugue,T2,Host,650,0,0,0.2,3.0,600,600,40,110,4000,2500,5,3,40,1,1,1,1,1,1,1.5,1.5,1,Nav_Small,M09,"Splits into 2 illusions (1 HP, 50% dmg) every 15 s; Distort/Arc Coil reveal"
+ENM_Hymnal,Hymnal,T2,Host,900,0,0,0.2,3.0,250,250,120,120,4000,2500,6,3,40,1,1,1,1,1,1,1.5,1,2.5,Flying,M08,Spine x2.5; spawns Wailers (max 6); its Wailers die with it
+ENM_Echo,Echo,T2,Host,1,0,0,0,0,400,400,40,90,4000,2500,4,-1,0,0,0,0,0,0,1,0,1,1,Flying,M09,Immune to all damage except Silence and Larynx Inhale; possesses T1/T2 hosts
+ENM_Profundo,Profundo,T3,Host,4500,0,0,0.12,2.5,250,500,160,225,5000,3000,15,-1,60,1,1,1,1,1,1,1.5,1.5,3,Nav_Large,M12,Chest cavity x3 during Roar wind-up; Frag/Power Chord into chest = Guard Break 2 s
+ENM_Carillon,Carillon,T3,Host,8000,0,0,0.12,2.5,180,180,220,325,5000,3000,20,-1,60,1,1,1,1,1,1,1.5,1,2,Nav_Large,M15,4 bells x 500 HP; all destroyed = Enraged + Falter once
+ENM_Maestro,Maestro,T3,Host,2500,0,0,0.12,2.5,350,350,70,190,5000,3000,14,-1,60,1,1,1,1,1,1,1.5,1.5,1,Nav_Medium,M16,Score 400 HP: destroyed = no summon/revive; teleports after 600 dmg in 3 s
+ENM_RequiemKnight,Requiem Knight,T3,Host,3500,0,0,0.12,2.5,300,550,80,150,5000,3000,14,-1,60,1,1,1,1,1,1,1.5,1.5,1,Nav_Medium,M08,Shield blocks 150 deg frontal; Counter gold strikes = Guard Break 2 s; Dirge Stance at 50%
+ENM_BellwetherGilded,Gilded Bellwether,T2,Host,1500,1200,0,0.2,3.0,300,550,110,175,4000,2500,10.5,3,40,1,1,1,1,1,1,1.5,1.5,2,Nav_Medium,M15,4 plates x 300; immune to Falter while plated; Toll Slam emits 3 rings
+ENM_CrescendoGilded,Gilded Crescendo,T2,Host,1000,1000,0,0.2,3.0,300,1900,120,150,4000,2500,9,3,40,1,1,1,1,1,1,1.5,1,2.5,Nav_Medium,M17,Back plates cover the bellows until broken; charge max 1900
+ENM_ProfundoGilded,Gilded Profundo,T3,Host,4500,2000,0,0.12,2.5,250,500,160,225,5000,3000,22.5,-1,60,1,1,1,1,1,1,1.5,1.5,3,Nav_Large,M20,5 plates x 400; Roar also pulls the player 300 cm
+ENM_CanonGilded,Gilded Canon,T2,Host,1800,1400,0,0.2,3.0,200,200,170,200,4000,2500,12,3,40,1,1,1,1,1,1,1.5,1.5,2,Nav_Medium,M22,Bell-mouths plated; echo shells echo twice

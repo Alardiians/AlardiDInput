@@ -124,7 +124,7 @@ ENC_M14_06  "Restart" (FINALE)      Arena: A08 (50 m spherical chamber; 3 catwal
   Music: MUS_M14_Combat_C (finale)   Reward: 2 Brass + big loot fountain
   Objective: throw 3 breakers (3 s interact each), then survive 30 s spin-up
   Continuous (until objective done): Thrall x6 every 20 s; Chorister x3 every 30 s
-  Per breaker thrown: +1 heavy spawn (1st: Bellwether; 2nd: Profundo; 3rd: Maestro x1 — a standard Maestro, killable)
+  Per breaker thrown: +1 heavy spawn (1st: Bellwether; 2nd: Profundo; 3rd: Requiem Knight)
   Spin-up 30 s: Hymnfall of Seraph x2, Vesper x10, Thrall x8
   Pickups: Health M x3, Plating M x3, ammo L each, Null Cell x1, Harrow Spool x3
   Power-up: OVERDRIVE SURGE (appears when the 3rd breaker is thrown)

@@ -1,0 +1,17 @@
+Name,DisplayName,FoundIn,Effect,BoutiqueChallenge,BoutiqueTarget,BoutiqueEffect
+PDL_Boost,Boost,M05 (story),Surge recharge -25%,Kill enemies within 1 s after a dash,50,Dash kills refund a dash charge
+PDL_Delay,Delay,M06,"Breakdowns trigger a delayed echo blast 0.5 s later (100, r350)",Kill enemies with echo blasts,40,Echo repeats twice
+PDL_NoiseGate,Noise Gate,M07,"Falter thresholds: T1 45%, T2 25%, T3 15%",Perform Breakdowns,150,Falter duration +1 s
+PDL_Reverb,Reverb,M08,Counter window +60 ms; reflected notes home in,Counter notes,100,"Reflected notes explode (80, r250)"
+PDL_Fuzz,Fuzz,M09,Punches x3 damage and x2 Gain,Kill enemies with punches,60,Punches instantly stagger T1
+PDL_Phaser,Phaser,M10,Surge grants 0.15 s invulnerability,Phase through attacks,150,Phased attacks grant +3 Gain and +5 Plating
+PDL_Compressor,Compressor,M11,No explosive self-damage; incoming Explosive -30%,Deal Explosive damage,20000,Self-knockback +50%
+PDL_Whammy,Whammy,M12,Airborne: fire rate +15%; hold Mod Fire to slow fall 50%,Kill enemies while airborne,100,Air kills refund the double jump
+PDL_Tremolo,Tremolo,M13,Once per checkpoint: lethal damage leaves 1 HP and slows time 25% for 2 s,Trigger Tremolo and survive the arena,5,Also grants +50 Plating
+PDL_Looper,Looper,M15,Fodder Shreds 30% chance to cost no charge,Shred enemies,200,Heavy Shred refunds 1 charge
+PDL_Octaver,Octaver,M16,+1 air jump (triple jump),Kill enemies with Downbeat,30,"Extra jump emits a downward pulse (60, r300)"
+PDL_Tuner,Tuner,M17,"Weak points glow brighter, visible through walls within 20 m; weak-point hits +1 Gain",Destroy weak points,150,Destroying a weak point staggers T2
+PDL_Bitcrusher,Bitcrusher,M18,"Energy kills burst into shrapnel (40, r300)",Kill enemies with Energy weapons,200,Shrapnel applies Distorted
+PDL_Sustain,Sustain,M20,Overdrive +3 s; Overdrive kills heal 5 HP,Activate Overdrive,30,Encore cap +6 -> +10 s
+PDL_KillSwitch,Kill Switch,M21,Headshot/weak-point kills reset Surge charges,Get precision kills,100,Precision kills refund 2 ammo
+PDL_WallOfAmps,Wall of Amps,M23,"Below 30% Health: damage taken -25%, Gain x1.5",Survive arenas after dropping below 30% Health,20,Dropping below 30% grants +20 Plating (once per arena)

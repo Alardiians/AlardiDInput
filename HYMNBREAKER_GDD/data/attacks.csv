@@ -1,0 +1,74 @@
+Name,Enemy,DisplayName,Damage,DamageType,bPiercing,Range,Radius,TelegraphTime,TelegraphType,Cooldown,TokenPool,ProjectileSpeed,Count,Notes
+ATK_Thrall_Claw,ENM_Thrall,Claw,12,Damage.Type.Melee,0,180,0,0.5,Cyan,1.2,Melee,0,2,2-swipe combo max
+ATK_Thrall_LungeBite,ENM_Thrall,Lunge Bite,18,Damage.Type.Melee,0,600,0,0.6,Cyan,4.0,Melee,0,1,Leap 400-600 cm; 0.4 s grapple shake
+ATK_Bloated_Swell,ENM_ThrallBloated,Swell & Burst,120,Damage.Type.Explosive,0,300,350,1.2,Cyan,0,Kamikaze,0,1,Triggers within 300 cm; hurts enemies
+ATK_Bloated_DeathBurst,ENM_ThrallBloated,Death Burst,120,Damage.Type.Explosive,0,0,350,0,None,0,None,0,1,Always on death
+ATK_Trooper_Burst,ENM_Trooper,Burst Fire,8,Damage.Type.Kinetic,0,2500,0,0.6,Cyan,2.5,Ranged,6000,3,Tracer projectiles
+ATK_Trooper_Butt,ENM_Trooper,Rifle Butt,15,Damage.Type.Melee,0,180,0,0.4,Cyan,2.0,Melee,0,1,
+ATK_Bulwark_Sidearm,ENM_TrooperBulwark,Sidearm,10,Damage.Type.Kinetic,0,2000,0,0.4,Cyan,1.2,Ranged,6000,1,Fires over the shield
+ATK_Bulwark_Bash,ENM_TrooperBulwark,Shield Bash,20,Damage.Type.Melee,0,250,0,0.5,Cyan,3.0,Melee,0,1,Knockback 600
+ATK_Bulwark_Charge,ENM_TrooperBulwark,Shield Charge,25,Damage.Type.Melee,0,1000,0,0.8,Cyan,8.0,Melee,0,1,Used when player 500-1000 ahead
+ATK_Marksman_HymnShot,ENM_TrooperMarksman,Hymn Shot,30,Damage.Type.Kinetic,0,6000,0,1.5,Gold,4.0,Sniper,8000,1,Laser line cyan -> gold last 0.4 s; LOS break resets
+ATK_Chorister_Note,ENM_Chorister,Note Throw,12,Damage.Type.Sonic,0,3000,0,0.45,Cyan,1.8,Ranged,2500,1,Lead-aim on Overdriven+
+ATK_Chorister_GoldNote,ENM_Chorister,Resonant Note,20,Damage.Type.Sonic,0,3000,0,0.8,Gold,6.0,Ranged,1800,1,Reflected = Chorister Falters
+ATK_Chorister_Rake,ENM_Chorister,Rake,15,Damage.Type.Melee,0,200,0,0.4,Cyan,1.5,Melee,0,2,
+ATK_Chorister_Pounce,ENM_Chorister,Pounce,20,Damage.Type.Melee,0,900,0,0.6,Cyan,5.0,Melee,0,1,
+ATK_Vesper_Needles,ENM_Vesper,Needle Notes,6,Damage.Type.Sonic,0,2000,0,0.4,Cyan,2.2,Ranged,3000,3,Pack shares 2 tokens
+ATK_Vesper_Dive,ENM_Vesper,Dive Sting,10,Damage.Type.Melee,0,1000,0,0.5,Cyan,5.0,Melee,0,1,
+ATK_Wailer_Burst,ENM_Wailer,Wail Burst,20,Damage.Type.Sonic,0,150,250,0.8,Cyan,0,Kamikaze,0,1,Bursts where it dies if killed mid-charge
+ATK_Acolyte_Rifle,ENM_Acolyte,Hymn Rifle,9,Damage.Type.Sonic,0,2500,0,0.5,Cyan,2.0,Ranged,5000,3,
+ATK_Acolyte_Chime,ENM_Acolyte,Chime Grenade,45,Damage.Type.Explosive,0,1500,300,1.5,Gold,10.0,Ranged,1500,1,Rings 3x; shootable; Counter returns it
+ATK_Acolyte_Harmonize,ENM_Acolyte,Harmonize,-50,None,0,800,0,1.5,None,15.0,None,0,1,Heals self/ally 50 HP; interruptible
+ATK_Zealot_Flurry,ENM_Zealot,Blade Flurry,12,Damage.Type.Melee,0,200,0,0.4,Gold,2.0,Melee,0,3,3rd hit gold (parry = Falter)
+ATK_Zealot_Leap,ENM_Zealot,Leap Strike,20,Damage.Type.Melee,0,700,0,0.5,Cyan,5.0,Melee,0,1,
+ATK_Zealot_Martyr,ENM_Zealot,Martyr Hymn,60,Damage.Type.Explosive,0,0,350,1.0,Cyan,0,Kamikaze,0,1,Below 25% HP; sprint 800 for up to 3 s
+ATK_Crescendo_Charge,ENM_Crescendo,Crescendo Charge,45,Damage.Type.Melee,0,3000,0,1.0,Cyan,6.0,Heavy,0,1,Knockback 1200; turn rate 180 -> 30 deg/s; wall = Crash 2 s
+ATK_Crescendo_Gore,ENM_Crescendo,Gore Swipe,30,Damage.Type.Melee,0,350,0,0.6,Cyan,2.5,Melee,0,1,
+ATK_Bellwether_Toll,ENM_Bellwether,Toll Slam,25,Damage.Type.Sonic,0,1200,1200,0.9,Cyan,7.0,Heavy,0,2,"Two ring shockwaves 0.3 s apart, height 60 (jump)"
+ATK_Bellwether_Leap,ENM_Bellwether,Leap Slam,35,Damage.Type.Melee,0,1500,400,0.8,Cyan,9.0,Heavy,0,1,Shadow marker
+ATK_Bellwether_Clapper,ENM_Bellwether,Clapper Swing,30,Damage.Type.Melee,0,350,0,0.5,Cyan,2.0,Melee,0,2,
+ATK_Bellwether_GoldToll,ENM_Bellwether,Gold Toll,40,Damage.Type.Melee,0,350,0,0.6,Gold,12.0,Heavy,0,1,Parry = Guard Break 1.5 s
+ATK_Seraph_Missiles,ENM_Seraph,Chime Missiles,20,Damage.Type.Explosive,0,4000,150,0.7,Cyan,4.0,Ranged,1400,2,Homing 90 deg/s; shootable 10 HP; -1 per destroyed wing-pipe
+ATK_Seraph_Lance,ENM_Seraph,Seraph Lance,25,Damage.Type.Energy,0,2500,0,0.8,Cyan,8.0,Heavy,0,1,Beam 1.2 s (dps)
+ATK_Seraph_Kick,ENM_Seraph,Talon Kick,25,Damage.Type.Melee,0,250,0,0.4,Cyan,2.0,Melee,0,1,Grounded only
+ATK_Ophan_DroneBeam,ENM_Ophan,Drone Beam,30,Damage.Type.Energy,0,3000,0,1.0,Cyan,8.0,Heavy,0,1,2 s tracking beam (dps); maw open during charge
+ATK_Ophan_EyeBolts,ENM_Ophan,Eye Bolts,10,Damage.Type.Sonic,0,2500,0,0.5,Cyan,3.0,Ranged,2800,4,
+ATK_Ophan_Bite,ENM_Ophan,Bite,30,Damage.Type.Melee,0,250,0,0.6,Cyan,3.0,Melee,0,1,
+ATK_Canon_EchoShells,ENM_Canon,Echo Shells,40,Damage.Type.Explosive,0,4500,350,0.8,Cyan,3.5,Heavy,1800,2,Echo explosion 30 (r450) 1.0 s later; ground markers
+ATK_Canon_Horn,ENM_Canon,Horn Blast,35,Damage.Type.Sonic,0,600,0,0.7,Cyan,5.0,Heavy,0,1,Cone 60 deg; knockback 1000
+ATK_Canon_Stomp,ENM_Canon,Stomp,20,Damage.Type.Melee,0,300,300,0.5,Cyan,4.0,Melee,0,1,
+ATK_Grinder_Staccato,ENM_OrganGrinder,Staccato Volley,5,Damage.Type.Sonic,0,3000,0,0.6,Cyan,4.0,Ranged,5000,20,10/s for 2 s
+ATK_Grinder_Mortar,ENM_OrganGrinder,Pipe Mortar,30,Damage.Type.Explosive,0,3000,250,0.8,Cyan,7.0,Heavy,1500,3,Lobbed; ground markers
+ATK_Grinder_LegStab,ENM_OrganGrinder,Leg Stab,25,Damage.Type.Melee,0,300,0,0.5,Cyan,2.0,Melee,0,1,
+ATK_Grinder_Skitter,ENM_OrganGrinder,Skitter Charge,30,Damage.Type.Melee,0,1200,0,0.7,Cyan,8.0,Melee,0,1,Only after turret destroyed
+ATK_Cantor_Link,ENM_Cantor,Harmony Link,0,None,0,2000,0,0.6,None,2.0,None,0,3,Linked take -75% damage; sustained
+ATK_Cantor_Wall,ENM_Cantor,Harmony Wall,0,None,0,1500,0,0.8,None,12.0,None,0,1,"600 x 400 barrier, 8 s, 600 HP; allied fire passes"
+ATK_Cantor_Orbs,ENM_Cantor,Chant Orbs,10,Damage.Type.Sonic,0,2000,0,0.5,Cyan,3.0,Ranged,2200,3,
+ATK_Siren_Whip,ENM_Siren,Vocal Whip,25,Damage.Type.Melee,0,450,0,0.5,Cyan,2.0,Melee,0,2,
+ATK_Siren_Lunge,ENM_Siren,Coil Lunge,30,Damage.Type.Melee,0,1000,0,0.6,Cyan,5.0,Melee,0,1,
+ATK_Siren_Call,ENM_Siren,Siren Call,0,None,0,2000,0,0.8,Cyan,12.0,Heavy,0,1,Pull 500 cm/s for 1.5 s; throat x2; Harrow = Falter
+ATK_Fugue_Claw,ENM_Fugue,Claw Combo,15,Damage.Type.Melee,0,250,0,0.4,Cyan,2.0,Melee,0,3,
+ATK_Fugue_Pounce,ENM_Fugue,Pounce,25,Damage.Type.Melee,0,800,0,0.6,Cyan,5.0,Melee,0,1,Teleport ambush tell: reversed whisper 0.5 s
+ATK_Hymnal_Birth,ENM_Hymnal,Page Birth,0,None,0,0,0,0.8,None,4.0,None,0,2,Spawns 2 Wailers (max 6)
+ATK_Hymnal_PageStorm,ENM_Hymnal,Page Storm,20,Damage.Type.Kinetic,0,1200,0,0.7,Cyan,6.0,Ranged,0,1,Cone 45 deg
+ATK_Hymnal_Slam,ENM_Hymnal,Slam,30,Damage.Type.Melee,0,0,300,0.6,Cyan,8.0,Melee,0,1,Only if player below
+ATK_Profundo_Stomp,ENM_Profundo,Sub-bass Stomp,30,Damage.Type.Sonic,0,800,800,0.8,Cyan,6.0,Heavy,0,1,Ground wave height 60 (jump)
+ATK_Profundo_Roar,ENM_Profundo,Profundo Roar,40,Damage.Type.Sonic,0,1500,0,1.2,Cyan,10.0,Heavy,0,1,Cone 60; Slowed 50% 3 s; chest x3 during wind-up
+ATK_Profundo_GoldFist,ENM_Profundo,Gold Hammerfist,50,Damage.Type.Melee,0,400,0,0.7,Gold,9.0,Heavy,0,1,Parry = Guard Break 1.5 s
+ATK_Profundo_Grab,ENM_Profundo,Grab & Throw,60,Damage.Type.Melee,1,250,0,0.5,Cyan,12.0,Heavy,0,1,Piercing; throw 1500 cm
+ATK_Profundo_Slab,ENM_Profundo,Slab Toss,50,Damage.Type.Explosive,0,3500,300,0.9,Cyan,8.0,Heavy,1600,1,
+ATK_Carillon_Barrage,ENM_Carillon,Bell Barrage,25,Damage.Type.Explosive,0,5000,200,1.2,Cyan,7.0,Heavy,1400,16,4 per intact bell; homing; shootable 15 HP
+ATK_Carillon_Laser,ENM_Carillon,Chime Laser,50,Damage.Type.Energy,0,4000,0,1.0,Cyan,12.0,Heavy,0,1,2.5 s horizontal sweep at 80 cm (dps)
+ATK_Carillon_Quake,ENM_Carillon,Stomp Quake,40,Damage.Type.Melee,0,600,600,0.8,Cyan,6.0,Heavy,0,1,
+ATK_Carillon_Peal,ENM_Carillon,Peal,0,None,0,0,0,2.0,None,30.0,None,0,8,Summons 2 T1 per intact bell (max 8 alive)
+ATK_Maestro_Conduct,ENM_Maestro,Conduct,0,None,0,0,0,1.0,None,20.0,None,0,1,Summons 3-5 T1 or 1 T2
+ATK_Maestro_Accelerando,ENM_Maestro,Accelerando,0,None,0,2500,0,0.8,None,25.0,None,0,1,Anthem to all enemies in range 10 s
+ATK_Maestro_Resurrect,ENM_Maestro,Resurrection Crescendo,0,None,0,2500,0,2.0,None,30.0,None,0,3,Revives up to 3 T1/T2 as Echoed; interrupt with 300 dmg or Hush
+ATK_Maestro_Cascade,ENM_Maestro,Note Cascade,15,Damage.Type.Sonic,0,3000,1000,0.8,Gold,10.0,Ranged,1500,12,Parryable rain
+ATK_Maestro_Lash,ENM_Maestro,Baton Lash,30,Damage.Type.Melee,0,300,0,0.5,Cyan,3.0,Melee,0,1,
+ATK_Knight_Combo,ENM_RequiemKnight,Requiem Combo,25,Damage.Type.Melee,0,400,0,0.4,Gold,3.0,Heavy,0,3,25/25/35; 3rd strike gold; parry = Guard Break 2 s; 4 hits in Dirge Stance
+ATK_Knight_Lunge,ENM_RequiemKnight,Lunge Thrust,40,Damage.Type.Melee,0,900,0,0.6,Gold,6.0,Heavy,0,1,Parry = Guard Break 2 s
+ATK_Knight_Wave,ENM_RequiemKnight,Requiem Wave,30,Damage.Type.Energy,0,3000,0,0.7,Cyan,5.0,Ranged,2600,1,Shield lowered during wind-up
+ATK_Knight_Bash,ENM_RequiemKnight,Shield Bash,15,Damage.Type.Melee,0,250,0,0.3,Cyan,4.0,Melee,0,1,Knockback 800
+ATK_ChimeTurret_Burst,HAZ_ChimeTurret,Note Burst,8,Damage.Type.Sonic,0,2500,0,0.6,Cyan,3.0,Ranged,2600,4,Every 3rd burst is a gold note (Counter destroys the turret)
+ATK_ResonanceMine,HAZ_ResonanceMine,Resonance Burst,40,Damage.Type.Explosive,0,250,350,0.6,Cyan,0,None,0,1,Proximity; shootable 1 HP

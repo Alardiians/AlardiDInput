@@ -1,0 +1,33 @@
+Name,Category,Value,Duration,MagnetRadius,Notes
+PKP_Health_S,Health,5,0,0,Placed
+PKP_Health_M,Health,25,0,0,Placed
+PKP_Health_L,Health,50,0,0,Placed
+PKP_HealthOrb,Health,5,0,600,"Dropped (Breakdown, Hush chips); magnetizes"
+PKP_Bloodrush,Health,100,0,0,Overheal to max+100; decays 2/s
+PKP_Plating_S,Plating,5,0,0,Placed
+PKP_Plating_M,Plating,25,0,0,Placed
+PKP_Plating_L,Plating,50,0,0,Placed
+PKP_PlatingShard,Plating,5,0,600,"Dropped (Distort, Counter bonus, Overflow); magnetizes"
+PKP_IronMantle,Plating,50,0,0,Overcharge to max+50; decays 1/s
+PKP_Ammo_Shells_S,Ammo,0.25,0,0,Fraction of max
+PKP_Ammo_Shells_L,Ammo,0.6,0,0,Fraction of max
+PKP_Ammo_Rounds_S,Ammo,0.25,0,0,Fraction of max
+PKP_Ammo_Rounds_L,Ammo,0.6,0,0,Fraction of max
+PKP_Ammo_Charge_S,Ammo,0.25,0,0,Fraction of max
+PKP_Ammo_Charge_L,Ammo,0.6,0,0,Fraction of max
+PKP_Ammo_Ordnance_S,Ammo,0.25,0,0,Fraction of max
+PKP_Ammo_Ordnance_L,Ammo,0.6,0,0,Fraction of max
+PKP_AmmoBurst,Ammo,0,0,600,Dropped by Shred; value computed by the Shred formula (04 §5.1)
+PKP_NullCell,Special,1,0,0,Silencer ammo (max 3)
+PKP_Grudge,Special,1,0,0,Axe charge (max 3)
+PKP_HarrowSpool,Special,1,0,0,+1 Harrow charge
+PKP_HushRefill,Special,1,0,0,Resets Hush Charge cooldown
+PKP_FragRefill,Special,1,0,0,Resets Frag Charge cooldown
+PKP_PU_Amp,PowerUp,4,20,0,x4 damage
+PKP_PU_Tempo,PowerUp,1.5,20,0,"+35% move, +50% fire rate, instant reloads, dash recharge x3"
+PKP_PU_DeadSilence,PowerUp,1,15,0,Invulnerability; immune to hazards
+PKP_PU_OverdriveSurge,PowerUp,100,0,0,Fills Gain
+PKP_Reprise,Life,1,0,0,Extra life (carry max 3); 1000 Silence shockwave on revive
+PKP_Fuse_Red,Key,1,0,0,Shape: square
+PKP_Fuse_Yellow,Key,1,0,0,Shape: triangle
+PKP_Fuse_Blue,Key,1,0,0,Shape: circle

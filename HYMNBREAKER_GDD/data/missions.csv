@@ -1,0 +1,28 @@
+Name,Title,Act,Location,Kits,TargetMinutes,Boss,NewWeapons,NewAbilities,NewEnemies,ModCrates,HeartShard,MuteCell,Tab,Tape,RequiemGate,Pedal,ChoirMasses,Effigies,Reprise,SoundingStations,NextMission,HubAfter
+M01,Tranquility Deep,I,Lunar subsurface lab,BRU;CHOIR,55,,WPN_Breacher;WPN_Riveter,Surge;Breakdown;Harrow;Counter(passive),Thrall;Trooper;Chorister,,0,0,,,0,,0,1,0,1,M02,0
+M02,Selene Relay,I,Lunar surface,BRU;ORB;CHOIR,65,,WPN_StaticRifle,Distort;FragCharge;Counter,Bulwark;Vesper;Cantor,MOD_Breacher_FragSlug,1,1,,,0,,0,1,1,1,M03,1
+M03,The Meridian Tether,I,Space elevator,ORB;BRU;CHOIR,70,,WPN_Gravedigger,HushCharge;Overdrive;Downbeat,Crescendo;Ophan;Wailer,MOD_Riveter_TackScope;MOD_Static_HeatBurst,1,0,,Tape01,0,,1,1,0,1,M04,1
+M04,Rapture,I,Halcyon - the Bowl,CITY;CHOIR,80,BOSS_Ionian,WPN_Hammerfall,PowerChord,Seraph;Canon;HymnPylon,MOD_Static_ArcBeam,1,0,Tab01,,0,,1,2,1,2,M05,1
+M05,Radio Free Static,II,Halcyon Undercity,CITY;BRU;CHOIR,70,,WPN_Shredder,Pedalboard,OrganGrinder;ThrallBloated,MOD_Breacher_DrumFire;MOD_Hammerfall_ClusterBell,1,1,,Tape02,0,PDL_Boost,1,1,1,1,M06,1
+M06,Fort Obdurate,II,Alpine fortress,BRU;CHOIR,75,,WPN_ArcCoil,,Bellwether;Marksman,MOD_Riveter_HotRivets;MOD_Shredder_TriSpin,1,0,Tab02,,1,PDL_Delay,2,2,0,2,M07,1
+M07,Mount Canticle,II,Cult seminary,CULT;CHOIR,80,BOSS_Tenebrae_1,,,Acolyte;Zealot;Siren,MOD_Hammerfall_LockSalvo;MOD_ArcCoil_StormNode,0,1,,Tape03,0,PDL_NoiseGate,1,1,1,1,M08,1
+M08,The Iron Psalm,II,War-cathedral,CHOIR;BRU,80,BOSS_Dorian,,,RequiemKnight;Hymnal,MOD_Shredder_DeflectorSpin,1,0,Tab03,,2,PDL_Reverb,2,2,1,2,M09,1
+M09,The Listening Array,II,Desert observatory,BRU;CHOIR,85,BOSS_Tenebrae_2,WPN_Silencer,,Echo;Fugue,MOD_ArcCoil_Tether,1,0,,Tape04,0,PDL_Fuzz,2,2,0,2,M10,1
+M10,The Forge-Belt,III,Industrial corridor,IND;CHOIR,70,,WPN_Lance,GrindRails,OrganWalker(distant),MOD_Lance_Overcharge,1,1,Tab04,,0,PDL_Phaser,1,1,1,1,M11,1
+M11,The Assembly,III,Machine-cathedral,IND;CHOIR,85,BOSS_Mixolydian,,AnvilSiegeFrame;PedalSlot3,OrganWalker;VesperCloud,,0,0,,Tape05,3,PDL_Compressor,1,2,1,2,M12,1
+M12,Helios Station,III,Mercury,BRU;ORB;CHOIR,75,BOSS_Antiphon,WPN_Ripsaw,SolarExposure,Profundo,MOD_Ripsaw_Grinder;MOD_Lance_ArcScythe,1,0,Tab05,,0,PDL_Whammy,2,1,1,1,M13,1
+M13,Corona,III,Mercury mirror fields,ORB;CHOIR,80,BOSS_Phrygian,,,,MOD_Ripsaw_Recall,1,1,,Tape06,4,PDL_Tremolo,1,2,1,2,M14,0
+M14,Dead Air,III,The Quietus,SHIP;CHOIR,60,BOSS_MaestroPrimus,,,Maestro(Primus),,0,0,Tab06,,0,,0,1,1,1,M15,1
+M15,Cryobore,IV,Europa ice,ICE;BRU;CHOIR,75,,,,Carillon;BellwetherGilded,,1,1,,Tape07,0,PDL_Looper,2,1,1,1,M16,1
+M16,The Singing Sea,IV,Europa ocean,ICE;CHOIR,85,BOSS_Leviathan;BOSS_Aeolian,,,Maestro;Leviathan,,1,0,Tab07,,5,PDL_Octaver,1,2,0,2,M17,1
+M17,Cytherea,IV,Venus aerostat,AERO;CHOIR,75,,,Reverie;GravityRooms,CrescendoGilded,,1,0,,Tape08,0,PDL_Tuner,2,1,1,1,M18,0
+M18,The Dreaming Choir,IV,Lydian's dream,AERO;MIXED;CHOIR,80,BOSS_Lydian,,,,,1,1,Tab08,,6,PDL_Bitcrusher,1,2,1,2,M19,1
+M19,The Chancel,IV,LEO conversion facility,CHOIR;ORB,80,BOSS_MaestroPrimus_Final,,PedalSlot4,,,0,0,,Tape09,0,,2,2,1,2,M20,1
+M20,The Nave,V,Harmonium entry,HARM;CHOIR,70,,,NotePlatforms;HymnSaturation,ProfundoGilded,,1,0,Tab09,,0,PDL_Sustain,2,1,1,1,M21,1
+M21,Aubade,V,Oreth capital,OREN,65,,WPN_Axe,GrudgeBearer;WindTowers,,,1,1,,Tape10,0,PDL_KillSwitch,1,2,0,1,M22,0
+M22,The Unresolved,V,Locris's domain,OREN;HARM,75,BOSS_Locris,,HeartbeatNavigation,CanonGilded,,1,0,Tab10,,7,,2,2,1,2,M23,1
+M23,Aureole,V,Halcyon ruins,CITY;CHOIR;CULT,85,,,Mech2,ChoirColossus,,1,0,,Tape11,0,PDL_WallOfAmps,2,2,1,2,M24,0
+M24,The Octave,V,Cathedral of the Final Chord,CULT;CHOIR,75,BOSS_Octave,,,,,0,1,Tab11,,0,,1,1,1,1,M25,1
+M25,The Staves,VI,Harmonium,HARM;SHIP,75,,,Broadside,Seraphim,,0,0,,Tape12,0,,2,2,1,2,M26,0
+M26,The Clef,VI,Harmonium,HARM;SHIP,80,,,Mech3,,,0,0,Tab12,,0,,2,1,1,1,M27,0
+M27,The Final Chord,VI,Heart of the Clef,HARM,60,BOSS_Unison,,LastOverdrive,Unison,,0,0,,,0,,0,1,0,0,,1

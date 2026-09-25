@@ -1,0 +1,19 @@
+Name,Track,Step,HealthAdd,PlatingAdd,ShellsAdd,RoundsAdd,ChargeAdd,OrdnanceAdd,Perk
+HEART_Vitality_1,Vitality,1,15,0,0,0,0,0,
+HEART_Vitality_2,Vitality,2,15,0,0,0,0,0,
+HEART_Vitality_3,Vitality,3,15,0,0,0,0,0,Second Pulse (Breakdown Health +25%)
+HEART_Vitality_4,Vitality,4,15,0,0,0,0,0,
+HEART_Vitality_5,Vitality,5,20,0,0,0,0,0,
+HEART_Vitality_6,Vitality,6,20,0,0,0,0,0,Heart of the Storm (Overdrive +4 s)
+HEART_Plating_1,Plating,1,0,15,0,0,0,0,
+HEART_Plating_2,Plating,2,0,15,0,0,0,0,
+HEART_Plating_3,Plating,3,0,15,0,0,0,0,Iron Skin (Plating pickups & shards +25%)
+HEART_Plating_4,Plating,4,0,15,0,0,0,0,
+HEART_Plating_5,Plating,5,0,20,0,0,0,0,
+HEART_Plating_6,Plating,6,0,20,0,0,0,0,"Resonant Shell (Plating >= 50: Counter +40 ms, parried notes x4)"
+HEART_Arsenal_1,Arsenal,1,0,0,4,20,25,2,
+HEART_Arsenal_2,Arsenal,2,0,0,4,20,25,2,
+HEART_Arsenal_3,Arsenal,3,0,0,4,20,25,2,Double Chord (Power Chord max 2)
+HEART_Arsenal_4,Arsenal,4,0,0,4,20,25,2,
+HEART_Arsenal_5,Arsenal,5,0,0,4,20,25,2,
+HEART_Arsenal_6,Arsenal,6,0,0,4,20,25,2,Deep Pockets (Pocket Reload = normal reload; ammo pickups +25%)
