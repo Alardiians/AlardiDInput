@@ -119,7 +119,7 @@ Resume · **Rig** (upgrades: Brass / Rig Cores — field upgrades) · **Pedalboa
 * **Reduce flashing:** caps bloom spikes, removes screen-edge strobes, softens Hymnfall and Silencer flashes, replaces Radiance/Octave Nova whiteouts with a colored overlay.
 * **Motion:** FOV, head bob off, camera shake slider, motion blur off, reduce speed lines.
 * **HUD & text scaling**, high-contrast HUD mode.
-* **Controls:** full remapping; hold/toggle options (weapon wheel, scope, Shredder spin); aim assist levels; auto-mantle; "Separate Downbeat button".
+* **Controls:** full remapping; hold/toggle options (weapon wheel, scope, Shredder spin); adjustable hold durations for multi-use buttons; aim assist levels; auto-mantle; "Dedicated Counter button".
 * **Sign language:** Tamsin's signing is always subtitled.
 
 ---

@@ -7,7 +7,7 @@ PDL_Fuzz,Fuzz,M09,Punches x3 damage and x2 Gain,Kill enemies with punches,60,Pun
 PDL_Phaser,Phaser,M10,Surge grants 0.15 s invulnerability,Phase through attacks,150,Phased attacks grant +3 Gain and +5 Plating
 PDL_Compressor,Compressor,M11,No explosive self-damage; incoming Explosive -30%,Deal Explosive damage,20000,Self-knockback +50%
 PDL_Whammy,Whammy,M12,Airborne: fire rate +15%; hold Mod Fire to slow fall 50%,Kill enemies while airborne,100,Air kills refund the double jump
-PDL_Tremolo,Tremolo,M13,Once per checkpoint: lethal damage leaves 1 HP and slows time 25% for 2 s,Trigger Tremolo and survive the arena,5,Also grants +50 Plating
+PDL_Tremolo,Tremolo,M13,Once per checkpoint: lethal damage leaves 1 HP and slows time to 25% for 2 s,Trigger Tremolo and survive the arena,5,Also grants +50 Plating
 PDL_Looper,Looper,M15,Fodder Shreds 30% chance to cost no charge,Shred enemies,200,Heavy Shred refunds 1 charge
 PDL_Octaver,Octaver,M16,+1 air jump (triple jump),Kill enemies with Downbeat,30,"Extra jump emits a downward pulse (60, r300)"
 PDL_Tuner,Tuner,M17,"Weak points glow brighter, visible through walls within 20 m; weak-point hits +1 Gain",Destroy weak points,150,Destroying a weak point staggers T2

@@ -14,6 +14,7 @@ The Unsung's **Rig** carries a set of built-in tools. Most "wake up" over Act I 
 | Downbeat | `ABL_Downbeat` | M03 | Downbeat (air) | Slam AoE, secrets, mobility |
 | Power Chord | `ABL_PowerChord` | M04 | Melee with charge | Armor/shield/pylon breaker |
 | Surge | `ABL_Surge` | M01 (start) | Surge | Dash |
+| Broadside | `ABL_Broadside` | M25 (M25–M26 only) | Broadside | Quietus fire-support call-in (see `14_Missions/M25_The_Staves.md` §2) |
 
 ---
 
@@ -129,7 +130,7 @@ Full rules in the core-loop doc §7. Upgrades are through **Pedals** (e.g., *Rev
 | Visual when charged | The right gauntlet's knuckles glow ember with arcing static; a low hum loop |
 | Strike | Melee with a charge: 0.1 s wind-up, then a devastating punch; frontal cone 300 cm × 60°; **600 Melee dmg** |
 | Special | Instantly breaks: Bulwark shields, Harmony Walls, Gilded armor plates (all on the struck enemy), Hymn Pylon cores, Organ Grinder turrets (if hit directly), Canon bell-mouths (if hit directly) |
-| Stagger | T1 obliterated; T2 at ≤ 50% HP → Falter; T3 → Guard Break (1.0 s) |
+| Stagger | T1 obliterated; T2 at ≤ 50% HP → Falter; T3 → Guard Break (duration per enemy, 1.0–2.0 s — see the bestiary) |
 | With Downbeat | See Power Downbeat |
 
 ---

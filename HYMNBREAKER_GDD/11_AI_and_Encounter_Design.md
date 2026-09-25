@@ -7,7 +7,7 @@
 | Controller | `AHBAIController` (C++) | Owns Perception, Blackboard, runs the BT from the enemy's DataAsset |
 | Decision | **Behavior Trees** (`BT_<Family>`) + Blackboards (`BB_Enemy`) | One BT per behavior family, parameterized by `DA_Enemy_*` |
 | Queries | **EQS** (`EQS_*`) | Positioning, flanking, perch selection, retreat |
-| Perception | `UAIPerceptionComponent`: Sight, Hearing, Damage | Choir enemies "hear" gunfire at 2500 cm |
+| Perception | `UAIPerceptionComponent`: Sight, Hearing, Damage | Enemies "hear" gunfire within their hearing range (T1 2000 / T2 2500 / T3 3000 cm) |
 | Navigation | NavMesh with **3 agent sizes** + NavLinks + custom flight | See §6 |
 | Combat coordination | `UHBCombatDirector` (World Subsystem) | Attack tokens, aggression, spawning budget |
 | Encounters | `AHBEncounterArena` + `UHBEncounterData` | Waves, seals, triggers, rewards |
@@ -123,6 +123,7 @@ score = 2.0 * visibleToPlayerCamera   // enemies on screen attack first (fairnes
 | `ThreatBelow` | threat points | "Spawn W3 when threat ≤ 6" |
 | `TimeElapsed` | seconds since previous wave | Pressure waves |
 | `KilledTag` | enemy tag | "When the Cantor dies" |
+| `ObjectiveDestroyed` | objective tag, N | "When 3 `PlectrumJoint` objectives are destroyed" — written in mission docs as `JointsDestroyed(3)`, `NodesDestroyed(4)`, `AnchorsDestroyed(3)`, `OrgansDestroyed(3)`: all map to `ObjectiveDestroyed(<tag>, N)` |
 | `PlayerInVolume` | sub-volume | Multi-stage arenas |
 | `PercentKilled` | % of previous wave | "When 70% of W2 dead" |
 
@@ -154,7 +155,7 @@ Each enemy has a **threat** value used for budgets and pacing:
 | Max alive enemies (performance cap) | 16 | 18 | 20 | 22 | 24 | 26 |
 
 ### 5.4 Encounter Design Rules
-1. **Resources in the room:** every wave containing T2/T3 enemies includes **≥ 3 T1** (or T1 reinforcements trickle in via a `TimeElapsed` sub-wave) — the player must always be able to Shred and Breakdown.
+1. **Resources in the room:** every wave containing T2/T3 enemies includes **≥ 3 T1** (or T1 reinforcements trickle in via a `TimeElapsed` sub-wave) — the player must always be able to Shred and Breakdown. **Director safety net:** whenever T2/T3 enemies are alive and fewer than 3 T1 are alive for more than 10 s, the Director automatically spawns a trickle of 4 Thralls (or the mission's current fodder type) via the arena's T1 spawn points. Waves in mission docs that list only heavies rely on this rule; summoners (Maestro, Carillon, Hymnal) also count their summons as fodder.
 2. **The answer is in the room:** if a wave requires a specific answer (Ophan → Frag; Echo → Hush), the player has had that tool for ≥ 1 mission, or the arena provides it (pickups).
 3. **Introduction rule:** a new enemy type's first appearance is alone or with T1 support only, in a readable space, preceded by an environmental "foreshadow" (a corpse, a sound, a glimpse). Its second appearance combines it with known enemies. Its third appearance tests it under pressure.
 4. **Variety rule:** after Act I, no arena uses fewer than 3 distinct enemy types; no two consecutive arenas share the same heavy composition.
@@ -168,8 +169,8 @@ Each enemy has a **threat** value used for budgets and pacing:
 Each mission document specifies encounters in this format; builders transcribe them into `DA_ENC_Mxx_nn` assets.
 
 ```
-ENC_M04_05  "Upper Concourse"
-  Arena: A_M04_Concourse (40 x 30 m, 3 levels)       Seals: 3
+ENC_Mxx_nn  "Example Arena"   (illustrative only — not a real encounter)
+  Arena: A_Mxx_Example (40 x 30 m, 3 levels)       Seals: 3
   Music: MUS_M04_Combat_B                              Reward: 1 Brass + loot fountain
   W1 OnStart:               Thrall x8 (Emerge: SP_01-04), Chorister x2 (Hymnfall: SP_10,11)
   W2 AliveBelow(4):         Seraph x1 (Hymnfall: SP_20), Trooper x4 (Drop: SP_05-08)
@@ -201,9 +202,9 @@ Applied automatically by the Director (designers author Amplified only):
 
 | Agent | Radius | Height | Used by |
 |---|---|---|---|
-| `Nav_Small` | 45 | 200 | All T1, Cantor, Fugue, Siren (head), Maestro (r 70 → uses Medium) |
-| `Nav_Medium` | 120 | 350 | Crescendo, Bellwether, Canon, Organ Grinder, Seraph (ground), Maestro, Requiem Knight |
-| `Nav_Large` | 220 | 650 | Profundo, Carillon, bosses |
+| `Nav_Small` | 45 | 300 | All T1 except the Bloated Thrall; Cantor, Fugue |
+| `Nav_Medium` | 120 | 350 | Bloated Thrall, Siren, Crescendo (+Gilded), Bellwether (+Gilded), Seraph (ground), Maestro, Requiem Knight |
+| `Nav_Large` | 220 | 650 | Canon (+Gilded), Organ Grinder, Profundo (+Gilded), Carillon, bosses |
 
 * **NavLinks** (`BP_NavLink_Leap`): jump-down and leap-up links for Thralls/Choristers/Troopers; T2 brutes only use **drop-downs** ≤ 400 cm and ramps.
 * **Flyers** do not use NavMesh: `UHBFlightComponent` with steering behaviors (seek, orbit, separation, obstacle avoidance using 5 short sphere-traces per tick at 10 Hz), constrained to the arena's `FlightVolume`.

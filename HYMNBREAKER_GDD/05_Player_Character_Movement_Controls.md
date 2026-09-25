@@ -28,7 +28,7 @@ All values are **Amplified (Normal)** defaults and live in `DA_PlayerTuning` (a 
 | Ground friction | 8.0 | `GroundFriction = 8` |
 | Step height | 45 cm | `MaxStepHeight = 45` |
 | Walkable slope | 46° | `SetWalkableFloorAngle(46)` |
-| Speed while firing | 100% (no penalty) except Shredder *Tri-Spin* and Lance charge (−30%) | — |
+| Speed while firing | 100% (no penalty) except Shredder *Tri-Spin* (−30%), Shredder *Deflector Spin* (−30%), Lance *Overcharge* charging (−30%) and Riveter *Tack Scope* (−30%; 0% with the *Light Frame* upgrade) | — |
 | Backpedal | 100% speed (DOOM-style) | — |
 
 ---
@@ -122,7 +122,7 @@ Resulting **traversable heights** (these are the level-design metrics — see `1
 
 | Hazard | Behavior |
 |---|---|
-| Bottomless pit / void / deep water / lava-steel | Player is returned to the last safe ground (sampled every 0.5 s while grounded on `SafeGround`-flagged surfaces) after a 0.4 s fade. −10 Health (0 on Lullaby/Unplugged). Enemies falling in die instantly (+4 Gain, "Environmental kill"). |
+| Bottomless pit / void / deep water / lava-steel | Player is returned to the last safe ground (sampled every 0.5 s while grounded on `SafeGround`-flagged surfaces) after a 0.4 s fade. −10 Health (0 on Lullaby/Unplugged; 20 on Deafening/Unsung). Enemies falling in die instantly (+4 Gain, "Environmental kill"). |
 | Hymn Saturation (bright white Choir mist, Act V–VI) | 5 dmg/s to Plating first, then Health; a Hush Charge clears it for 6 s |
 | Solar exposure (M12–M13) | Standing in direct sunlight: Plating drains 10/s, then Health 10/s; shade is safe. Clear visual: bright white light with heat shimmer, a "sizzle" SFX |
 | Fire/molten steel splash | 10 dmg/s while in contact |
@@ -178,6 +178,7 @@ Resulting **traversable heights** (these are the level-design metrics — see `1
 | `IA_Map` | Digital | Map screen |
 | `IA_Pause` | Digital | Pause menu |
 | `IA_Interact` | Digital | Interact (doors, collectibles, terminals, hub NPCs) — most interactions are automatic on touch; this is for terminals/NPCs only |
+| `IA_Broadside` | Digital (hold) | Mark a Broadside target for the Quietus's guns (M25–M26 only; see `14_Missions/M25_The_Staves.md` §2) |
 
 **Mapping contexts:** `IMC_OnFoot` (default), `IMC_Mech` (Anvil Siege Frame), `IMC_Menu`, `IMC_Hub` (on-foot + interact emphasis, weapons holstered), `IMC_Cutscene` (look-only).
 
@@ -203,6 +204,7 @@ Resulting **traversable heights** (these are the level-design metrics — see `1
 | Last weapon | X |
 | Map | M |
 | Interact | Mouse 4 / T |
+| Broadside (M25–M26) | B (hold to aim, release to confirm) |
 | Pause | Esc |
 
 ### 10.3 Default Gamepad (Xbox layout)
@@ -213,20 +215,22 @@ Resulting **traversable heights** (these are the level-design metrics — see `1
 | Jump | A |
 | Surge | LB |
 | Fire / Mod fire | RT / LT |
-| Swap mod | D-pad Up |
+| Swap mod | D-pad Up (tap) |
+| Weapon inspect | D-pad Up (hold 1 s, idle; not in M25–M26) |
+| Broadside (M25–M26 only) | D-pad Up (hold 0.3 s to aim, release to confirm) |
 | Melee | RS click |
 | Harrow | RB |
-| Equipment (throw) | B *(hold B: swap Frag/Hush)* |
+| Equipment (throw) | B (tap — on the ground or in the air) |
+| Swap equipment | B (hold 0.4 s) |
 | Distort | LS click |
-| Downbeat | B while airborne (context) — or remap |
-| Overdrive | LS + RS click simultaneously |
-| Weapon wheel | Y (hold) · tap Y = last weapon |
+| Downbeat | X while airborne (≥ 250 cm above ground); keep X held 0.2 s during the slam = Power Downbeat |
+| Interact | X (hold 0.3 s) while grounded and a prompt is shown |
+| Overdrive | D-pad Down |
+| Weapon wheel | Y (hold) · tap Y = last weapon; **super weapons** sit in the wheel's center |
 | Weapon cycle | D-pad Left/Right |
-| Super weapon | D-pad Down |
 | Map / Pause | View / Menu |
-| Interact | X |
 
-> Note the context-sensitive Equipment/Downbeat: on gamepad, B throws the Charge on the ground and Downbeats in the air (≥ 250 cm). Option: "Separate Downbeat button" remaps Downbeat to X-in-air.
+> **Conflict rules (gamepad):** X is Downbeat only while airborne ≥ 250 cm and Interact only while grounded with a prompt visible — the two never overlap. D-pad Up resolves by duration: < 0.3 s = Swap Mod (fires on release), ≥ 0.3 s = Broadside in M25–M26, ≥ 1.0 s idle = Inspect elsewhere. B resolves by duration: tap = throw, hold 0.4 s = swap. All bindings are remappable; hold durations are adjustable in Options → Controls.
 
 ### 10.4 Aim Assist (gamepad only)
 * **Slowdown:** look sensitivity ×0.55 when the crosshair passes over an enemy hitbox + 1.5° margin.

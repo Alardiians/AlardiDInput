@@ -194,47 +194,28 @@ Map names: `Mxx_<Name>_P` (persistent) with sublevels `Mxx_<Name>_Geo_<Area>`, `
 
 ## 5. Data Schemas (DataTable row structs)
 
-All CSVs in `/HYMNBREAKER_GDD/data/` map to these structs (import as DataTables; row name = first column `Name`).
+All CSVs in `/HYMNBREAKER_GDD/data/` map to these structs **field-for-field** (import as DataTables; the first column `Name` is the row name, not a struct field). Field order below = CSV column order. Types: `F` = float, `I` = int32, `N` = FName, `T` = FText, `S` = FString. Tag-like and list-like columns are `N`/`S` — see `data/README.md` for resolution rules.
 
 ### 5.1 `FHBWeaponRow` → `DT_Weapons` (`data/weapons.csv`)
-| Field | Type | Notes |
-|---|---|---|
-| Name | FName | `WPN_Breacher` |
-| DisplayName | FText | |
-| Slot | int32 | 1–9, 10–12 for supers |
-| FireModel | enum | Hitscan / Projectile / Beam / Chain / Melee |
-| DamageType | FGameplayTag | |
-| DamagePerHit | float | Per pellet/rivet/bolt/tick |
-| PelletsPerShot | int32 | |
-| ShotsPerSecond | float | |
-| SpreadDeg | float | |
-| FalloffStart / FalloffEnd | float | cm |
-| FalloffMinMult | float | |
-| HeadMult | float | |
-| AmmoType | FGameplayTag | |
-| AmmoPerShot | float | |
-| ProjectileSpeed | float | cm/s (0 = hitscan) |
-| SplashDamage / SplashRadius | float | |
-| MagSize / ReloadTime | int32 / float | 0 = no magazine |
-| SwitchTime | float | |
-| Acquired | FName | Mission ID |
+`DisplayName` T · `Slot` I · `FireModel` N (Hitscan / Projectile / Beam / Chain / Melee) · `DamageType` N (tag) · `DamagePerHit` F (per pellet/rivet/bolt/tick) · `PelletsPerShot` I · `ShotsPerSecond` F · `SpreadDeg` F · `FalloffFull` F (cm, 100% damage up to here) · `FalloffMid` F (cm) · `FalloffMidMult` F · `FalloffFar` F (cm) · `FalloffFarMult` F (linear interpolation between points; beyond Far = FarMult) · `HeadMult` F (weapon head multiplier) · `AmmoType` N (tag) · `AmmoPerShot` F · `ProjectileSpeed` F (0 = hitscan) · `SplashDamage` F · `SplashRadius` F · `MagSize` I (0 = no magazine) · `ReloadTime` F · `SpinUpTime` F · `PierceCount` I · `ChainTargets` I · `ChainRange` F · `ChainMult` F · `ShieldMult` F (vs. Bulwark shields & Harmony Walls) · `SwitchTime` F · `Acquired` N (mission ID) · `Notes` S
 
 ### 5.2 `FHBWeaponModRow` → `DT_WeaponMods` (`data/weapon_mods.csv`)
-Name, Weapon, DisplayName, Description, Cost1, Cost2, Cost3, Upgrade1Text, Upgrade2Text, Upgrade3Text, MasteryName, MasteryChallenge, MasteryTarget (int), AcquiredMission.
+`Weapon` N · `DisplayName` T · `Description` T · `Cost1` I · `Upgrade1` T · `Cost2` I · `Upgrade2` T · `Cost3` I · `Upgrade3` T · `MasteryName` T · `MasteryChallenge` T · `MasteryTarget` I · `MasteryEffect` T · `AcquiredMission` N
 
 ### 5.3 `FHBEnemyRow` → `DT_Enemies` (`data/enemies.csv`)
-Name, DisplayName, Tier, Faction, HP, ArmorHP, ShieldHP, FalterPct, FalterDuration, WalkSpeed, RunSpeed, CapsuleRadius, CapsuleHalfHeight, SightRange, HearingRange, Threat, HarrowCost (0/1/3/-1 = none/special), BreakdownHealth, Res_Kinetic, Res_Explosive, Res_Energy, Res_Blade, Res_Melee, Res_Silence, Res_Sonic, HeadMult, WeakPointMult, NavAgent, FirstMission.
+`DisplayName` T · `Tier` N (T1/T2/T3) · `Faction` N · `HP` F · `ArmorHP` F (Gilded plates total) · `ShieldHP` F · `FalterPct` F · `FalterDuration` F · `WalkSpeed` F · `RunSpeed` F · `CapsuleRadius` F · `CapsuleHalfHeight` F · `SightRange` F · `HearingRange` F · `Threat` F · `HarrowCost` I (**1** = fodder Shred, **3** = Heavy Shred, **0** = special — Bloated Thrall *Fling*, **−1** = Reel-In only) · `BreakdownHealth` F (0 = no Breakdown) · `Res_Kinetic` `Res_Explosive` `Res_Energy` `Res_Blade` `Res_Melee` `Res_Silence` `Res_Sonic` F (damage multipliers) · `HeadMult` F (1.0 = no head zone; >1 = has a head zone — the weapon's HeadMult is applied) · `WeakPointMult` F · `NavAgent` N (Nav_Small / Nav_Medium / Nav_Large / Flying) · `FirstMission` N · `Notes` S
 
 ### 5.4 `FHBAttackRow` → `DT_Attacks` (`data/attacks.csv`)
-Name, Enemy, DisplayName, Damage, DamageType, bPiercing, Range, Radius, TelegraphTime, TelegraphType (Cyan/Gold), Cooldown, TokenPool (Melee/Ranged/Heavy/Sniper/Kamikaze/None), ProjectileSpeed, Count, Notes.
+`Enemy` N · `DisplayName` T · `Damage` F (negative = heal) · `DamageType` N (tag or `None`) · `bPiercing` bool (0/1) · `Range` F · `Radius` F · `TelegraphTime` F · `TelegraphType` N (Cyan / Gold / None) · `Cooldown` F · `TokenPool` N (Melee / Ranged / Heavy / Sniper / Kamikaze / None) · `ProjectileSpeed` F · `Count` I · `Notes` S
 
 ### 5.5 Other tables
-* `FHBPickupRow` (`data/pickups.csv`): Name, Category, Value, Duration, Notes.
-* `FHBMissionRow` (`data/missions.csv`): Name (Mxx), Title, Act, Location, Kits, TargetMinutes, Boss, NewWeapons, NewAbilities, NewEnemies, HeartShard, MuteCell, Tab, Tape, RequiemGate, Pedal, ChoirMasses, Effigies, Reprise, SoundingStations.
-* `FHBRigUpgradeRow` (`data/rig_upgrades.csv`): Name, Branch, Tier, Cost, DisplayName, Effect.
-* `FHBPedalRow` (`data/pedals.csv`): Name, DisplayName, FoundIn, Effect, BoutiqueChallenge, BoutiqueTarget, BoutiqueEffect.
-* `FHBDifficultyRow` (`data/difficulty.csv`): Name, EnemyDamageMult, EnemyHPMult, BossHPMult, T1CountMult, T2CountMult, EliteChance, ThreatCapMult, ParryWindowMs, BreakdownHealthMult, TokenMelee, TokenRanged, TokenHeavy, DecisionDelayMult, SelfDamage, FallPenalty, AimAssistSnapDeg.
-* `FHBHeartTrackRow` (`data/heart_tracks.csv`): Track, Step, Value(s), Perk.
+* `FHBPickupRow` (`data/pickups.csv`): `Category` N · `Value` F · `Duration` F · `MagnetRadius` F · `Notes` S
+* `FHBMissionRow` (`data/missions.csv`): `Title` T · `Act` N · `Location` T · `Kits` S (list) · `TargetMinutes` I · `Boss` S (list) · `NewWeapons` S (list) · `NewAbilities` S (list of `ABL_`/`SYS_` IDs) · `NewEnemies` S (list of `ENM_`/`HAZ_`/`TTN_`/`BOSS_` IDs) · `ModCrates` S (list) · `HeartShard` I · `MuteCell` I · `Tab` N · `Tape` N · `RequiemGate` I (gate number, 0 = none) · `Pedal` N · `ChoirMasses` I · `Effigies` I · `Reprise` I · `SoundingStations` I · `NextMission` N · `HubAfter` bool
+* `FHBRigUpgradeRow` (`data/rig_upgrades.csv`): `Branch` N · `Tier` I · `Cost` I · `DisplayName` T · `Effect` T · `UnlockCondition` S
+* `FHBPedalRow` (`data/pedals.csv`): `DisplayName` T · `FoundIn` S · `Effect` T · `BoutiqueChallenge` T · `BoutiqueTarget` I · `BoutiqueEffect` T
+* `FHBDifficultyRow` (`data/difficulty.csv`): `EnemyDamageMult` F · `EnemyHPMult` F · `BossHPMult` F · `BossCooldownMult` F · `T1CountMult` F · `T2CountMult` F · `EliteChance` F · `ThreatCapMult` F · `AliveBelowOffset` I · `ParryWindowMs` I · `BreakdownHealthMult` F · `TokenMelee` I · `TokenRanged` I · `TokenHeavy` I · `TokenSniper` I · `TokenKamikaze` I · `DecisionDelayMult` F · `SelfDamage` F · `FallPenalty` F · `AimAssistSnapDeg` F · `WheelSlowMo` F · `Permadeath` bool
+* `FHBHeartTrackRow` (`data/heart_tracks.csv`): `Track` N · `Step` I · `HealthAdd` F · `PlatingAdd` F · `ShellsAdd` I · `RoundsAdd` I · `ChargeAdd` I · `OrdnanceAdd` I · `Perk` T
+* `data/player_tuning.csv` is a **key/value reference** (`Value`, `Unit`, `Source`) used to fill `DA_PlayerTuning` — not a DataTable.
 
 ### 5.6 DataAssets
 * `UHBPlayerTuningData` — all movement values from `05` (one asset: `DA_PlayerTuning`).

@@ -27,7 +27,7 @@ ATK_Crescendo_Gore,ENM_Crescendo,Gore Swipe,30,Damage.Type.Melee,0,350,0,0.6,Cya
 ATK_Bellwether_Toll,ENM_Bellwether,Toll Slam,25,Damage.Type.Sonic,0,1200,1200,0.9,Cyan,7.0,Heavy,0,2,"Two ring shockwaves 0.3 s apart, height 60 (jump)"
 ATK_Bellwether_Leap,ENM_Bellwether,Leap Slam,35,Damage.Type.Melee,0,1500,400,0.8,Cyan,9.0,Heavy,0,1,Shadow marker
 ATK_Bellwether_Clapper,ENM_Bellwether,Clapper Swing,30,Damage.Type.Melee,0,350,0,0.5,Cyan,2.0,Melee,0,2,
-ATK_Bellwether_GoldToll,ENM_Bellwether,Gold Toll,40,Damage.Type.Melee,0,350,0,0.6,Gold,12.0,Heavy,0,1,Parry = Guard Break 1.5 s
+ATK_Bellwether_GoldToll,ENM_Bellwether,Gold Toll,40,Damage.Type.Melee,0,350,0,0.6,Gold,12.0,Heavy,0,1,Parry = instant Falter (T2)
 ATK_Seraph_Missiles,ENM_Seraph,Chime Missiles,20,Damage.Type.Explosive,0,4000,150,0.7,Cyan,4.0,Ranged,1400,2,Homing 90 deg/s; shootable 10 HP; -1 per destroyed wing-pipe
 ATK_Seraph_Lance,ENM_Seraph,Seraph Lance,25,Damage.Type.Energy,0,2500,0,0.8,Cyan,8.0,Heavy,0,1,Beam 1.2 s (dps)
 ATK_Seraph_Kick,ENM_Seraph,Talon Kick,25,Damage.Type.Melee,0,250,0,0.4,Cyan,2.0,Melee,0,1,Grounded only

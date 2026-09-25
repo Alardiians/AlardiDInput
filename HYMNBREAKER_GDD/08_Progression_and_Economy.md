@@ -4,7 +4,7 @@
 
 | Layer | Currency / Item | Spent at | What it improves | Total available | Needed to max |
 |---|---|---|---|---|---|
-| Weapon mods | **Brass** | Armory (Quietus) or pause menu *Field Upgrade* | Weapon mod upgrades | ~140 | 105 |
+| Weapon mods | **Brass** | Armory (Quietus) or pause menu *Field Upgrade* | Weapon mod upgrades | ~340 | 262 |
 | Weapon masteries | Challenges / **Mastery Picks** | Automatic / Armory | Mastery perks | 8 Picks | — |
 | Rig | **Rig Cores** | Rig Bay (Quietus) or pause menu | Harrow, Frag, Hush, Distort, Mobility, Survival | 63 | 44 |
 | Core stats | **Heart Shards** | Heart Chamber (Quietus only) | Max Health, Plating, Ammo + 6 perks | 18 | 18 |
@@ -15,9 +15,10 @@
 | Lives | **Reprises** | Automatic | Extra life | ~20 placed | carry max 3 |
 
 **Design goals:**
-* A **main-path-only** player finishes the game with ~50% of upgrades and is comfortable on Unplugged/Amplified.
-* A **~70% explorer** (the target) is fully comfortable on Amplified and Overdriven.
+* A **main-path-only** player earns Brass from arenas (~180 → ~65–70% of weapon upgrades) but few suit/heart upgrades (those live in secrets and challenges); they are comfortable on Unplugged and can finish Amplified.
+* A **~70% explorer** (the target) is fully comfortable on Amplified and Overdriven, and can max all weapon mods by the end of the campaign.
 * A **completionist** maxes everything by the end of Act V, with Act VI as a victory lap.
+* **Placement rule:** in every mission, the hidden Rig Core and at least one Heart Shard-bearing secret (where the mission has one) must be **visible from the critical path** (a "glance secret"), so attentive main-path players still collect ~30–40% of suit/heart upgrades.
 
 ---
 
@@ -25,13 +26,15 @@
 
 | Source | Amount | Count | Total |
 |---|---|---|---|
+| **Arena completions** (every encounter's "Reward: N Brass" in the mission documents, incl. mini-bosses and bosses) | 1–3 | ~110 arenas | ~182 (incl. 8 conditional: M07 Tenebrae retreat, M19 freed halls) |
 | **Brass Caches** (hidden: a Static ammo crate stenciled with a brass-knuckle icon, violet light) | 1–2 | 54 (2 per mission) | ~81 |
-| **Choir Masses** (optional encounters) completed | 1 | ~35 | 35 |
+| **Choir Masses** (optional encounters) completed | 1 | 35 | 35 |
 | **Requiem Gates** completed | 3 | 7 | 21 |
-| Pit Trials (first completion) | 1 | 12 | 12 (some Trials give Rig Cores instead) |
-| **Total** | | | **~140** |
+| **Pit Trials** (first completion; the other 6 Trials give Rig Cores) | 2 | 6 | 12 |
+| **Mute Cell vaults** (V3, V6) | 5 | 2 | 10 |
+| **Total** | | | **~341** |
 
-Costs per weapon: each mod's 3 upgrades cost **1 / 2 / 3** Brass (6 per mod, 12 per weapon); Gravedigger path costs 2 / 3 / 4 (9). **Total to max all: 8 × 12 + 9 = 105.**
+Costs: each mod's 3 upgrades cost **2 / 5 / 8** Brass (15 per mod, 30 per weapon with two mods); the Gravedigger path costs **4 / 7 / 11** (22). **Total to max all: 16 × 15 + 22 = 262** (≈ 77% of total supply — main path alone covers ≈ 69%).
 
 **Field Upgrades:** Brass can be spent from the pause menu anywhere (not only in the hub), so players can use new upgrades immediately.
 
@@ -174,7 +177,7 @@ Each Pedal has a **Boutique** upgrade unlocked by a challenge (the pedal gets a 
 
 ## 8. COSMETICS
 
-* **Rig Finishes** (full-body skins, visible in cutscenes, the hub, FP arms, and shadows): 15 total — unlocked by vaults (2), completing each Act (6), Encore missions (3), the Unsung difficulty (1), 100% collectibles (1), all Requiem Gates (1), the Mute Engine Gauntlet Pit Trial (1).
+* **Rig Finishes** (full-body skins, visible in cutscenes, the hub, FP arms, and shadows): **15** total — Rust Bucket (Vault 2), Shieldwarden (Vault 9), one per Act — *First Noise*, *Tuned Out*, *Iron and Fire*, *Deep Water*, *Homecoming*, *Last Broadcast* — Encore rewards *Live at Halcyon*, *Bootleg*, *Platinum*, *Unsung* (Unsung difficulty), *Liner Notes* (100% collectibles), *Reliquary* (all Requiem Gates), *Gauntlet Gold* (Mute Engine Gauntlet).
 * **Weapon Finishes:** per-weapon, unlocked by Masteries (one per mastered mod) + vault set.
 * **Helmet variants:** 4, from Pit Trials.
 * All cosmetics are **earned in-game**. No microtransactions, no online store — the design assumes a premium single-player product.
@@ -191,11 +194,11 @@ Every mission has **3 challenges** (listed in each mission document), e.g. *"Kil
 
 | After mission | Weapons | Heart Shards (Health/Plating) | Rig Cores spent | Brass spent | Pedal slots |
 |---|---|---|---|---|---|
-| M04 | 5 | 2 (130 / 65) | 4 | 8 | 0 |
-| M09 | 7 + Silencer | 5 (145 / 80) | 11 | 26 | 2 |
-| M14 | 9 + Silencer | 8 (160 / 95) | 20 | 48 | 3 |
-| M19 | 9 + Silencer | 11 (180 / 110) | 28 | 68 | 4 |
-| M24 | + Axe | 14 (190 / 130) | 36 | 88 | 4 |
-| M27 | all | 18 (200 / 150) | 44 | 105 | 4 |
+| M04 | 5 | 3 (130 / 65) | 4 | 35 | 0 |
+| M09 | 7 + Silencer | 6 (145 / 80) | 11 | 95 | 2 |
+| M14 | 9 + Silencer | 9 (160 / 95) | 20 | 160 | 3 |
+| M19 | 9 + Silencer | 13 (180 / 110) | 28 | 215 | 4 |
+| M24 | + Axe | 17 (200 / 130) | 36 | 250 | 4 |
+| M27 | all | 18 (200 / 150) | 44 | 262 | 4 |
 
 Encounter budgets in mission docs assume these values on Amplified.

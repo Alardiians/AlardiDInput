@@ -57,7 +57,7 @@ All enemies implement these states via the shared `UHBStatusComponent` (see `20_
 | **Linked** | Cantor's Harmony Link | Gold beam from Cantor's lantern to the enemy; enemy has a gold hex-sheen | Sustained harmony | −75% damage taken. Broken by: killing/staggering the Cantor, shooting the lantern, Distort hitting the linked enemy, Arc Beam mod. |
 | **Anthem** (buffed) | Near a Hymn Pylon, or Maestro's Accelerando | Gold particle aura, eyes flare | Faster, higher chord | +30% move speed, +25% attack speed, +20% damage. |
 | **Echoed** (possessed) | Echo enters an enemy | Translucent ghost double trails the host by 0.3 s | Reverb-drenched copy of its chord | Every attack repeats once 0.5 s later (the "echo"). +50% HP. On host death, the Echo is freed (must be Hushed). |
-| **Burning** | Hot Rivets, Phrygian hazards, Silencer? (no) — environmental fire | Orange flames | Crackle | 10 dmg/s for 4 s. T1 panic-run for 1 s. |
+| **Burning** | Hot Rivets, Shredder *Hot Barrels*, environmental fire (molten steel, Phrygian hazards) | Orange flames | Crackle | 10 dmg/s for 4 s. T1 panic-run for 1 s. |
 | **Airborne / Knocked** | Downbeat, Power Chord, explosions (T1 only) | Ragdoll-blend knockback | — | Can be juggled; Breakdown in air if Faltering. |
 
 ### 3.1 Falter Rules
@@ -163,7 +163,7 @@ Design note: Distort is deliberately usable on crowds. The best play is to Disto
 | Parryable attacks | **Gold** projectiles ("Resonant Notes") and **gold-flashing** melee strikes. Enemies telegraph them with a gold flare + a rising two-note chime 0.4 s before impact. |
 | Parry window | Melee pressed ≤ **180 ms** before impact on Amplified (see difficulty table: 350 / 280 / 180 / 160 / 130 / 130 ms) |
 | Projectile Counter | The note is reflected at 2× speed toward its source (auto-aimed), dealing **3×** its original damage; T1/T2 sources are staggered (instant Falter for T1) |
-| Melee Counter | Attacker is thrown back; T1/T2 instantly Falter; T3 enters **Guard Break** (1.5 s, takes +50% damage) |
+| Melee Counter | Attacker is thrown back; T1/T2 instantly Falter; T3 enters **Guard Break** (duration per enemy, 1.0–2.0 s — see the bestiary; takes +50% damage) |
 | Reward | **+10 Plating**, **+6 Gain**, brief time-dilation (0.1 s at 20% speed) and a bright bell-crack "CLANG" |
 | Mistimed | Normal punch (25 dmg — see §9.1). No penalty. |
 | Multiple notes | One press can reflect up to 3 notes arriving within the same window |
@@ -195,13 +195,14 @@ Displayed as an ember arc around the lower half of the crosshair and as a VU-met
 
 | Effect | Value |
 |---|---|
-| Duration | 12 s (Rig/Heart upgrades → 16 s). Gain drains to 0 over the duration. |
+| Duration | 12 s (+4 s with the *Heart of the Storm* Heart perk, +3 s with the *Sustain* Pedal — max 19 s). Gain drains to 0 over the duration. |
 | Melee | Kills T1/T2 instantly; 800 dmg to T3; bosses 400 |
 | Breakdowns | ×0.6 animation time; ×2 Health drop |
 | Weapons | +25% fire rate; **no ammo consumed** (standard weapons only) |
 | Defense | −40% damage taken |
 | Mobility | Dash recharge ×2; +10% move speed |
 | Harrow | Fodder Shreds cost 0 charges; every 5th kill restores 1 charge |
+| Plating | Kills during Overdrive drop Plating: T1 +5 · T2 +10 · T3 +20 |
 | Encore | Killing a T3 during Overdrive extends it by +2 s (max +6 s per activation) |
 | Music | Switches to the **Overdrive stem** (guitar-solo layer) bar-synced via Quartz — see audio doc |
 | VFX | Screen-edge orange static vignette, exhaust flames, chromatic aberration pulses on every kill |
@@ -230,25 +231,25 @@ Overdrive cannot be activated during Breakdowns, cutscenes, or mech segments. Ga
 2. **Plating absorbs damage 1:1 first.** When Plating reaches 0, the remainder goes to Health.
 3. **Piercing** attacks (marked in the bestiary; only some T3/boss attacks) apply **50%** of their damage directly to Health, bypassing Plating.
 4. At Health 0 → death (or a **Reprise** triggers).
-5. **Low Health state (< 25%)**: the Arrhythm heartbeat SFX intensifies; screen-edge desaturates to red; Breakdown drops get the Desperate Pulse bonus.
-6. **No fall damage.** Out-of-bounds falls return the player to the last safe ground point with 10 damage (0 on Lullaby/Unplugged).
+5. **Low Health state (< 25%)**: the Arrhythm heartbeat SFX intensifies; screen-edge desaturates to red. (Breakdown drops already get the *Desperate Pulse* bonus below **30%** — §4.)
+6. **No fall damage.** Out-of-bounds falls return the player to the last safe ground point with 10 damage (0 on Lullaby/Unplugged; 20 on Deafening/Unsung).
 
 ### 10.2 Damage Types
 
 | Type | Sources | Notes |
 |---|---|---|
 | **Kinetic** | Breacher, Gravedigger, Riveter, Shredder | Baseline |
-| **Explosive** | Hammerfall, Frag Charge, Frag Slug, Hot Rivets, Cluster Bell, barrels | Splash; self-damage 25% (no self-damage on Lullaby/Unplugged); self-knockback allowed (rocket-jumping is a valid trick) |
-| **Energy** | Static Rifle, Arc Coil, Lance, Distort | ×3 vs. shields and Harmony Walls |
+| **Explosive** | Hammerfall, Frag Charge, Frag Slug, Hot Rivets, Cluster Bell, barrels | Splash; self-damage 25% (0% on Lullaby/Unplugged, 35% on Deafening/Unsung; 0% with the *Compressor* Pedal); self-knockback allowed (rocket-jumping is a valid trick); ×1.5 vs. Bulwark shields |
+| **Energy** | Static Rifle, Arc Coil, Lance, Distort | ×3 vs. Bulwark shields and Harmony Walls; ×2 vs. Gilded plates |
 | **Blade** | Ripsaw, The Axe | Severs limbs readily (dismemberment bias) |
 | **Melee** | Punch, Power Chord, Downbeat, Breakdown | Staggers |
 | **Silence** | Hush Charge, The Silencer | Kills Echoes; freezes Choir |
 | **Sonic** | The Larynx, reflected notes | ×1.5 vs. Choir "pure" forms (Host) |
 
 ### 10.3 Enemy Damage Modifiers
-* **Headshots:** enemies with a defined `Head` hit zone take ×1.5 from all bullet/energy/blade hits (Riveter *Tack Scope* ×2.5; Lance ×2.0; shotgun pellets ×1.25).
-* **Weak points:** destructible hit zones with their own HP and multiplier (×2–×3). Destroying one triggers a behavior change (defined per enemy) + Gain +5.
-* **Armor plates** (Gilded variants, Bulwark shields): separate HP pools that block damage to the body until broken; Power Chord breaks instantly; Energy ×2.
+* **Headshots:** enemies with a defined `Head` hit zone take the **weapon's** `HeadMult` from `data/weapons.csv` — ×1.5 for bullet/energy/blade weapons by default (Riveter *Tack Scope* ×2.5; Lance ×2.0; shotgun pellets ×1.25). The enemy's own `HeadMult` column only flags whether a head zone exists (1.0 = none); the two are never multiplied together.
+* **Weak points:** destructible hit zones with their own HP and multiplier (×2–×3, enemy `WeakPointMult`). Destroying one triggers a behavior change (defined per enemy) + Gain +5. Precision weapons (Tack Scope, Lance) use **max**(enemy `WeakPointMult`, weapon `HeadMult`) on weak points.
+* **Armor plates & shields** (Gilded plates, Bulwark shields, Harmony Walls): separate HP pools that block damage to the body until broken; Power Chord breaks them instantly. Multipliers: Gilded plates — Energy ×2, Explosive ×1.5, Hot Rivets ×3; Bulwark shields & Harmony Walls — Energy ×3, Explosive ×1.5, Hot Rivets ×3.
 * **Resistances** per enemy per damage type are in `data/enemies.csv` (`Res_Kinetic`, `Res_Explosive`, …) as multipliers.
 * **Splash vs. flyers:** flying enemies take ×1.25 from Explosive splash (encourages rockets vs. Vespers packs).
 
@@ -284,7 +285,7 @@ Pickup readability: rotating, bobbing, emissive, with a colored light and a uniq
 
 * **Checkpoints:** autosave at: mission start, every combat-arena start **and** completion, every major area transition, before bosses and each boss phase ≥ 2.
 * **On death:** reload last checkpoint. Player resources restored to at least: Health 100%, Plating 50% of max, each ammo type 50% of max (or current value at checkpoint if higher). Arena restarts from wave 1.
-* **Reprise** (extra life, `PKP_Reprise`): found in secrets (max carried: 3). On lethal damage, a Reprise is consumed automatically: time freezes for 0.8 s, a massive shockwave (1000 dmg, 1200 cm, Silence damage type) blasts out, the player revives at 100% Health and 50% Plating with 2 s invulnerability. Disabled in Unsung (permadeath) mode? **No** — Reprises are the only safety net in Unsung mode and are highly valued there.
+* **Reprise** (extra life, `PKP_Reprise`): found in secrets (max carried: 3). On lethal damage, a Reprise is consumed automatically: time freezes for 0.8 s, a massive shockwave (1000 dmg, 1200 cm, Silence damage type) blasts out, the player revives at 100% Health and 50% Plating with 2 s invulnerability. Reprises remain active in Unsung (permadeath) mode — they are its only safety net.
 
 ---
 

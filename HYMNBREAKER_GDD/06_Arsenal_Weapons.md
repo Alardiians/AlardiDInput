@@ -18,7 +18,7 @@
 | S3 | `WPN_Larynx` | **The Larynx** | Captured Choir organ-weapon | Voice | Optional (7 Requiem Gates) | Steals enemy projectiles and fires them back |
 
 ### Ammo Pools (base → max upgraded)
-| Ammo | Weapons | Base max | Upgraded max (Heart Shards / Rig) |
+| Ammo | Weapons | Base max | Upgraded max (Heart Shards — Arsenal track) |
 |---|---|---|---|
 | **Shells** | Breacher, Gravedigger | 24 | 48 |
 | **Rounds** | Riveter, Shredder | 180 | 300 |
@@ -60,18 +60,18 @@ Fires a sticky explosive slug. Hold Mod Fire to arm (0.35 s), release to fire.
 * Cooldown: 2.0 s between slugs; costs 2 Shells.
 | Upgrade | Cost (Brass) | Effect |
 |---|---|---|
-| Quick Arm | 1 | Arm time 0.35 → 0.2 s |
-| Double Slug | 2 | Fires 2 slugs in quick succession (costs 3 Shells) |
-| Shrapnel Bloom | 3 | Explosion releases 8 fragments (40 dmg each, 600 cm) |
+| Quick Arm | 2 | Arm time 0.35 → 0.2 s |
+| Double Slug | 5 | Fires 2 slugs in quick succession (costs 3 Shells) |
+| Shrapnel Bloom | 8 | Explosion releases 8 fragments (40 dmg each, 600 cm) |
 | **Mastery: Cluster Slug** | Challenge: *Stagger 25 Ophans with a Frag Slug in the maw* | Slug detonation spawns 3 mini-slugs that seek nearby enemies |
 
 ### Mod B — Drum Fire (`MOD_Breacher_DrumFire`)
 Hold Mod Fire to spin up a mechanical drum (0.4 s), then the Breacher fires full-auto at 5 shots/s. Uses 1 Shell per shot. Pellet spread +20%.
 | Upgrade | Cost | Effect |
 |---|---|---|
-| Fast Spin | 1 | Spin-up 0.4 → 0.2 s |
-| Heavy Drum | 2 | +2 shots per second |
-| Cool Barrel | 3 | Every 4th shot costs no ammo |
+| Fast Spin | 2 | Spin-up 0.4 → 0.2 s |
+| Heavy Drum | 5 | +2 shots per second |
+| Cool Barrel | 8 | Every 4th shot costs no ammo |
 | **Mastery: Stampede** | *Kill 150 enemies while Drum Fire is active* | Movement speed +15% while firing Drum Fire; each kill during Drum Fire refunds 1 Shell |
 
 ---
@@ -95,18 +95,18 @@ Hold Mod Fire to spin up a mechanical drum (0.4 s), then the Breacher fires full
 Hold Mod Fire to aim down a 3× scope (zoom 0.18 s). Scoped shots: 90 dmg, headshots and weak points **×2.5**, 0 spread, 2 shots/s.
 | Upgrade | Cost | Effect |
 |---|---|---|
-| Light Frame | 1 | Move at 100% while scoped (base 70%) |
-| Superheated | 2 | Scoped rivets pierce one extra target |
-| Weakpoint Coil | 3 | Destroying a weak point refunds 3 Rounds and +2 Gain |
+| Light Frame | 2 | Move at 100% while scoped (base 70%) |
+| Superheated | 5 | Scoped rivets pierce one extra target |
+| Weakpoint Coil | 8 | Destroying a weak point refunds 3 Rounds and +2 Gain |
 | **Mastery: Deadeye** | *Destroy 100 weak points while scoped* | Scoped headshot kills on T1 cause the body to explode (60 dmg, 300 radius) |
 
 ### Mod B — Hot Rivets (`MOD_Riveter_HotRivets`)
 Mod Fire fires a 5-rivet burst (0.3 s) of glowing rivets that embed, then detonate after 1.0 s (40 Explosive each, 150 radius) and apply **Burning**. Costs 5 Rounds. Cooldown 1.5 s.
 | Upgrade | Cost | Effect |
 |---|---|---|
-| Quick Fuse | 1 | Fuse 1.0 → 0.6 s |
-| Plate Cracker | 2 | Hot Rivet explosions deal ×3 to armor plates and Bulwark shields |
-| Full Clip | 3 | Burst 5 → 7 rivets |
+| Quick Fuse | 2 | Fuse 1.0 → 0.6 s |
+| Plate Cracker | 5 | Hot Rivet explosions deal ×3 to armor plates and Bulwark shields |
+| Full Clip | 8 | Burst 5 → 7 rivets |
 | **Mastery: Chain Reaction** | *Kill 40 enemies with Hot Rivet detonations* | Killed enemies with embedded rivets explode in a secondary blast (100 dmg) |
 
 ---
@@ -130,18 +130,18 @@ Mod Fire fires a 5-rivet burst (0.3 s) of glowing rivets that embed, then detona
 Mod Fire vents all current Heat as a shockwave around the Unsung: radius 300–600 (scales with Heat), damage 50–300 Energy. Stuns T1. Cooldown 4 s.
 | Upgrade | Cost | Effect |
 |---|---|---|
-| Quick Vent | 1 | Cooldown 4 → 2.5 s |
-| Wide Burst | 2 | +30% radius |
-| Hot Hands | 3 | Heat builds 25% faster (bigger bursts sooner) |
+| Quick Vent | 2 | Cooldown 4 → 2.5 s |
+| Wide Burst | 5 | +30% radius |
+| Hot Hands | 8 | Heat builds 25% faster (bigger bursts sooner) |
 | **Mastery: Supernova** | *Kill 60 enemies with Heat Burst* | A full-Heat burst also applies Distorted to everything it hits |
 
 ### Mod B — Arc Beam (`MOD_Static_ArcBeam`)
 Hold Mod Fire: continuous beam (range 2500 cm) dealing ramping damage (60 → 240 dps over 2 s). **Instantly breaks any Harmony Link** it touches (beam hitting a Cantor's lantern or a linked enemy). Costs 12 Charge/s.
 | Upgrade | Cost | Effect |
 |---|---|---|
-| Fast Ramp | 1 | Ramp time 2 → 1.2 s |
-| Arc Stun | 2 | Beam stuns T1 continuously while held on them |
-| Efficient Coil | 3 | Cost 12 → 8 Charge/s |
+| Fast Ramp | 2 | Ramp time 2 → 1.2 s |
+| Arc Stun | 5 | Beam stuns T1 continuously while held on them |
+| Efficient Coil | 8 | Cost 12 → 8 Charge/s |
 | **Mastery: Overload** | *Break 50 Harmony Links or Harmony Walls with the Arc Beam* | Enemies killed by the beam explode (150 dmg, 350 radius, Energy) |
 
 ---
@@ -165,9 +165,9 @@ Hold Mod Fire: continuous beam (range 2500 cm) dealing ramping damage (60 → 24
 ### Upgrade Path (no mods)
 | Upgrade | Cost | Effect |
 |---|---|---|
-| Rending Shells | 2 | ×1.5 damage vs. armor plates and shields |
-| Quick Load | 3 | Cycle 1.15 → 0.95 s |
-| Heavy Loads | 4 | +15% damage, +2° spread |
+| Rending Shells | 4 | ×1.5 damage vs. armor plates and shields |
+| Quick Load | 7 | Cycle 1.15 → 0.95 s |
+| Heavy Loads | 11 | +15% damage, +2° spread |
 | **Mastery: Double Grave** | *Kill 3+ enemies with a single Gravedigger shot 20 times* | Gravedigger has a **second trigger**: tap fire again within 0.2 s of the first shot to fire both barrels separately (2 × 220 dmg, independent aim), same total cycle |
 
 ---
@@ -185,25 +185,25 @@ Hold Mod Fire: continuous beam (range 2500 cm) dealing ramping damage (60 → 24
 | Fire rate | 1 rocket / 0.9 s |
 | Drum | 4 rockets, then 0.8 s drum-spin reload (can be interrupted by switching) |
 | Ammo | 1 Ordnance per rocket |
-| Self-damage | 25% (see core loop) |
+| Self-damage | 25% (0% Lullaby/Unplugged, 35% Deafening/Unsung — see core loop) |
 | vs. flyers | Splash ×1.25 |
 
 ### Mod A — Cluster Bell (`MOD_Hammerfall_ClusterBell`)
 Mod Fire launches a heavy shell that bursts at the first surface/enemy, or at max range 2500 cm, into 8 bomblets that bounce once then explode (60 dmg each, 200 radius). Costs 2 Ordnance. Cooldown 3 s.
 | Upgrade | Cost | Effect |
 |---|---|---|
-| Air Burst | 1 | Hold Mod Fire to set the burst distance with a range readout |
-| More Bomblets | 2 | 8 → 12 bomblets |
-| Sticky Bomblets | 3 | Bomblets stick to enemies |
+| Air Burst | 2 | Hold Mod Fire to set the burst distance with a range readout |
+| More Bomblets | 5 | 8 → 12 bomblets |
+| Sticky Bomblets | 8 | Bomblets stick to enemies |
 | **Mastery: Carpet** | *Kill 100 enemies with bomblets* | Cluster Bell costs 1 Ordnance |
 
 ### Mod B — Lock Salvo (`MOD_Hammerfall_LockSalvo`)
 Hold Mod Fire to paint targets (up to 4 locks; 0.3 s per lock; can lock the same heavy multiple times). Release to fire homing rockets (each 150 impact + 100 splash). Costs 1 Ordnance per lock.
 | Upgrade | Cost | Effect |
 |---|---|---|
-| Fast Lock | 1 | Lock time 0.3 → 0.18 s |
-| Wide Paint | 2 | Lock cone 10° → 18° |
-| Six-Pack | 3 | Max locks 4 → 6 |
+| Fast Lock | 2 | Lock time 0.3 → 0.18 s |
+| Wide Paint | 5 | Lock cone 10° → 18° |
+| Six-Pack | 8 | Max locks 4 → 6 |
 | **Mastery: Barrage** | *Kill 40 flyers (Vespers, Ophans, Seraphs, Hymnals, Wailers) with Lock Salvo* | Rockets fired by Lock Salvo cost no ammo if the salvo kills at least one enemy |
 
 ---
@@ -227,18 +227,18 @@ Hold Mod Fire to paint targets (up to 4 locks; 0.3 s per lock; can lock the same
 Mod Fire deploys the Shredder into a braced mode: the barrels split into three rotating barrel clusters (3× the muzzles). Fire rate 45 rounds/s, spread 2°. Movement −30% while deployed. 0.6 s to deploy.
 | Upgrade | Cost | Effect |
 |---|---|---|
-| Quick Deploy | 1 | Deploy 0.6 → 0.3 s |
-| Unbraced | 2 | Movement penalty −30% → −10% |
-| Hot Barrels | 3 | Rounds in Tri-Spin apply Burning on every 10th hit |
+| Quick Deploy | 2 | Deploy 0.6 → 0.3 s |
+| Unbraced | 5 | Movement penalty −30% → −10% |
+| Hot Barrels | 8 | Rounds in Tri-Spin apply Burning on every 10th hit |
 | **Mastery: Meat Grinder** | *Deal 50,000 damage in Tri-Spin* | No ammo cost for the first 2 s of each Tri-Spin burst |
 
 ### Mod B — Deflector Spin (`MOD_Shredder_DeflectorSpin`)
 Hold Mod Fire: the barrels spin without firing, projecting a frontal disc of spinning static (200 cm radius) that **blocks cyan projectiles** and **automatically Counters gold ones** (reflects them). Move at 70%. Barrel heat builds; 4 s max.
 | Upgrade | Cost | Effect |
 |---|---|---|
-| Wider Disc | 1 | 200 → 280 cm radius |
-| Charged Release | 2 | Releasing after ≥ 1.5 s of blocking fires a charged blast (300 Energy dmg cone) |
-| Cool Spin | 3 | Duration 4 → 6 s |
+| Wider Disc | 2 | 200 → 280 cm radius |
+| Charged Release | 5 | Releasing after ≥ 1.5 s of blocking fires a charged blast (300 Energy dmg cone) |
+| Cool Spin | 8 | Duration 4 → 6 s |
 | **Mastery: Wall of Sound** | *Block or reflect 500 projectiles* | Each blocked projectile adds +1 Plating |
 
 ---
@@ -261,18 +261,18 @@ Hold Mod Fire: the barrels spin without firing, projecting a frontal disc of spi
 Mod Fire launches a sparking node (lobbed projectile) that sticks to a surface/enemy and pulses lightning at everything within 600 cm for 5 s (20 dmg every 0.25 s). Costs 15 Charge. Cooldown 6 s. Arc Coil primary fire aimed at a node **overcharges** it (radius 900, damage ×2).
 | Upgrade | Cost | Effect |
 |---|---|---|
-| Longer Storm | 1 | 5 → 8 s |
-| Magnet Node | 2 | Node pulls T1 enemies and Vespers toward itself |
-| Twin Nodes | 3 | 2 nodes can exist at once |
+| Longer Storm | 2 | 5 → 8 s |
+| Magnet Node | 5 | Node pulls T1 enemies and Vespers toward itself |
+| Twin Nodes | 8 | 2 nodes can exist at once |
 | **Mastery: Tempest** | *Kill 150 enemies with Storm Nodes* | Nodes detonate at the end of their duration (250 dmg, 600 radius) |
 
 ### Mod B — Tether Coil (`MOD_ArcCoil_Tether`)
 Mod Fire tags up to 3 enemies with a glowing coil-mark (10 s). All damage dealt to any tagged enemy is **shared at 50%** with all other tagged enemies. Costs 20 Charge.
 | Upgrade | Cost | Effect |
 |---|---|---|
-| Wider Tag | 1 | Tag 3 → 4 enemies |
-| Full Share | 2 | Share 50% → 75% |
-| Mark Duration | 3 | 10 → 15 s |
+| Wider Tag | 2 | Tag 3 → 4 enemies |
+| Full Share | 5 | Share 50% → 75% |
+| Mark Duration | 8 | 10 → 15 s |
 | **Mastery: Circuit** | *Kill 3 tagged enemies within 1 s, 30 times* | Killing a tagged enemy refreshes the tag duration on the others and tags the nearest untagged enemy |
 
 ---
@@ -296,18 +296,18 @@ Mod Fire tags up to 3 enemies with a glowing coil-mark (10 s). All damage dealt 
 Hold Mod Fire to charge (1.5 s) — releasing fires a 1400-dmg shot that pierces **terrain up to 100 cm thick** and applies Stagger to T2. Movement −30% while charging. Costs 25 Charge.
 | Upgrade | Cost | Effect |
 |---|---|---|
-| Quick Charge | 1 | Charge 1.5 → 1.0 s |
-| Held Charge | 2 | Can hold a full charge for up to 3 s |
-| Kill Shot | 3 | Overcharged kills refund 15 Charge |
+| Quick Charge | 2 | Charge 1.5 → 1.0 s |
+| Held Charge | 5 | Can hold a full charge for up to 3 s |
+| Kill Shot | 8 | Overcharged kills refund 15 Charge |
 | **Mastery: Colossus Killer** | *Destroy 30 super-heavies with an Overcharged shot as the killing blow* | Overcharge deals ×1.5 damage to T3 and bosses |
 
 ### Mod B — Arc Scythe (`MOD_Lance_ArcScythe`)
 Mod Fire releases a horizontal blade of energy (width 1200 cm at max range 3000, grows as it travels) that cuts through everything in a plane (350 dmg; T1 cut in half). Costs 20 Charge. Cooldown 3 s.
 | Upgrade | Cost | Effect |
 |---|---|---|
-| Wider Scythe | 1 | +40% width |
-| Twin Scythe | 2 | Fires two blades in an X |
-| Reaper | 3 | Kills with the Scythe drop +10 Charge |
+| Wider Scythe | 2 | +40% width |
+| Twin Scythe | 5 | Fires two blades in an X |
+| Reaper | 8 | Kills with the Scythe drop +10 Charge |
 | **Mastery: Harvest** | *Kill 5+ enemies with a single Arc Scythe 15 times* | The Scythe returns after reaching max range (a second pass) |
 
 ---
@@ -331,18 +331,18 @@ Mod Fire releases a horizontal blade of energy (width 1200 cm at max range 3000,
 Mod Fire launches a blade that embeds in the first enemy and grinds (40 dmg every 0.1 s for 2 s = 800 total), staggering T1/T2 for the duration (T2 cannot attack while being ground unless HP > 70%). Costs 1 Ordnance. Cooldown 3 s.
 | Upgrade | Cost | Effect |
 |---|---|---|
-| Longer Grind | 1 | 2 → 3 s |
-| Shrapnel Finish | 2 | Blade shatters at the end: 8 fragments × 40 |
-| Chainsaw Teeth | 3 | Grinding makes the target shed ammo (Rounds/Shells) every 0.5 s |
+| Longer Grind | 2 | 2 → 3 s |
+| Shrapnel Finish | 5 | Blade shatters at the end: 8 fragments × 40 |
+| Chainsaw Teeth | 8 | Grinding makes the target shed ammo (Rounds/Shells) every 0.5 s |
 | **Mastery: Buzzkill** | *Kill 25 T2 enemies with the Grinder Blade* | Grinder cooldown 3 → 1.5 s |
 
 ### Mod B — Recall (`MOD_Ripsaw_Recall`)
 Mod Fire (tap) recalls all active blades in the world back to the Unsung along their shortest path, damaging everything they pass through (180 per hit). Recalled blades refund their ammo.
 | Upgrade | Cost | Effect |
 |---|---|---|
-| Faster Recall | 1 | Return speed +50% |
-| Sharper Return | 2 | Return damage 180 → 260 |
-| Orbit | 3 | Recalled blades orbit the Unsung for 2 s (hitting anything that gets close) before being caught |
+| Faster Recall | 2 | Return speed +50% |
+| Sharper Return | 5 | Return damage 180 → 260 |
+| Orbit | 8 | Recalled blades orbit the Unsung for 2 s (hitting anything that gets close) before being caught |
 | **Mastery: Boomerang Storm** | *Hit 3+ enemies with a single Recall 40 times* | Blades that reach max ricochets auto-recall |
 
 ---
@@ -395,7 +395,7 @@ Upgrades: none (the Silencer is balanced by ammo scarcity). **Null Cell** capaci
 | Stat | Value |
 |---|---|
 | Alt-fire — **Inhale** | Hold Mod Fire: a 45° cone (1200 cm) that pulls in and **swallows all enemy projectiles** (cyan and gold) inside it; each swallowed projectile = +5 Voice (gold: +10). Also sucks T1 enemies toward the player slowly. |
-| Primary — **Aria** | Fires a rapid stream of homing golden notes (12/s, 45 Sonic dmg each, ×1.5 vs. the Host). 1 Voice per note. |
+| Primary — **Aria** | Fires a rapid stream of homing golden notes (12/s, 45 Sonic dmg each; the Host takes ×1.5 via its Sonic resistance). 1 Voice per note. |
 | Charged primary — **Requiem** | Hold Fire 1.2 s with ≥ 50 Voice: a beam of all stored voices (duration = Voice/50 s, 1200 dps). |
 | Ammo | **Voice** (max 100); cannot be picked up — only inhaled |
 

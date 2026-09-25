@@ -50,7 +50,7 @@
 * **Trophies:** a snapped tuning fork on the belt; kill-tallies scratched into the right pauldron in alien script (Oreth notation — revealed later); a scrap of Oreth cloth (pale, ancient) tied at the left wrist — the only soft thing on the armor (it matches Veyl's statue's cloth in M21).
 * **Hands (first person):** thick armored fingers, knuckle plates, a worn leather-like undersuit visible at joints. In M21, the bare hand: long, grey, scarred, four fingers and a thumb.
 
-**Rig Finishes (skins):** Rust Bucket (orange primer), Shieldwarden (pale stone & silver), Unsung (pure black + single ember line), Tour Poster (gig-poster print), Live at Halcyon, Bootleg, Platinum, Gauntlet Gold, + one per Act (6).
+**Rig Finishes (skins, 15 — list in `08_Progression_and_Economy.md` §8):** Rust Bucket (orange primer), Shieldwarden (pale stone & silver), Unsung (pure black + single ember line), Liner Notes (hand-inked band art), Reliquary (bone & gold trophies), Live at Halcyon, Bootleg, Platinum, Gauntlet Gold, + one per Act (6). (*Tour Poster* is a **weapon** finish set, not a Rig Finish.)
 
 ---
 
