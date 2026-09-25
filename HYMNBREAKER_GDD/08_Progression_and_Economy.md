@@ -174,7 +174,7 @@ Each Pedal has a **Boutique** upgrade unlocked by a challenge (the pedal gets a 
 
 ## 8. COSMETICS
 
-* **Rig Finishes** (full-body skins, visible in cutscenes, the hub, FP arms, and shadows): 14 total — unlocked by vaults (2), completing each Act (6), Encore missions (3), the Unsung difficulty (1), 100% collectibles (1), all Requiem Gates (1).
+* **Rig Finishes** (full-body skins, visible in cutscenes, the hub, FP arms, and shadows): 15 total — unlocked by vaults (2), completing each Act (6), Encore missions (3), the Unsung difficulty (1), 100% collectibles (1), all Requiem Gates (1), the Mute Engine Gauntlet Pit Trial (1).
 * **Weapon Finishes:** per-weapon, unlocked by Masteries (one per mastered mod) + vault set.
 * **Helmet variants:** 4, from Pit Trials.
 * All cosmetics are **earned in-game**. No microtransactions, no online store — the design assumes a premium single-player product.
