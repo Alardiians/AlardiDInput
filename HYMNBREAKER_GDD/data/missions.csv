@@ -11,18 +11,18 @@ M09,The Listening Array,II,Desert observatory,BRU;CHOIR,85,BOSS_Tenebrae_2,WPN_S
 M10,The Forge-Belt,III,Industrial corridor,IND;CHOIR,70,,WPN_Lance,SYS_GrindRails,TTN_OrganWalker,MOD_Lance_Overcharge,1,1,COL_Tab_04,,0,PDL_Phaser,1,1,1,1,M11,1
 M11,The Assembly,III,Machine-cathedral,IND;CHOIR,85,BOSS_Mixolydian,,SYS_AnvilSiegeFrame;SYS_PedalSlot3,TTN_OrganWalker;TTN_VesperCloud,,0,0,,COL_Tape_05,3,PDL_Compressor,1,2,1,2,M12,1
 M12,Helios Station,III,Mercury,BRU;ORB;CHOIR,75,BOSS_Antiphon,WPN_Ripsaw,SYS_SolarExposure,ENM_Profundo,MOD_Ripsaw_Grinder;MOD_Lance_ArcScythe,1,0,COL_Tab_05,,0,PDL_Whammy,2,1,1,1,M13,1
-M13,Corona,III,Mercury mirror fields,ORB;CHOIR,80,BOSS_Phrygian,,,,MOD_Ripsaw_Recall,1,1,,COL_Tape_06,4,PDL_Tremolo,1,2,1,2,M14,0
+M13,Corona,III,Mercury mirror fields,ORB;BRU;CHOIR,80,BOSS_Phrygian,,,,MOD_Ripsaw_Recall,1,1,,COL_Tape_06,4,PDL_Tremolo,1,2,1,2,M14,0
 M14,Dead Air,III,The Quietus,SHIP;CHOIR,60,BOSS_MaestroPrimus,,,BOSS_MaestroPrimus,,0,0,COL_Tab_06,,0,,0,1,1,1,M15,1
 M15,Cryobore,IV,Europa ice,ICE;BRU;CHOIR,75,,,,ENM_Carillon;ENM_BellwetherGilded,,1,1,,COL_Tape_07,0,PDL_Looper,2,1,1,1,M16,1
 M16,The Singing Sea,IV,Europa ocean,ICE;CHOIR,85,BOSS_Leviathan;BOSS_Aeolian,,,ENM_Maestro;TTN_Leviathan,,1,0,COL_Tab_07,,5,PDL_Octaver,1,2,0,2,M17,1
 M17,Cytherea,IV,Venus aerostat,AERO;CHOIR,75,,,SYS_Reverie;SYS_GravityRooms,ENM_CrescendoGilded,,1,0,,COL_Tape_08,0,PDL_Tuner,2,1,1,1,M18,0
-M18,The Dreaming Choir,IV,Lydian's dream,AERO;MIXED;CHOIR,80,BOSS_Lydian,,,,,1,1,COL_Tab_08,,6,PDL_Bitcrusher,1,2,1,2,M19,1
+M18,The Dreaming Choir,IV,Lydian's dream,AERO;BRU;CITY;SHIP;IND;CULT;ICE;CHOIR,80,BOSS_Lydian,,,,,1,1,COL_Tab_08,,6,PDL_Bitcrusher,1,2,1,2,M19,1
 M19,The Chancel,IV,LEO conversion facility,CHOIR;ORB,80,BOSS_MaestroPrimus_Final,,SYS_PedalSlot4,,,0,0,,COL_Tape_09,0,,2,2,1,2,M20,1
-M20,The Nave,V,Harmonium entry,HARM;CHOIR,70,,,SYS_NotePlatforms;SYS_HymnSaturation,ENM_ProfundoGilded,,1,0,COL_Tab_09,,0,PDL_Sustain,2,1,1,1,M21,1
+M20,The Nave,V,Harmonium entry,HARM;CHOIR_ARCH,70,,,SYS_NotePlatforms;SYS_HymnSaturation,ENM_ProfundoGilded,,1,0,COL_Tab_09,,0,PDL_Sustain,2,1,1,1,M21,1
 M21,Aubade,V,Oreth capital,OREN,65,,WPN_Axe,RIG_Survival_5;SYS_WindTowers,,,1,1,,COL_Tape_10,0,PDL_KillSwitch,1,2,0,1,M22,0
-M22,The Unresolved,V,Locris's domain,OREN;HARM,75,BOSS_Locris,,SYS_HeartbeatNavigation,ENM_CanonGilded,,1,0,COL_Tab_10,,7,,2,2,1,2,M23,1
+M22,The Unresolved,V,Locris's domain,OREN;HARM;CHOIR,75,BOSS_Locris,,SYS_HeartbeatNavigation,ENM_CanonGilded,,1,0,COL_Tab_10,,7,,2,2,1,2,M23,1
 M23,Aureole,V,Halcyon ruins,CITY;CHOIR;CULT,85,,,SYS_AnvilSiegeFrame,TTN_ChoirColossus,,1,0,,COL_Tape_11,0,PDL_WallOfAmps,2,2,1,2,M24,0
 M24,The Octave,V,Cathedral of the Final Chord,CULT;CHOIR,75,BOSS_Octave,,,,,0,1,COL_Tab_11,,0,,1,1,1,1,M25,1
-M25,The Staves,VI,Harmonium,HARM;SHIP,75,,,ABL_Broadside,TTN_Seraphim,,0,0,,COL_Tape_12,0,,2,2,1,2,M26,0
-M26,The Clef,VI,Harmonium,HARM;SHIP,80,,,SYS_AnvilSiegeFrame,,,0,0,COL_Tab_12,,0,,2,1,1,1,M27,0
+M25,The Staves,VI,Harmonium,HARM;CHOIR_ARCH;SHIP,75,,,ABL_Broadside,TTN_Seraphim,,0,0,,COL_Tape_12,0,,2,2,1,2,M26,0
+M26,The Clef,VI,Harmonium,HARM;CHOIR_ARCH;SHIP,80,,,SYS_AnvilSiegeFrame,,,0,0,COL_Tab_12,,0,,2,1,1,1,M27,0
 M27,The Final Chord,VI,Heart of the Clef,HARM,60,BOSS_Unison,,SYS_LastOverdrive,BOSS_Unison,,0,0,,,0,,0,1,0,0,,1

@@ -68,7 +68,7 @@ ENC_M13_01  "Sector 7"               Arena: A02 (120 x 100 m mirror grid; panels
   Music: MUS_M13_Combat_A             Reward: 1 Brass + loot fountain
   Hazards: 4 reflected beam lines (shatter mirrors to disable)
   W1 OnStart:             Chorister x6 (panel tops), Thrall x8
-  W2 AliveBelow(5):       Seraph x2, Marksman x2 (pylons)
+  W2 AliveBelow(5):       Seraph x2, Marksman x2 (pylons), Thrall x4
   W3 AliveBelow(4):       Profundo x1, Crescendo x1, Thrall x6
   Final W4 AliveBelow(4): Ophan x2, Canon x1, Chorister x4
   Pickups: Health S x8, Plating M x2, ammo L x1 (Rounds, Ordnance), Harrow Spool x2
@@ -80,6 +80,7 @@ ENC_M13_02  "Pumping Station"        Arena: A04 platform (40 x 30 m) + conduit c
   W1 OnStart:             Vesper x10, Trooper x4
   W2 AliveBelow(5):       Siren x2, Chorister x3
   W3 AliveBelow(4):       Bellwether x1, Echo x1, Hymnal x1
+  W3b TimeElapsed(20s, W3): Thrall x6  [resource trickle]
   Final W4 AliveBelow(3): Seraph x2, Crescendo x2, Thrall x6
   Pickups: Health M x1, Health S x6, Plating M x1, Ordnance L x1, Charge L x1
   Notes: the conduit's sides drop 30 m (void: knockback kills).

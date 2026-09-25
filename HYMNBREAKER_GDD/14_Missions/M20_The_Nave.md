@@ -82,6 +82,7 @@ ENC_M20_01  "Narthex"                Arena: A02 (120 x 60 m; mist lowlands; rais
   Music: MUS_M20_Combat_A (120 BPM locked — Note-Platforms)   Reward: 1 Brass + loot fountain
   W1 OnStart:             Chorister x6, Thrall x8 (alien-species Tuned variants)
   W2 AliveBelow(5):       Seraph x2, Ophan x1
+  W2b TimeElapsed(20s, W2): Thrall x6  [resource trickle]
   Final W3 AliveBelow(4): Gilded Bellwether x1, Siren x2, Chorister x3
   Pickups: Health S x8, Plating M x2, ammo L x1 (Charge, Ordnance), Hush refill x1
 ```
@@ -105,6 +106,7 @@ ENC_M20_03  "The Great Chapel"       Arena: A05 (70 x 50 m; 4 diorama alcoves; b
   W1b TimeElapsed(20s):   Thrall x6
   W2 KilledTag(GildedProfundo) OR AliveBelow(4): Cantor x2, Canon x1, Bulwark x3
   W3 AliveBelow(4):       Maestro x1, Siren x2
+  W3b TimeElapsed(20s, W3): Thrall x6  [resource trickle]
   Final W4 AliveBelow(4): Carillon x1, Gilded Bellwether x1, Chorister x4
   Pickups: Health M x2, Plating M x2, ammo L each, Harrow Spool x3
 ```
@@ -114,6 +116,7 @@ ENC_M20_04  "The Rood Screen" (FINALE)  Arena: A07 (90 x 60 m; side balconies 12
   Music: MUS_M20_Combat_C             Reward: 2 Brass + big loot fountain
   W1 OnStart:             Hymn Pylon x2, Chorister x6, Thrall x8
   W2 AliveBelow(5):       Gilded Profundo x1, Seraph x2
+  W2b TimeElapsed(20s, W2): Thrall x6  [resource trickle]
   W3 AliveBelow(5):       Maestro x1, Requiem Knight x1, Echo x2
   W3b TimeElapsed(25s):   Thrall x8
   Final W4 AliveBelow(4): Carillon x1, Gilded Crescendo x1, Ophan x2, Chorister x4

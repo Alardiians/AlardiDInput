@@ -80,7 +80,7 @@ ENC_M17_01  "Promenade"              Arena: A02 (60 x 40 m plaza, 3 balcony leve
   Music: MUS_M17_Combat_A             Reward: 1 Brass + loot fountain
   W1 OnStart:             Chorister x6, Thrall x8 (Tuned — the few truly gilded here)
   W2 AliveBelow(5):       Seraph x2, Vesper x8
-  W3 AliveBelow(4):       Siren x2, Bulwark x2
+  W3 AliveBelow(4):       Siren x2, Bulwark x2, Thrall x4
   Final W4 AliveBelow(3): Ophan x2, Canon x1, Thrall x6
   Pickups: Health S x8, Plating M x1, Ordnance L x1, Charge S x2
 ```
@@ -92,6 +92,7 @@ ENC_M17_02  "Hanging Gardens"        Arena: A03 (bowl dome 70 m; 5 terraces; con
   W1 OnStart:             Chorister x4, Thrall x8 (+ illusions)                              [Reverie intro]
   W2 AliveBelow(4):       Gilded Crescendo x1, Thrall x6                                     [Gilded Crescendo intro]
   W3 AliveBelow(4):       Maestro x1, Fugue x2
+  W3b TimeElapsed(20s, W3): Thrall x6  [resource trickle]
   Final W4 AliveBelow(4): Gilded Bellwether x1, Seraph x2, Chorister x4
   Pickups: Health M x2, Plating M x2, ammo L each, Harrow Spool x3
   Power-up: TEMPO (conservatory roof)
@@ -103,6 +104,7 @@ ENC_M17_03  "Leaning Library"        Arena: A04 (30 m cube; 6 shelf-lined faces;
   Dream Wells: 1
   W1 OnStart:             Chorister x6 (every surface), Thrall x6
   W2 AliveBelow(4):       Siren x2, Echo x1
+  W2b TimeElapsed(20s, W2): Thrall x6  [resource trickle]
   Final W3 AliveBelow(3): Profundo x1, Chorister x4
   Pickups: Health S x6, Plating S x6, Shells L x1, Charge L x1
   Notes: enemies re-orient with the player's gravity; the Profundo's Stomp follows the current "floor".

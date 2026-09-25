@@ -39,10 +39,9 @@ Industry has become liturgy. The Forge-Belt's machines never stop: robotic arms 
 ### A02 — Derailed Armored Train, ENC_M10_01
 * **Space:** a CDF armored train derailed across the yard: 8 cars zig-zagged and toppled, forming a maze of steel walls and ramps (cars as climbable platforms, 4–6 m), an overturned locomotive, a turret car.
 * **Lance:** in the train's command car (`PKP_Weapon_Lance`). Wren: "*Oh, that's a Concord rail-lance. Those things punch through tanks. Please punch through something big.*" Prompt: `LANCE — pierces everything in a line`.
-* **Mod Crate: Lance — Overcharge** is later, in A05.
 
 ### A03 — Blast Furnace No. 4, ENC_M10_02
-* **Space:** an enormous furnace hall (70 × 50 m, 35 m tall): the furnace tower in the center, **molten-steel channels** (runners) crossing the floor (hazard: 10 dmg/s + instant death volume in the deep runner pools — void rules), ladle cranes carrying crucibles overhead (a crucible pour can be triggered by shooting its latch: pours molten steel over an area — environmental kill), charging platforms at 8 m and 16 m.
+* **Space:** an enormous furnace hall (70 × 50 m, 35 m tall): the furnace tower in the center, **molten-steel channels** (runners) crossing the floor (hazard: 10 dmg/s + instant death volume in the deep runner pools — void rules), ladle cranes carrying brimming steel ladles overhead (a ladle pour can be triggered by shooting its latch: pours molten steel over an area — environmental kill), charging platforms at 8 m and 16 m.
 * **Crushers:** hydraulic slag-crushers on one side (instant kill for enemies knocked in).
 * **Optional:** `CM_M10_01` in the casting house.
 
@@ -87,16 +86,17 @@ ENC_M10_02  "Blast Furnace No. 4"  Arena: A03 (70 x 50 m, 35 m; platforms 8 & 16
   W1 OnStart:             Thrall x10 (Tuned workers), Organ Grinder x1
   W2 AliveBelow(4):       Chorister x4, Bloated Thrall x2, Trooper x3
   W3 AliveBelow(4):       Crescendo x2 (charge along the runners — make them crash into the furnace!), Cantor x1
+  W3b TimeElapsed(20s, W3): Thrall x6  [resource trickle]
   Final W4 AliveBelow(3): Bellwether x1, Seraph x1, Hymnal x1, Thrall x8
   Pickups: Health M x1, Health S x6, Plating M x1, Ordnance L x1, Shells L x1, Harrow Spool x2
-  Hazards: 2 pourable crucibles (shoot latch), 2 slag crushers, molten runners
+  Hazards: 2 pourable ladles (shoot latch), 2 slag crushers, molten runners
 ```
 
 ```
 ENC_M10_03  "Rolling Mill"         Arena: A05 (150 x 30 m hall; roller table center; pulpits 6 m; crane Grind Rails 12 m)   Seals: 2
   Music: MUS_M10_Combat_B           Reward: 1 Brass + loot fountain
   W1 OnStart:             Trooper x6 (pulpits), Thrall x8
-  W2 AliveBelow(4):       Organ Grinder x2, Chorister x2
+  W2 AliveBelow(4):       Organ Grinder x2, Chorister x2, Thrall x4
   W3 AliveBelow(4):       Canon x1, Bulwark x3, Echo x1
   Final W4 AliveBelow(3): Crescendo x2, Seraph x2, Thrall x8
   Pickups: Health S x8, Plating M x2, Charge L x1, Rounds L x1, Ordnance S x2
@@ -133,7 +133,7 @@ ENC_M10_05  "Heavy-Armor Depot" (FINALE)  Arena: A08 (hangar 60 x 40 m + yard 40
 | ID | Description |
 |---|---|
 | `EVT_M10_Horizon` | Organ Walkers striding around the Assembly on the horizon |
-| `EVT_M10_CruciblePour` | Shootable crucible latches (environmental kills) |
+| `EVT_M10_LadlePour` | Shootable ladle latches (environmental kills) |
 | `EVT_M10_GrindRails` | Grind-rail tutorial run |
 | `EVT_M10_WalkerCrossing` | A Walker steps over the slag field |
 | `EVT_M10_AnvilWake` | The Anvil powers up in stages as waves fall |
@@ -166,7 +166,7 @@ ENC_M10_05  "Heavy-Armor Depot" (FINALE)  Arena: A08 (hangar 60 x 40 m + yard 40
 | # | Challenge |
 |---|---|
 | 1 | Kill 4+ enemies with a single Lance shot |
-| 2 | Kill 10 enemies with environmental hazards (crucibles, crushers, slabs, runners, robot arms) |
+| 2 | Kill 10 enemies with environmental hazards (ladles, crushers, slabs, runners, robot arms) |
 | 3 | Kill 5 enemies while grinding on a rail |
 
 ---
@@ -186,10 +186,10 @@ ENC_M10_05  "Heavy-Armor Depot" (FINALE)  Arena: A08 (hangar 60 x 40 m + yard 40
 ## 8. Art & Lighting
 
 * **Palette:** smog-orange sky, black iron, molten orange-white steel, sodium lights, brass and porcelain Choir growth on machines, the Assembly's gold smoke.
-* **Key props:** rail yard & railcars, armored train (8 car types, derailed variants), blast furnace (hero), ladle cranes & crucibles, molten runner material (emissive flow), slag crushers, conveyor network with Grind Rail splines, rolling mill stands, robotic arms (skeletal, animated cycles), assembly-line Organ Grinder states, slag heaps, CDF depot, the Anvil in its gantry.
+* **Key props:** rail yard & railcars, armored train (8 car types, derailed variants), blast furnace (hero), ladle cranes & hanging ladles, molten runner material (emissive flow), slag crushers, conveyor network with Grind Rail splines, rolling mill stands, robotic arms (skeletal, animated cycles), assembly-line Organ Grinder states, slag heaps, CDF depot, the Anvil in its gantry.
 
 ---
 
 ## 9. New Assets Required (P1)
 
-`SK_WPN_Lance`, `BP_GrindRail`, IND kit (walls, catwalks, stairs, pipes, conveyors, cranes), blast furnace hero set, crucible pour VFX & kill volume, rolling mill set, `SK_RobotArm` (crusted), `SPN_Assembly` Organ Grinder states, `TTN_OrganWalker` (distant & crossing variant), slag terrain, CDF depot kit, `SM_AnvilSiegeFrame` (active version, rigged `SK_Anvil`).
+`SK_WPN_Lance`, `BP_GrindRail`, IND kit (walls, catwalks, stairs, pipes, conveyors, cranes), blast furnace hero set, ladle pour VFX & kill volume, rolling mill set, `SK_RobotArm` (crusted), `SPN_Assembly` Organ Grinder states, `TTN_OrganWalker` (distant & crossing variant), slag terrain, CDF depot kit, `SM_AnvilSiegeFrame` (active version, rigged `SK_Anvil`).

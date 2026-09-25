@@ -31,8 +31,8 @@ The player assaults the heart of the human cult. For the first time, enemies are
    → [A04 Scriptorium] (Lock Salvo, Storm Node mods; lore)
    → [A05 Resonance Cisterns (flooded catacombs)] ENC_03 (Siren intro)   (+CM_M07_01 in the ossuary)
    → [A06 The Great Auditorium] MINI-BOSS: The Tenebrae (retreats at 50%)
-   → [A07 Cloister of Voices] ENC_05
-   → [A08 Precentor's Sanctum] CIN_M07_Aurelia → ENC_06 FINALE "Zealots" → console smash → exit
+   → [A07 Cloister of Voices] ENC_04
+   → [A08 Precentor's Sanctum] CIN_M07_Aurelia → ENC_05 FINALE "Zealots" → console smash → exit
 ```
 
 ### A01 — Pilgrim Road
@@ -62,12 +62,12 @@ The player assaults the heart of the human cult. For the first time, enemies are
 * **Fight:** `10_Bosses.md` §2 (M07 version: 6000 HP, **retreats at 50%** — it rises through the dome's oculus). Thale's voice over its PA: "*CDF General Idris Thale, formerly. Choirmaster now. I watched you tear my soldiers apart on the Moon. You're magnificent. You're also noise.*"
 * Resource adds: Acolytes & Thralls from the vomitories.
 
-### A07 — Cloister of Voices, ENC_M07_05
+### A07 — Cloister of Voices, ENC_M07_04
 * **Space:** a square cloister (50 × 50 m) around a courtyard garden: arcades on two floors, a fountain-bell at the center, four Cantors "conducting" from the arcade corners. The upper arcade is reachable via Grip Walls on the columns and a Kick Pad in the garden.
 
 ### A08 — Precentor's Sanctum
 * **Space:** a circular white chamber (25 m) with a shallow reflecting pool, a gold ring-gate humming behind a dais, and a broadcast console (the Consonance's master transmitter). Surrounding it: the **Sanctum Halls** (a ring of galleries, 20 m wide, looping around the chamber — the finale arena).
-* **Script:** `CIN_M07_Aurelia` (she steps into the gate). → Zealots pour in: `ENC_M07_06`. → After the fight, the console is interactable: `GST_ScreenSmash`-style destruction (the Unsung rips it from its mount and throws it into the pool). Lund recovers the Consonance star-charts: the **seven Cantor Spires**.
+* **Script:** `CIN_M07_Aurelia` (she steps into the gate). → Zealots pour in: `ENC_M07_05`. → After the fight, the console is interactable: `GST_ScreenSmash`-style destruction (the Unsung rips it from its mount and throws it into the pool). Lund recovers the Consonance star-charts: the **seven Cantor Spires**.
 
 ---
 
@@ -110,7 +110,7 @@ BOSS_Tenebrae_1  "The Great Auditorium"  Arena: A06   (see 10_Bosses.md §2)
 ```
 
 ```
-ENC_M07_05  "Cloister of Voices"   Arena: A07 (50 x 50 m; 2 arcade floors 5 m; courtyard)   Seals: 4
+ENC_M07_04  "Cloister of Voices"   Arena: A07 (50 x 50 m; 2 arcade floors 5 m; courtyard)   Seals: 4
   Music: MUS_M07_Combat_C           Reward: 1 Brass + loot fountain
   W1 OnStart:             Cantor x2 (arcade corners), Bulwark x2, Acolyte x6
   W2 AliveBelow(5):       Siren x1, Zealot x4, Thrall x6
@@ -121,7 +121,7 @@ ENC_M07_05  "Cloister of Voices"   Arena: A07 (50 x 50 m; 2 arcade floors 5 m; c
 ```
 
 ```
-ENC_M07_06  "Sanctum Halls" (FINALE)  Arena: A08 ring galleries (loop, 20 m wide, 130 m circumference; inner windows to the sanctum)   Seals: 4
+ENC_M07_05  "Sanctum Halls" (FINALE)  Arena: A08 ring galleries (loop, 20 m wide, 130 m circumference; inner windows to the sanctum)   Seals: 4
   Music: MUS_M07_Combat_C (finale)   Reward: 2 Brass + big loot fountain
   W1 OnStart:             Zealot x8, Acolyte x6
   W2 AliveBelow(5):       Siren x2, Chorister x4
@@ -183,7 +183,7 @@ ENC_M07_06  "Sanctum Halls" (FINALE)  Arena: A08 ring galleries (loop, 20 m wide
 | `MUS_M07_Combat_A` — "**Heresy**" | ENC_01–02 | 170 BPM, blackened thrash |
 | `MUS_M07_Combat_B` — "**Baptism**" | ENC_03 | Doom-heavy, drowned reverb |
 | `MUS_BOSS_Tenebrae` — "**Reliquary**" | Mini-boss | Pipe organ + blast beats |
-| `MUS_M07_Combat_C` — "**Excommunication**" | ENC_05–06 | Finale |
+| `MUS_M07_Combat_C` — "**Excommunication**" | ENC_04–05 | Finale |
 | Acolyte barks | All | Human VO, harmonized lightly (they're "harmonized" but human) |
 
 ---

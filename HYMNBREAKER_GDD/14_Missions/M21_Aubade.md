@@ -90,6 +90,7 @@ ENC_M21_01  "The Low Market"        Arena: A03 (60 x 50 m sunken plaza; terraces
   Music: MUS_M21_Combat_A (starts as a single clean guitar; builds over the arena)   Reward: 1 Brass + loot fountain
   W1 OnStart:             Chorister x6 (Oreth-shaped), Cantor x1
   W2 AliveBelow(3):       Fugue x2, Siren x1
+  W2b TimeElapsed(20s, W2): Thrall x6  [resource trickle]
   Final W3 AliveBelow(3): Gilded Bellwether x1, Chorister x4
   Pickups: Health S x6, Plating S x6, ammo L x1 (Shells, Charge)
 ```
@@ -100,6 +101,7 @@ ENC_M21_02  "The Statues Wake"      Arena: A06 (70 x 50 m hall, 40 m; altar dais
   Grudges: player starts with 3; Grudge pickups x3 on the altar steps (respawn once)
   W1 OnStart:             Chorister x8 (statue skins), Thrall x6 (Oreth-shaped "Silent Ones")
   W2 AliveBelow(5):       Requiem Knight x2
+  W2b TimeElapsed(20s, W2): Thrall x6  [resource trickle]
   W3 AliveBelow(3):       Profundo x1, Chorister x4
   Final W4 AliveBelow(3): Carillon x1 (a bell-tower of the citadel wakes and walks), Thrall x8
   Pickups: Health M x2, Plating M x2, ammo L each, Harrow Spool x3
@@ -110,6 +112,7 @@ ENC_M21_03  "The Singing Stair" (FINALE)  Arena: A07 (3 landings 80 x 25 m, 6 m 
   Music: MUS_M21_Combat_C (weaves in any unsealed tower notes)   Reward: 2 Brass + big loot fountain
   W1 OnStart:             Chorister x6, Bulwark x3, Thrall x8
   W2 AliveBelow(5):       Maestro x1, Seraph x2
+  W2b TimeElapsed(20s, W2): Thrall x6  [resource trickle]
   W3 AliveBelow(5):       Gilded Profundo x1, Requiem Knight x1
   W3b TimeElapsed(25s):   Thrall x8
   Final W4 AliveBelow(4): Carillon x1, Gilded Crescendo x1, Siren x2, Chorister x4

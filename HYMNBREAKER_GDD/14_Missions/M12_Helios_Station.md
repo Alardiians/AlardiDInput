@@ -78,6 +78,7 @@ ENC_M12_01  "Open Pit"                Arena: A03 (100 x 80 m, 5 benches; moving 
   W1 OnStart:             Thrall x10 (Tuned miners), Trooper x4
   W2 AliveBelow(5):       Organ Grinder x2 (converted haul trucks' crane-legs), Chorister x3
   W3 AliveBelow(4):       Seraph x2, Bellwether x1
+  W3b TimeElapsed(20s, W3): Thrall x6  [resource trickle]
   Final W4 AliveBelow(3): Canon x1 (top bench, in shade), Crescendo x2, Thrall x8
   Pickups: Health S x8, Plating M x2 (both in sunlit spots — risk/reward), Rounds L x1, Charge L x1
 ```
@@ -106,6 +107,7 @@ ENC_M12_03  "Collector Station 3" (FINALE)  Arena: A08 (60 m platform; rotating 
   Music: MUS_M12_Combat_C              Reward: 2 Brass + big loot fountain
   W1 OnStart:             Chorister x6, Thrall x8
   W2 AliveBelow(5):       Profundo x1, Seraph x1
+  W2b TimeElapsed(20s, W2): Thrall x6  [resource trickle]
   W3 AliveBelow(4):       Canon x2 (lower ring, shelling up), Echo x1, Bulwark x3
   W3b TimeElapsed(25s):   Thrall x8
   Final W4 AliveBelow(4): Profundo x1, Ophan x2, Crescendo x1, Chorister x4
@@ -133,7 +135,7 @@ ENC_M12_03  "Collector Station 3" (FINALE)  Arena: A08 (60 m platform; rotating 
 
 | # | Item | Location | Hint |
 |---|---|---|---|
-| S1 | **Heart Shard #9** | A06: in full sunlight on a mirror array's hub — sprint across 40 m of sun (≈ 4 s exposure) or wait for a Dead Silence-style trick: a **shade drone** secret (Harrow-yank a Static shade-umbrella drone that follows you for 20 s) | Violet glow in the blinding light |
+| S1 | **Heart Shard #9** | A06: in full sunlight on a mirror array's hub — sprint across 40 m of sun (≈ 4 s exposure) or use the **shade drone** secret (Harrow-yank a Static shade-umbrella drone that follows you for 20 s) | Violet glow in the blinding light |
 | S2 | **Tab #5: "Sunburn"** (enemies have a chance to burst into flames on death — cosmetic fire gore) | A02: the Consonance shrine's offering bowl (Distort the crust) | Violet crystal |
 | S3 | **Pedal: Whammy** | A05: top of the tallest radiator fin (Grip Wall on the fin end, then a Swing Pole chain) | — |
 | S4 | **Effigy: Profundo** | A04: the foreman's secret cabinet behind his poster (interact the "HANG IN THERE" cat poster) | — |

@@ -8,9 +8,9 @@ Durations are **first playthrough, Amplified, ~70% exploration** (critical path 
 |---|---|---|---|---|---|---|---|
 | M01 | **Tranquility Deep** | I | Lunar subsurface lab | BRU | 55 | — | `14_Missions/M01_Tranquility_Deep.md` |
 | M02 | **Selene Relay** | I | Lunar surface | BRU, ORB | 65 | — | `M02_Selene_Relay.md` |
-| M03 | **The Meridian Tether** | I | Space elevator | ORB | 70 | — | `M03_The_Meridian_Tether.md` |
+| M03 | **The Meridian Tether** | I | Space elevator | ORB, BRU | 70 | — | `M03_The_Meridian_Tether.md` |
 | M04 | **Rapture** | I | Halcyon, the Bowl | CITY | 80 | **Ionian** | `M04_Rapture.md` |
-| M05 | **Radio Free Static** | II | Halcyon Undercity | CITY | 70 | — | `M05_Radio_Free_Static.md` |
+| M05 | **Radio Free Static** | II | Halcyon Undercity | CITY, BRU | 70 | — | `M05_Radio_Free_Static.md` |
 | M06 | **Fort Obdurate** | II | Alpine fortress | BRU (snow) | 75 | — | `M06_Fort_Obdurate.md` |
 | M07 | **Mount Canticle** | II | Cult seminary | CULT | 80 | Tenebrae (1) | `M07_Mount_Canticle.md` |
 | M08 | **The Iron Psalm** | II | War-cathedral | CHOIR, BRU | 80 | **Dorian** | `M08_The_Iron_Psalm.md` |
@@ -18,20 +18,20 @@ Durations are **first playthrough, Amplified, ~70% exploration** (critical path 
 | M10 | **The Forge-Belt** | III | Industrial corridor | IND | 70 | — | `M10_The_Forge_Belt.md` |
 | M11 | **The Assembly** | III | Machine-cathedral | IND, CHOIR | 85 | **Mixolydian** (+mech) | `M11_The_Assembly.md` |
 | M12 | **Helios Station** | III | Mercury | BRU (solar), ORB | 75 | Antiphon | `M12_Helios_Station.md` |
-| M13 | **Corona** | III | Mercury mirror fields | ORB, CHOIR | 80 | **Phrygian** | `M13_Corona.md` |
+| M13 | **Corona** | III | Mercury mirror fields | ORB, BRU, CHOIR | 80 | **Phrygian** | `M13_Corona.md` |
 | M14 | **Dead Air** | III | The Quietus | SHIP | 60 | Maestro Primus | `M14_Dead_Air.md` |
-| M15 | **Cryobore** | IV | Europa ice | ICE | 75 | — | `M15_Cryobore.md` |
+| M15 | **Cryobore** | IV | Europa ice | ICE, BRU | 75 | — | `M15_Cryobore.md` |
 | M16 | **The Singing Sea** | IV | Europa ocean | ICE, CHOIR | 85 | Leviathan, **Aeolian** | `M16_The_Singing_Sea.md` |
 | M17 | **Cytherea** | IV | Venus aerostat | AERO | 75 | — | `M17_Cytherea.md` |
 | M18 | **The Dreaming Choir** | IV | Lydian's dream | AERO + mixed | 80 | **Lydian** | `M18_The_Dreaming_Choir.md` |
 | M19 | **The Chancel** | IV | LEO conversion facility | CHOIR, ORB | 80 | Maestro Primus (final) | `M19_The_Chancel.md` |
-| M20 | **The Nave** | V | Harmonium entry | HARM | 70 | — | `M20_The_Nave.md` |
+| M20 | **The Nave** | V | Harmonium entry | HARM, CHOIR_ARCH | 70 | — | `M20_The_Nave.md` |
 | M21 | **Aubade** | V | Oreth capital | OREN | 65 | — | `M21_Aubade.md` |
 | M22 | **The Unresolved** | V | Locris's domain | OREN, HARM | 75 | **Locris** | `M22_The_Unresolved.md` |
-| M23 | **Aureole** | V | Halcyon ruins | CITY, CHOIR | 85 | — (mech) | `M23_Aureole.md` |
+| M23 | **Aureole** | V | Halcyon ruins | CITY, CHOIR, CULT | 85 | — (mech) | `M23_Aureole.md` |
 | M24 | **The Octave** | V | Cathedral of the Final Chord | CULT, CHOIR | 75 | **Aurelia, the Octave** | `M24_The_Octave.md` |
-| M25 | **The Staves** | VI | Harmonium | HARM | 75 | — | `M25_The_Staves.md` |
-| M26 | **The Clef** | VI | Harmonium | HARM, SHIP | 80 | — (mech, gauntlet) | `M26_The_Clef.md` |
+| M25 | **The Staves** | VI | Harmonium | HARM, CHOIR_ARCH, SHIP | 75 | — | `M25_The_Staves.md` |
+| M26 | **The Clef** | VI | Harmonium | HARM, CHOIR_ARCH, SHIP | 80 | — (mech, gauntlet) | `M26_The_Clef.md` |
 | M27 | **The Final Chord** | VI | Heart of the Clef | HARM | 60 | **The Unison** | `M27_The_Final_Chord.md` |
 | | **Total** | | | | **≈ 2,010 min ≈ 33.5 h** | | |
 
@@ -76,7 +76,7 @@ Optional content (Requiem Gates ~2 h, Pit Trials ~2.5 h, 100% secrets ~3 h, Enco
 
 ## 3. Collectible Distribution
 
-**Legend:** HS = Heart Shard, MC = Mute Cell, TAB = Tab, TAPE = Bootleg Tape, RG = Requiem Gate (+Key), PDL = Pedal, CM = Choir Masses, EF = Effigies, RP = Reprise, SS = Sounding Stations. Every mission also has: 1 Master, 1 Rig Core, 2 Brass Caches, 3–6 Archive Stones.
+**Legend:** HS = Heart Shard, MC = Mute Cell, TAB = Tab, TAPE = Bootleg Tape, RG = Requiem Gate (+Key), PDL = Pedal, CM = Choir Masses, EF = Effigies, RP = Reprise, SS = Sounding Stations. Every mission also has: 1 Master, 1 Rig Core, 2 Brass Caches, 3–6 Archive Stones (M21: up to 8).
 
 | Mission | HS | MC | TAB | TAPE | RG | PDL | CM | EF | RP | SS |
 |---|---|---|---|---|---|---|---|---|---|---|

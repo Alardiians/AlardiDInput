@@ -8,7 +8,7 @@
 | **Target duration** | 75 min |
 | **Priority** | P1 |
 | **Story beats** | BEAT_M15_1 → BEAT_M15_5 |
-| **New** | *Looper* pedal; enemies **Carillon**, **Gilded Bellwether**; ice hazards (slippery? no — see §1), pressure doors, descending elevator arena; Leviathan foreshadow |
+| **New** | *Looper* pedal; enemies **Carillon**, **Gilded Bellwether**; non-slippery ice (visual only — see §1), pressure doors, descending elevator arena; Leviathan foreshadow |
 | **Landmark** | **Jupiter** filling half the sky above the ice; and **the Bore** — a 60 m wide vertical shaft into the ice, glowing blue from below, with a faint whale-song rising from its depths |
 
 ---
@@ -109,6 +109,7 @@ ENC_M15_04  "Mid-Bore Camp"         Arena: A05 (100 x 60 m cavern, 25 m; huts; i
   W1b TimeElapsed(20s):   Thrall x6                                                            [resource trickle]
   W2 KilledTag(Carillon) OR AliveBelow(4): Fugue x2, Chorister x4, Bulwark x2
   W3 AliveBelow(4):       Profundo x1, Siren x1, Echo x1
+  W3b TimeElapsed(20s, W3): Thrall x6  [resource trickle]
   Final W4 AliveBelow(4): Gilded Bellwether x1, Canon x1, Cantor x1, Thrall x8
   Pickups: Health M x2, Plating M x2, Rounds L x1, Charge L x2, Null Cell x1, Harrow Spool x3
   Power-up: AMP (crane cab)

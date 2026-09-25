@@ -28,10 +28,14 @@ Cast size is deliberately small. Every speaking character must be memorable from
 | `GST_FistBump` | Fist bump | Wren (hub, after upgrades) |
 | `GST_Sign_Thanks` | ASL-style "thank you" (flat hand from chin outward) | Tamsin, M27 epilogue |
 | `GST_Sign_Ready` | Closed fist tapped twice on chest plate | Tamsin, before drops |
+| `GST_Sign_Yes` | ASL-style "yes" (fist nodding at the wrist) — clumsy the first time, fluent by Act IV | Tamsin, post-M03 hub and after |
 | `GST_Rack` | Racks the Breacher pump | Replacing dialogue replies |
-| `GST_ScreenSmash` | Punches a monitor showing the Herald | M02, M07, M19 |
+| `GST_ScreenSmash` | Punches a monitor showing the Herald | M01 (Observation Dome), M07 (console) |
 | `GST_HeartPress` | Presses hand to the Arrhythm cage | Emotional beats (M21, M27) |
 | `GST_HelmetTouch` | Touches visor where a mouth would be | Hearing the Hymn for the first time (M01) |
+| `GST_SwitchOff` | One deliberate finger on a switch; the sound dies | The original Signal reel (M09) |
+| `GST_VolumeUp` | Turns a dial all the way up | Juno's collar (M14); Harlan's broadcast when the Herald cuts in (hub) |
+| `GST_LidClose` | Gently closes a lid with one hand | Clara's music box (M24) |
 
 ### Visual Summary (full art spec in `17_Art_Direction.md`)
 * Black-iron and gunmetal armor plates, heavily worn, rust at the edges, bone-white rivets.

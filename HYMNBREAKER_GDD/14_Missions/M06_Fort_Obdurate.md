@@ -90,7 +90,7 @@ ENC_M06_01  "Killing Ground"     Arena: A02 (70 x 40 m + wall-top 20 m high)   S
 ENC_M06_02  "Casemate Hall"      Arena: A05 (40 x 30 m, 10 m, gun rails, embrasure gallery)   Seals: 2
   Music: MUS_M06_Combat_A          Reward: 1 Brass + loot fountain
   W1 OnStart:             Trooper x5, Thrall x6
-  W2 AliveBelow(4):       Canon x1, Chorister x2
+  W2 AliveBelow(4):       Canon x1, Chorister x2, Thrall x4
   Final W3 AliveBelow(3): Organ Grinder x1, Cantor x1, Bulwark x2, Thrall x6
   Pickups: Health M x1, Health S x4, Plating S x3, Ordnance S x2, Shells L x1
 ```
@@ -142,7 +142,7 @@ ENC_M06_06  "Summit Battery" (FINALE)  Arena: A10 (70 x 50 m platform + control 
   Power-up: OVERDRIVE SURGE (control tower roof)
 ```
 
-**Requiem Gate #1** (`RQG_01`, "**The Sentinel's Toll**") — see `16_Optional_Content_and_Modes.md` §1. Key hidden in A05.
+**Requiem Gate #1** (`RQG_01`, "**The Ossuary Toll**") — see `16_Optional_Content_and_Modes.md` §1. Key hidden in A05.
 
 ---
 

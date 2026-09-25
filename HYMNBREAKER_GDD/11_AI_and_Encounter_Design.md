@@ -123,7 +123,7 @@ score = 2.0 * visibleToPlayerCamera   // enemies on screen attack first (fairnes
 | `ThreatBelow` | threat points | "Spawn W3 when threat ≤ 6" |
 | `TimeElapsed` | seconds since previous wave | Pressure waves |
 | `KilledTag` | enemy tag | "When the Cantor dies" |
-| `ObjectiveDestroyed` | objective tag, N | "When 3 `PlectrumJoint` objectives are destroyed" — written in mission docs as `JointsDestroyed(3)`, `NodesDestroyed(4)`, `AnchorsDestroyed(3)`, `OrgansDestroyed(3)`: all map to `ObjectiveDestroyed(<tag>, N)` |
+| `ObjectiveDestroyed` | objective tag, N | "When 3 `TendonJoint` objectives are destroyed" (parallel-objective arenas: M03, M18, M23) |
 | `PlayerInVolume` | sub-volume | Multi-stage arenas |
 | `PercentKilled` | % of previous wave | "When 70% of W2 dead" |
 
@@ -155,7 +155,7 @@ Each enemy has a **threat** value used for budgets and pacing:
 | Max alive enemies (performance cap) | 16 | 18 | 20 | 22 | 24 | 26 |
 
 ### 5.4 Encounter Design Rules
-1. **Resources in the room:** every wave containing T2/T3 enemies includes **≥ 3 T1** (or T1 reinforcements trickle in via a `TimeElapsed` sub-wave) — the player must always be able to Shred and Breakdown. **Director safety net:** whenever T2/T3 enemies are alive and fewer than 3 T1 are alive for more than 10 s, the Director automatically spawns a trickle of 4 Thralls (or the mission's current fodder type) via the arena's T1 spawn points. Waves in mission docs that list only heavies rely on this rule; summoners (Maestro, Carillon, Hymnal) also count their summons as fodder.
+1. **Resources in the room:** every wave containing T2/T3 enemies includes **≥ 3 T1** (or T1 reinforcements trickle in via a `TimeElapsed` sub-wave) — the player must always be able to Shred and Breakdown. **Director safety net:** whenever T2/T3 enemies are alive and fewer than 3 T1 are alive for more than 10 s, the Director automatically spawns a trickle of 4 Thralls (or the mission's current fodder type) via the arena's T1 spawn points. Mission docs add explicit `[resource trickle]` sub-waves where a wave is heavy-only; the safety net is a runtime backstop for anything missed. Summoners' summons (Maestro, Carillon, Hymnal) count as fodder. The safety net is off in boss fights (bosses have their own add schedules) and in encounters flagged `NoTrickle`.
 2. **The answer is in the room:** if a wave requires a specific answer (Ophan → Frag; Echo → Hush), the player has had that tool for ≥ 1 mission, or the arena provides it (pickups).
 3. **Introduction rule:** a new enemy type's first appearance is alone or with T1 support only, in a readable space, preceded by an environmental "foreshadow" (a corpse, a sound, a glimpse). Its second appearance combines it with known enemies. Its third appearance tests it under pressure.
 4. **Variety rule:** after Act I, no arena uses fewer than 3 distinct enemy types; no two consecutive arenas share the same heavy composition.

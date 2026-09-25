@@ -169,14 +169,16 @@ Late-game armored versions. **Gilded plates** are separate HP pools covering mos
 
 ## 7. TITANS (Mech-Scale Enemies — Anvil Siege Frame segments)
 
-Mech segments use their own scale. All titans are designed against the **Anvil Siege Frame** (player mech; full spec in `10_Bosses.md` §14; first use in `14_Missions/M11`). They never appear in on-foot combat except as distant set-dressing (M10 foreshadowing).
+Mech segments use their own scale. All titans are designed against the **Anvil Siege Frame** (player mech; full spec in `10_Bosses.md` §14; first use in `14_Missions/M11`). They never appear in on-foot combat except as distant set-dressing (M10 foreshadowing) — with **one exception**: the **Seraphim Gunship** in M25, fought on foot with the Quietus's **Broadside** (see note below the table).
 
 | ID | Name | Size | HP (vs. Anvil) | Attacks | Weak point | Appears |
 |---|---|---|---|---|---|---|
 | `TTN_OrganWalker` | **Organ Walker** | 25 m tall, six legs | 12000 | Pipe Salvo (homing mortar bursts), Sweeping Staccato beam, Leg Stomp | Belly-organ (exposed when it rears up for the Stomp) | M11, M23, M26 |
 | `TTN_ChoirColossus` | **Choir Colossus** | 30 m humanoid of fused bodies | 20000 | Colossal Slam (shockwave), Hymn Breath (beam), Grab (QTE-free: Anvil must punch free — mash melee), Throw debris | Glowing throat-core in the chest | M23, M26 |
 | `TTN_VesperCloud` | **Vesper Cloud** | A swarm of 200+ Vespers acting as one entity | 6000 (swarm "mass") | Engulf (DoT), Stinger Rain | None — Anvil flamethrower-noise "Blast Horn" deals ×3 | M11, M23 |
-| `TTN_Seraphim` | **Seraphim Gunship** | 15 m flying Seraph | 8000 | Chime-missile barrages, strafing beam | Wing-pipes ×4 | M26 |
+| `TTN_Seraphim` | **Seraphim Gunship** | 15 m flying Seraph | 8000 | Chime-missile barrages, strafing beam | Wing-pipes ×4 | M25 (on foot), M26 (mech) |
+
+**Seraphim on foot (M25 exception):** same 8000 HP pool. It never lands: it flies a fixed strafing loop (its beam path is telegraphed by a gold line on the ground 1.5 s ahead) and alternates between attacking the Quietus and the player. Each **wing-pipe** (×4, 600 HP, takes ×2 from Energy and precision hits) destroyed deals 400 to the body and staggers it for 2 s; a **Broadside** hit deals 1500 (titan value). Target time-to-kill on foot: 60–90 s with Broadside on cooldown. Seraph adds drop in at each gunship kill (see `ENC_M25_03`).
 
 **Anvil Siege Frame (player mech) quick reference** (full spec in `10_Bosses.md` §14):
 * 9 m bipedal mech; first-person cockpit; speed 1200 cm/s (world-scale relative), dash 2 charges.
@@ -190,27 +192,27 @@ Mech segments use their own scale. All titans are designed against the **Anvil S
 | ID | Tier | HP | Size (cm) | Speed | First | Acts present |
 |---|---|---|---|---|---|---|
 | ENM_Thrall | T1 | 60 | 180 | 320 | M01 | I–VI |
-| ENM_ThrallBloated | T1 | 90 | 190 | 300 | M05 | II–VI |
-| ENM_Trooper | T1 | 90 | 185 | 450 | M01 | I–V |
-| ENM_TrooperBulwark | T1 | 110+300 | 195 | 400 | M02 | I–V |
-| ENM_TrooperMarksman | T1 | 80 | 185 | 450 | M06 | II–V |
+| ENM_ThrallBloated | T1 | 90 | 190 | 300 | M05 | II–IV |
+| ENM_Trooper | T1 | 90 | 185 | 450 | M01 | I–IV |
+| ENM_TrooperBulwark | T1 | 110+300 | 195 | 400 | M02 | I–VI |
+| ENM_TrooperMarksman | T1 | 80 | 185 | 450 | M06 | II–IV |
 | ENM_Chorister | T1 | 140 | 200 | 500 | M01 | I–VI |
 | ENM_Vesper | T1 | 50 | 90 | 700 | M02 | I–VI |
-| ENM_Wailer | T1 | 30 | 60 | 900 | M03 | I–VI |
-| ENM_Acolyte | T1 | 100 | 180 | 500 | M07 | II, IV, V |
+| ENM_Wailer | T1 | 30 | 60 | 900 | M03 | I–II, IV, VI |
+| ENM_Acolyte | T1 | 100 | 180 | 500 | M07 | II, IV–VI |
 | ENM_Zealot | T1 | 120 | 180 | 700 | M07 | II, IV, V |
-| ENM_Crescendo | T2 | 1000 | 300 | 1600 | M03 | I–VI |
-| ENM_Bellwether | T2 | 1500 | 350 | 550 | M06 | II–VI |
+| ENM_Crescendo | T2 | 1000 | 300 | 1600 | M03 | I–IV (Gilded from M17) |
+| ENM_Bellwether | T2 | 1500 | 350 | 550 | M06 | II–III (Gilded from M15) |
 | ENM_Seraph | T2 | 800 | 300 | 400 | M04 | I–VI |
 | ENM_Ophan | T2 | 1300 | 300 | 350 | M03 | I–VI |
-| ENM_Canon | T2 | 1800 | 400 | 200 | M04 | I–VI |
-| ENM_OrganGrinder | T2 | 1100 | 250 | 550 | M05 | II–IV, VI |
+| ENM_Canon | T2 | 1800 | 400 | 200 | M04 | I–V (Gilded from M22) |
+| ENM_OrganGrinder | T2 | 1100 | 250 | 550 | M05 | II–V |
 | ENM_Cantor | T2 | 600 | 280 | 250 | M02 | I–VI |
 | ENM_Siren | T2 | 800 | 250 | 600 | M07 | II–VI |
 | ENM_Fugue | T2 | 650 | 220 | 600 | M09 | II–VI |
 | ENM_Hymnal | T2 | 900 | 250 | 250 | M08 | II–VI |
 | ENM_Echo | T2* | — | 180 | 400 | M09 | II–VI |
-| ENM_Profundo | T3 | 4500 | 450 | 500 | M12 | III–VI |
+| ENM_Profundo | T3 | 4500 | 450 | 500 | M12 | III–V (Gilded from M20) |
 | ENM_Carillon | T3 | 8000 | 650 | 180 | M15 | IV–VI |
 | ENM_Maestro | T3 | 2500 | 380 | 350 | M14/M16 | III–VI |
 | ENM_RequiemKnight | T3 | 3500 | 300 | 550 | M08 | II–VI |

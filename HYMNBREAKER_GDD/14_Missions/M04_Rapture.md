@@ -81,7 +81,7 @@ Earth, at last. The first time the player sees what the Hymn does to a whole cit
 ENC_M04_01  "Toll Plaza"            Arena: A02 (50 x 40 m, booths, overturned bus 3 m)   Seals: 2
   Music: MUS_M04_Combat_A            Reward: 1 Brass + loot fountain
   W1 OnStart:             Thrall x10 (Tuned commuters), Trooper x3
-  W2 AliveBelow(4):       Crescendo x1, Chorister x2
+  W2 AliveBelow(4):       Crescendo x1, Chorister x2, Thrall x4
   Final W3 AliveBelow(3): Ophan x1, Vesper x5, Thrall x6
   Pickups: Health S x6, Plating S x3, Shells L x1, Charge S x2
 ```

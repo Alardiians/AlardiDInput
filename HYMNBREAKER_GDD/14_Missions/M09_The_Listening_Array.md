@@ -39,7 +39,7 @@ Lund believes the original Signal recordings in the Institute's archive can reve
 
 ### A02 — Dish Field North, ENC_M09_01
 * **Space:** a grid of 20 dishes (each 25 m diameter on 20 m pedestals; many grown into bone ears) across 150 × 100 m of flat plateau with service roads, cable trenches and equipment huts. Dishes rotate slowly (Choir-driven) — their shadows sweep the ground under the Aureole's light. Dish pedestals have Grip Walls; the dish rims are high ground; Harrow Anchors on feed-horn struts.
-* **Echo intro:** an **Echo** drifts among Troopers and possesses one (the Trooper's attacks begin repeating as ghost copies). Prompt when the host dies and the Echo emerges: `ECHOES can only be destroyed by SILENCE — [Q] HUSH CHARGE`. The player has had Hush since M03; this arena has extra Hush cooldown pickups? No — Rig design: add a **Hush recharge crate** (`PKP_HushRefill`) near the intro spot.
+* **Echo intro:** an **Echo** drifts among Troopers and possesses one (the Trooper's attacks begin repeating as ghost copies). Prompt when the host dies and the Echo emerges: `ECHOES can only be destroyed by SILENCE — [Q] HUSH CHARGE`. The player has had Hush since M03; a **Hush recharge crate** (`PKP_HushRefill`) sits near the intro spot.
 * **Optional:** `CM_M09_01` at the dish-field maintenance depot.
 
 ### A03 — Voss Institute, ENC_M09_02
@@ -78,6 +78,7 @@ ENC_M09_01  "Dish Field North"      Arena: A02 (150 x 100 m; dishes; pedestals 2
   W1 OnStart:             Trooper x6, Echo x1 (possesses a Trooper), Thrall x6                [Echo intro]
   W2 AliveBelow(4):       Chorister x4 (dish rims), Marksman x2 (feed horns), Thrall x6
   W3 AliveBelow(4):       Echo x1, Bellwether x1, Crescendo x1
+  W3b TimeElapsed(20s, W3): Thrall x6  [resource trickle]
   Final W4 AliveBelow(3): Seraph x2, Hymnal x1, Thrall x8
   Pickups: Hush refill crate x2, Health S x8, Plating M x1, Rounds L x1, Charge L x1
 ```
@@ -88,6 +89,7 @@ ENC_M09_02  "East Labs (dark)"      Arena: A03 east wing (labs 50 x 30 m, corrid
   W1 OnStart:             Fugue x1, Thrall x6                                                [Fugue intro]
   W2 AliveBelow(3):       Acolyte x6, Zealot x2
   W3 AliveBelow(4):       Fugue x2, Siren x1
+  W3b TimeElapsed(20s, W3): Thrall x6  [resource trickle]
   Final W4 AliveBelow(3): Echo x1, Cantor x1, Bulwark x2, Acolyte x4
   Pickups: Health S x6, Plating S x4, Charge L x1, Shells L x1
   Notes: visibility low; enemy halos and rim lights are the main readability cue here.
@@ -110,9 +112,10 @@ ENC_M09_03  "Assembly" (defense)    Arena: A04 anechoic chamber mesh level (30 x
 ```
 ENC_M09_04  "The Great Ear"         Arena: A05 apron (120 x 80 m) → bowl (concave, 200 m wide, ridges)   Seals: n/a (open; the bowl rim is the boundary)
   Music: MUS_M09_Combat_C            Reward: 2 Brass + big loot fountain
-  Scripted: HORDE (~40: Thrall x20, Chorister x8, Trooper x8, Crescendo x2, Bloated Thrall x2) over the rim → Silencer prompt
-  W1 (after Silencer):    Seraph x2, Chorister x4, Thrall x8
+  Scripted: HORDE (tag `Horde`; ~40: Thrall x20, Chorister x8, Trooper x8, Crescendo x2, Bloated Thrall x2) over the rim → Silencer prompt
+  W1 KilledTag(Horde):    Seraph x2, Chorister x4, Thrall x8
   W2 AliveBelow(4):       Echo x2, Bellwether x1, Canon x1
+  W2b TimeElapsed(20s, W2): Thrall x6  [resource trickle]
   W3 AliveBelow(4):       Ophan x2, Vesper x8, Hymnal x1
   Final W4 AliveBelow(4): Crescendo x2, Cantor x1, Fugue x1, Chorister x4, Thrall x8
   Pickups: Null Cell x1 (bowl ridge — hidden-ish, visible from the ear canal), Health M x2, Plating M x2, ammo L each, Harrow Spool x3
@@ -144,7 +147,7 @@ ENC_M09_05  "Correlator Hall" (FINALE)  Arena: A07 (60 x 40 m, 12 m; mezzanine 5
 | ID | Description |
 |---|---|
 | `EVT_M09_Diner` | The gas-station diner jukebox plays the pre-invasion news broadcast of the Signal (audio log) |
-| `EVT_M09_FirstReception` | The shrine room; the original reels; optional interact: play the reel — 5 s of the original Signal (the player *hears how beautiful it is*) → the Unsung shuts it off (`GST`), unprompted |
+| `EVT_M09_FirstReception` | The shrine room; the original reels; optional interact: play the reel — 5 s of the original Signal (the player *hears how beautiful it is*) → the Unsung shuts it off (`GST_SwitchOff`), unprompted |
 | `EVT_M09_WrenLund` | Wren & Lund arrive in person |
 | `EVT_M09_Silencer` | Silencer handed over; horde; first shot (hard audio duck to silence for 1.5 s) |
 | `EVT_M09_Thale` | Tenebrae destroyed; Thale pulled from the cockpit |

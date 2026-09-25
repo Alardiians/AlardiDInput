@@ -52,7 +52,7 @@ The first mech mission. The player climbs into Wren's restored **Anvil Siege Fra
 * Arena on the central 60 m of the nave + side-chapel balconies (6 m).
 
 ### A05 — Foundry of Voices, ENC_M11_02
-* **Space:** where Choir-forms are **cast**: rows of porcelain molds in the shape of Choristers, crucibles of liquid porcelain, kilns glowing gold, conveyor belts carrying freshly cast bodies. Enemies spawn **from molds** (`SPN_Mold`: a mold cracks open, a Chorister falls out steaming).
+* **Space:** where Choir-forms are **cast**: rows of porcelain molds in the shape of Choristers, vats of liquid porcelain, kilns glowing gold, conveyor belts carrying freshly cast bodies. Enemies spawn **from molds** (`SPN_Mold`: a mold cracks open, a Chorister falls out steaming).
 * **Pedal: Compressor** (secret S3). **Requiem Gate #3** is in the kiln room.
 * **Optional:** `CM_M11_01` in the pattern shop.
 
@@ -92,7 +92,9 @@ ENC_M11_01  "Pipe-Organ Nave"   Arena: A04 (60 x 40 m section; chapel balconies 
   Music: MUS_M11_Combat_A        Reward: 1 Brass + loot fountain
   W1 OnStart:             Chorister x6, Thrall x8
   W2 AliveBelow(5):       Organ Grinder x2, Seraph x1
+  W2b TimeElapsed(20s, W2): Thrall x6  [resource trickle]
   W3 AliveBelow(4):       Bellwether x1, Canon x1, Echo x1
+  W3b TimeElapsed(20s, W3): Thrall x6  [resource trickle]
   Final W4 AliveBelow(3): Crescendo x2, Hymnal x1, Cantor x1, Thrall x8
   Pickups: Health M x2, Plating M x1, ammo L each, Harrow Spool x2
 ```
@@ -103,6 +105,7 @@ ENC_M11_02  "Foundry of Voices" Arena: A05 (70 x 45 m; mold rows; kilns; catwalk
   W1 OnStart:             Chorister x8 (SPN_Mold, staggered), Thrall x6
   W2 AliveBelow(5):       Fugue x2, Siren x1, Chorister x4 (Mold)
   W3 AliveBelow(4):       Bellwether x1, Organ Grinder x1, Echo x1
+  W3b TimeElapsed(20s, W3): Thrall x6  [resource trickle]
   Final W4 AliveBelow(4): Requiem Knight x1, Chorister x6 (Mold), Thrall x6
   Pickups: Health M x1, Health S x6, Plating M x2, Charge L x1, Shells L x1, Harrow Spool x3
   Power-up: AMP (kiln room balcony)
@@ -185,7 +188,7 @@ ENC_M11_03  "Crankshaft Gantry" Arena: A06 platform (30 x 30 m) + flywheel rims;
 ## 8. Art & Lighting
 
 * **Palette:** brass gold, black iron, porcelain white, furnace orange, gold smoke; dawn light outside.
-* **Key props:** outer-yard mech-scale kit (factory blocks with destructible facades, cooling towers, rail lines), the Assembly exterior (hero), pipe-organ nave, porcelain molds (open/closed/cracked), kilns, crucibles of liquid porcelain, crankshaft & flywheels (animated), engine hall (turntable floor rings, pistons, governors, the cradle & cage), the Engine Hymn colossus (hero boss, 40 m).
+* **Key props:** outer-yard mech-scale kit (factory blocks with destructible facades, cooling towers, rail lines), the Assembly exterior (hero), pipe-organ nave, porcelain molds (open/closed/cracked), kilns, vats of liquid porcelain, crankshaft & flywheels (animated), engine hall (turntable floor rings, pistons, governors, the cradle & cage), the Engine Hymn colossus (hero boss, 40 m).
 
 ---
 

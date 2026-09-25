@@ -86,7 +86,9 @@ ENC_M25_02  "The Rest Monument"      Arena: A04 (180 x 120 m; monument ledges up
   Music: MUS_M25_Combat_B             Reward: 2 Brass + loot fountain
   W1 OnStart:             Requiem Knight x2, Chorister x6, Thrall x10
   W2 AliveBelow(8):       Gilded Canon x2, Cantor x2
+  W2b TimeElapsed(20s, W2): Thrall x6  [resource trickle]
   W3 AliveBelow(6):       Carillon x1, Siren x2, Fugue x2
+  W3b TimeElapsed(20s, W3): Thrall x6  [resource trickle]
   Final W4 AliveBelow(6): Maestro x2, Gilded Bellwether x1, Ophan x2, Thrall x10
   Pickups: Health M x3, Plating M x3, ammo L each, Grudge x1, Harrow Spool x4
   Power-up: AMP (monument's highest ledge)
@@ -106,7 +108,9 @@ ENC_M25_04  "The Note-World"         Arena: A06 (80 x 80 m plaza around a Hymn-c
   Hazard: the Hymn-core acts as a Hymn Pylon (radius 3000) until destroyed (4000 HP; Power Chord/explosives)
   W1 OnStart:             Chorister x8 (alien-species Tuned), Thrall x12
   W2 AliveBelow(8):       Gilded Profundo x1, Echo x2
+  W2b TimeElapsed(20s, W2): Thrall x6  [resource trickle]
   W3 AliveBelow(6):       Maestro x1, Requiem Knight x1, Seraph x2
+  W3b TimeElapsed(20s, W3): Thrall x6  [resource trickle]
   Final W4 AliveBelow(6): Carillon x1, Gilded Crescendo x1, Chorister x6
   Pickups: Health M x3, Plating M x3, ammo L each, Null Cell x1, Harrow Spool x4
 ```
@@ -116,9 +120,11 @@ ENC_M25_05  "Before the Clef" (FINALE)  Arena: A07 (200 x 150 m; spiral gate; br
   Music: MUS_M25_Combat_D ("Almost Time")   Reward: 3 Brass + big loot fountain
   W1 OnStart:             Chorister x10, Thrall x14, Hymn Pylon x2
   W2 AliveBelow(8):       Carillon x2
+  W2b TimeElapsed(20s, W2): Thrall x6  [resource trickle]
   W3 AliveBelow(8):       Maestro x2, Requiem Knight x2, Gilded Canon x1
   W3b TimeElapsed(25s):   Thrall x12
   W4 AliveBelow(8):       Gilded Profundo x2, TTN_Seraphim x1 (strafing the plaza)
+  W4b TimeElapsed(20s, W4): Thrall x6  [resource trickle]
   Final W5 AliveBelow(6): Everything: Gilded Bellwether x1, Gilded Crescendo x1, Siren x2, Fugue x2, Echo x2, Chorister x6
   Pickups: Health M x4, Plating M x4, ammo L each x2, Null Cell x2, Grudge x2, Harrow Spool x5
   Power-up: OVERDRIVE SURGE + DEAD SILENCE

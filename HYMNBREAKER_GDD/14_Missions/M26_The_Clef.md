@@ -67,6 +67,7 @@ ENC_M26_01  "The Wreck-Bridge"       Arena: A01 (3 torn decks of the bow + Choir
   W1 OnStart:             Thrall x14, Chorister x8
   W2 AliveBelow(8):       Maestro x1, Bulwark x4, Acolyte x6 (last Consonance stragglers)
   W3 AliveBelow(6):       Carillon x1, Gilded Crescendo x1
+  W3b TimeElapsed(20s, W3): Thrall x6  [resource trickle]
   Final W4 AliveBelow(6): Gilded Profundo x1, Seraph x3, Siren x2, Chorister x6
   Pickups: Health M x3, Plating M x3, ammo L each, Null Cell x1, Harrow Spool x4
   Broadside: available (the Quietus's intact dorsal guns can still fire into the chamber)
@@ -84,8 +85,9 @@ MECH_M26_02  "Ring Plaza"        (mech)  Circular plaza 400 m
 ```
 ENC_M26_02  "Line I — Voices"        Arena: 70 x 50 m spiral segment; galleries 8 m   Seals: 2
   Music: MUS_M26_Gauntlet (one continuous track across all four Lines, intensifying)   Reward: loot fountain
-  W1: Cantor x3, Chorister x8, Thrall x10
+  W1 OnStart: Cantor x3, Chorister x8, Thrall x10
   W2 AliveBelow(6): Maestro x2, Hymnal x2
+  W2b TimeElapsed(20s, W2): Thrall x6  [resource trickle]
   Final W3 AliveBelow(6): Maestro x1, Echo x3, Fugue x3, Thrall x10
   Pickups: Health M x2, Plating M x2, ammo L x1 each
 ```
@@ -93,8 +95,9 @@ ENC_M26_02  "Line I — Voices"        Arena: 70 x 50 m spiral segment; gallerie
 ```
 ENC_M26_03  "Line II — Iron"         Arena: 80 x 50 m; pillars; dais 2 m   Seals: 2
   Reward: loot fountain
-  W1: Requiem Knight x2, Bulwark x4, Thrall x8
+  W1 OnStart: Requiem Knight x2, Bulwark x4, Thrall x8
   W2 AliveBelow(5): Gilded Bellwether x1, Gilded Canon x1
+  W2b TimeElapsed(20s, W2): Thrall x6  [resource trickle]
   Final W3 AliveBelow(5): Gilded Profundo x1, Gilded Crescendo x1, Requiem Knight x1, Thrall x8
   Pickups: Health M x2, Plating M x3, Charge L x2 (plates!), Grudge x1
   Power-up: AMP
@@ -103,8 +106,9 @@ ENC_M26_03  "Line II — Iron"         Arena: 80 x 50 m; pillars; dais 2 m   Sea
 ```
 ENC_M26_04  "Line III — Air"          Arena: void with 7 floating platforms (15-25 m) + Note-Platform links   Seals: n/a
   Reward: loot fountain
-  W1: Vesper x16, Ophan x2
+  W1 OnStart: Vesper x16, Ophan x2
   W2 AliveBelow(8): Seraph x3, Hymnal x2
+  W2b TimeElapsed(20s, W2): Vesper x8  [resource trickle]
   Final W3 AliveBelow(6): Ophan x3, Seraph x2, Wailer x10, Chorister x6 (platform-hopping)
   Pickups: Health M x2, Plating M x2, Ordnance L x2, Charge L x1
 ```
@@ -112,8 +116,9 @@ ENC_M26_04  "Line III — Air"          Arena: void with 7 floating platforms (1
 ```
 ENC_M26_05  "Line IV — The Choir"    Arena: 120 x 80 m; spiral ramp edges; Saturation pools; 2 Hymn Pylons   Seals: 2
   Reward: 3 Brass + big loot fountain
-  W1: Carillon x1, Chorister x10, Thrall x14
+  W1 OnStart: Carillon x1, Chorister x10, Thrall x14
   W2 AliveBelow(8): Maestro x2, Requiem Knight x2
+  W2b TimeElapsed(20s, W2): Thrall x6  [resource trickle]
   W3 AliveBelow(8): Gilded Profundo x2, Siren x2, Echo x2
   W3b TimeElapsed(25s): Thrall x12
   Final W4 AliveBelow(8): Carillon x1, Gilded Canon x1, Gilded Bellwether x1, Seraph x3, Fugue x2, Chorister x8

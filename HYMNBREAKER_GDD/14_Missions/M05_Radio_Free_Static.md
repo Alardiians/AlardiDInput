@@ -116,7 +116,7 @@ ENC_M05_04  "Tower Yard"               Arena: A05 (70 x 50 m, cranes, rebar stac
 ENC_M05_05  "Transmitter Hall"         Arena: A06 (35 x 35 m, 15 m, transmitter banks, catwalk ring 7 m)   Seals: 2
   Music: MUS_M05_Combat_B          Reward: 1 Brass + loot fountain
   W1 OnStart:             Chorister x4, Thrall x8
-  W2 AliveBelow(4):       Seraph x1, Bulwark x2, Cantor x1
+  W2 AliveBelow(4):       Seraph x1, Bulwark x2, Cantor x1, Thrall x4
   Final W3 AliveBelow(3): Crescendo x1, Bloated Thrall x2, Chorister x3, Trooper x3
   Pickups: Health S x6, Plating S x4, Charge L x1, Shells S x2
   Power-up: TEMPO (catwalk, opposite the entry)

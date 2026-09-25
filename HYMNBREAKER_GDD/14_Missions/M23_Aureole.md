@@ -99,22 +99,24 @@ ENC_M23_01  "Decibel District"       Arena: A05 (main street 120 x 25 m + 2 club
 ```
 ENC_M23_02  "Break the Siege"         Arena: A06 (yard 70 x 50 m + parking structure 4 levels)   Seals: 3
   Music: MUS_M23_Combat_B             Reward: 2 Brass + loot fountain
-  Objective: 3 Resonance Organs (2500 HP each) jamming the signal
+  Objective: 3 Resonance Organs (tag `ResonanceOrgan`; 2500 HP each) jamming the signal
   W1 OnStart:             Organ Grinder x2, Chorister x6, Thrall x8
   W2 AliveBelow(5):       Gilded Canon x1, Cantor x2, Bulwark x3
   W3 AliveBelow(5):       Requiem Knight x1, Fugue x2, Echo x1
-  Final W4 OrgansDestroyed(3) AND AliveBelow(5): Carillon x1, Gilded Bellwether x1, Chorister x4
+  W3b TimeElapsed(20s, W3): Thrall x6  [resource trickle]
+  Final W4 ObjectiveDestroyed(ResonanceOrgan, 3) AND AliveBelow(5): Carillon x1, Gilded Bellwether x1, Chorister x4
   Pickups: Health M x3, Plating M x2, ammo L each, Null Cell x1, Harrow Spool x3
 ```
 
 ```
 ENC_M23_03  "The Crown, Again"        Arena: A07 (45 m deck + lower ring + mast platforms)   Seals: stair doors
   Music: MUS_M23_Combat_B (Harlan's jingle sampled)   Reward: 2 Brass + loot fountain
-  Objective: destroy 4 growth-nodes on the antenna mast (1500 HP each)
+  Objective: destroy 4 growth-nodes on the antenna mast (tag `GrowthNode`; 1500 HP each)
   Allies: Harlan (on the studio balcony, shotgun — invulnerable)
   W1 OnStart:             Seraph x3, Vesper x10, Chorister x4
   W2 AliveBelow(5):       Gilded Crescendo x1, Siren x2
-  Final W3 NodesDestroyed(4) AND AliveBelow(4): Maestro x1, Ophan x2, Thrall x8
+  W2b TimeElapsed(20s, W2): Thrall x6  [resource trickle]
+  Final W3 ObjectiveDestroyed(GrowthNode, 4) AND AliveBelow(4): Maestro x1, Ophan x2, Thrall x8
   Pickups: Health M x2, Plating M x2, ammo L each, Harrow Spool x3
 ```
 
@@ -125,6 +127,7 @@ ENC_M23_04  "The Approach" (FINALE)   Arena: A08 (processional ramp 150 x 50 m; 
   Allies: the Static army (30+ soldiers, invulnerable, advancing behind the player)
   W1 OnStart:             Acolyte x10, Zealot x8, Thrall x10
   W2 AliveBelow(8):       Carillon x1, Gilded Profundo x1
+  W2b TimeElapsed(20s, W2): Thrall x6  [resource trickle]
   W3 AliveBelow(6):       Maestro x2, Requiem Knight x1, Chorister x6
   W3b TimeElapsed(25s):   Thrall x10, Zealot x4
   Final W4 AliveBelow(6): Gilded Canon x1, Gilded Bellwether x1, Seraph x3, Chorister x6

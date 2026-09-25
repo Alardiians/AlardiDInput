@@ -34,7 +34,7 @@
 ```
 
 ### A01 — Docking Ring (Apex Station)
-* **Launch:** in the hub, the player enters the **Drop Coffin** (a black, coffin-shaped drop pod in the Quietus's launch bay). First-person launch sequence (8 s): the coffin is fired; through its narrow slit window the player sees the Quietus recede, Earth and its Aureole swing past, and Apex Station approach; the coffin punches through a docking-ring window and skids across the floor. (This sequence is reused, with variations, for every mission start from the hub.)
+* **Launch:** in the hub, the player enters the **Drop Coffin** (a black, coffin-shaped launch pod in the Quietus's Launch Bay). First-person launch sequence (8 s): the coffin is fired; through its narrow slit window the player sees the Quietus recede, Earth and its Aureole swing past, and Apex Station approach; the coffin punches through a docking-ring window and skids across the floor. (This sequence is reused, with variations, for every mission start from the hub.)
 * **Space:** Apex Station is a huge rotating ring (1 km diameter) — interiors have spin gravity, so **long corridors curve upward** in the distance (a signature visual). The docking ring is a 20 m wide hall of airlocks and cargo cranes.
 * Light combat: 3 Thralls (station crew).
 
@@ -105,13 +105,13 @@ ENC_M03_02  "Hydroponic Garden"    Arena: A03 (60 x 40 m, 3 terraces, canals, tr
 ```
 ENC_M03_03  "Plectrum Chamber"     Arena: A05 (sphere 50 m; ring walkway + 3 platforms)   Seals: 2
   Music: MUS_M03_Combat_B → C       Reward: 2 Brass + loot fountain
-  Objective: destroy 3 tendon joints (parallel to waves; waves continue until joints are destroyed AND final wave dies)
+  Objective: destroy 3 tendon joints (tag `TendonJoint`; parallel to waves; waves continue until joints are destroyed AND final wave dies)
   W1 OnStart:             Chorister x4, Thrall x6
   -- Overdrive boot + Overdrive Surge power-up after W1 --
   W2 AliveBelow(3):       Crescendo x1, Vesper x6, Thrall x4
   W3 AliveBelow(4):       Bulwark x2, Cantor x1, Chorister x2
   W3b TimeElapsed(20s):   Thrall x6                                                           [resource trickle]
-  Final W4 JointsDestroyed(3) AND AliveBelow(4): Crescendo x1, Chorister x3, Thrall x6
+  Final W4 ObjectiveDestroyed(TendonJoint, 3) AND AliveBelow(4): Crescendo x1, Chorister x3, Thrall x6
   Pickups: Health M x2, Plating M x1, Rounds L x1, Shells L x1, Harrow Spool x3
   Power-up: Overdrive Surge (scripted, once)
 ```
@@ -130,12 +130,12 @@ ENC_M03_04  "Climber Descent"      Arena: A07 (moving: 30 x 20 m deck + catwalks
 ```
 ENC_M03_05  "The Bridge"           Arena: A08 Bridge plaza (60 x 60 m; raised saddle base 5 m; hangar balconies 8 m)   Seals: 4
   Music: MUS_M03_Combat_C           Reward: 2 Brass + big loot fountain
-  Objective: 4 Saddle Nodes vulnerable during string-pluck windows
+  Objective: 4 Saddle Nodes (tag `SaddleNode`) vulnerable during string-pluck windows
   W1 OnStart:             Trooper x4, Bulwark x2, Thrall x8
   W2 AliveBelow(4):       Crescendo x1, Chorister x3
   W3 AliveBelow(4):       Ophan x1, Vesper x6, Thrall x6
   W3b TimeElapsed(25s):   Thrall x6
-  Final W4 NodesDestroyed(4) AND AliveBelow(4): Crescendo x2, Cantor x1, Chorister x3, Thrall x6
+  Final W4 ObjectiveDestroyed(SaddleNode, 4) AND AliveBelow(4): Crescendo x2, Cantor x1, Chorister x3, Thrall x6
   Pickups: Health M x2, Plating M x2, Shells L x1, Rounds L x1, Charge L x1, Harrow Spool x2
   Power-up: none
 ```
@@ -172,7 +172,7 @@ ENC_M03_06  "Roof Ride" (survival)  Arena: A09 (moving: 20 x 20 m roof)   Durati
 
 | # | Item | Location | Hint |
 |---|---|---|---|
-| S1 | **Master: *"Geostationary"* by ORBITAL DECAY** | A02: a record shop on the concourse mezzanine, shutters jammed — Downbeat isn't unlocked yet; the shop's back door is reached from A04 later (backtrack via a Swing Pole secret route) | A neon record sign flickering violet |
+| S1 | **Master: *"Geostationary"* by ORBITAL DECAY** | A02: a record shop on the concourse mezzanine, shutters jammed — the shop's back door is reached from A04 by backtracking along a Swing Pole secret route | A neon record sign flickering violet |
 | S2 | **Heart Shard #2** | A03: top of the tallest organ-pipe tree; Harrow Anchor on a greenhouse strut above it | Violet glow in the canopy |
 | S3 | **Effigy: Chorister** | A04: on a maintenance platform off the main ascent, reached by a hidden Swing Pole behind a cable bundle | Orange grip trim visible behind the cables |
 | S4 | **Bootleg Tape #1** (Pit Trial: *"Gravedigger Only"*) | A06: under a seat in the departure lounge | A cassette player on the seat playing muffled music |

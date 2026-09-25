@@ -133,6 +133,7 @@
 | `HAZ_*` | Hazard/structure | `HAZ_HymnPylon` |
 | `WPN_*` / `MOD_*` / `UPG_*` | Weapon / mod / upgrade path | `WPN_Lance`, `MOD_Lance_Overcharge` |
 | `ABL_*` | Ability | `ABL_Harrow` |
+| `SYS_*` | System / mechanic unlock that is not a player ability (menus, traversal, vehicles, mission-wide rules) | `SYS_Pedalboard`, `SYS_GrindRails`, `SYS_AnvilSiegeFrame` |
 | `RIG_<Branch>_n` | Rig upgrade | `RIG_Mobility_4` |
 | `HEART_<Track>_n` | Heart step | `HEART_Plating_3` |
 | `PDL_*` | Pedal | `PDL_Reverb` |
@@ -157,7 +158,7 @@
 `WPN_Breacher`, `WPN_Riveter`, `WPN_StaticRifle`, `WPN_Gravedigger`, `WPN_Hammerfall`, `WPN_Shredder`, `WPN_ArcCoil`, `WPN_Lance`, `WPN_Ripsaw`, `WPN_Silencer`, `WPN_Axe`, `WPN_Larynx`.
 
 ### 4.4 Bosses & Titans
-`BOSS_Ionian`, `BOSS_Tenebrae_1`, `BOSS_Tenebrae_2`, `BOSS_Dorian`, `BOSS_Mixolydian` (A/B), `BOSS_Antiphon`, `BOSS_Phrygian`, `BOSS_MaestroPrimus`, `BOSS_MaestroPrimus_Final`, `BOSS_Leviathan`, `BOSS_Aeolian`, `BOSS_Lydian`, `BOSS_Locris`, `BOSS_Octave` (a.k.a. `BOSS_Aurelia_Octave`), `BOSS_Unison`; `TTN_OrganWalker`, `TTN_VesperCloud`, `TTN_ChoirColossus`, `TTN_Seraphim`, `TTN_Leviathan`.
+`BOSS_Ionian`, `BOSS_Tenebrae_1`, `BOSS_Tenebrae_2`, `BOSS_Dorian`, `BOSS_Mixolydian` (A/B), `BOSS_Antiphon`, `BOSS_Phrygian`, `BOSS_MaestroPrimus`, `BOSS_MaestroPrimus_Final`, `BOSS_Leviathan`, `BOSS_Aeolian`, `BOSS_Lydian`, `BOSS_Locris`, `BOSS_Octave` (Aurelia, the Octave — never `BOSS_Aurelia_Octave`), `BOSS_Unison`; `TTN_OrganWalker`, `TTN_VesperCloud`, `TTN_ChoirColossus`, `TTN_Seraphim`, `TTN_Leviathan`.
 
 ### 4.5 Missions
 | ID | Title | ID | Title |
@@ -205,7 +206,7 @@ I **First Noise** · II **The Tuned Earth** · III **Iron and Fire** · IV **Dee
 
 ## 6. Words to Avoid (IP hygiene & tone)
 
-Do **not** use, in any player-facing text or asset name: *Hell, demon(ic), Slayer, Doom (as a proper noun), UAC, Argent, Sentinel(s) (as a faction), Maykr, praetor, glory kill, BFG, Crucible, Icon of Sin, Marauder, Mancubus, Cacodemon, Imp, Baron of Hell, Revenant, Arch-vile, Cyberdemon, Night Sentinel, Khan, Hell Priest, Slipgate, Fortress of Doom.* Use this game's equivalents (Breakdown, the Silencer, the Axe, Requiem Knight, Canon, Ophan, Chorister, Profundo, Maestro, Carillon, Resonance Gate, the Quietus…).
+Do **not** use, in any player-facing text or asset name: *Hell, demon(ic), Slayer, Doom (as a proper noun or in caps), UAC, Argent, Sentinel(s), Maykr, praetor, glory kill, BFG, Crucible, Icon of Sin, Marauder, Mancubus, Cacodemon, Imp, Baron of Hell, Revenant, Arch-vile, Cyberdemon, Night Sentinel, Khan, Hell Priest, Slipgate, Fortress of Doom.* Use this game's equivalents (Breakdown, the Silencer, the Axe, Requiem Knight, Canon, Ophan, Chorister, Profundo, Maestro, Carillon, Resonance Gate, the Quietus…).
 
 Also avoid real-world religious terms and symbols for the Choir/Consonance (no crosses, crescents, Stars of David, scripture, "God" as a Choir name, "church", "mass" in a liturgical sense — *Choir Mass* refers to a mass of bodies, and should be written "Choir Mass" only in that sense).
 

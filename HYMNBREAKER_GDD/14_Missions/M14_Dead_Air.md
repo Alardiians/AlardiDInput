@@ -31,8 +31,8 @@ The player's home is under attack. A harmonized saboteur — **Deacon Marrow**, 
    → [A03 Spine Corridor] (Juno's last stand — scripted) 
    → [A04 Listening Room & Effigy Gallery] ENC_03
    → [A05 The Armory] (Wren's workshop, overrun) → [A06 Launch Bay] MINI-BOSS: MAESTRO PRIMUS (teleports at 25%)
-   → [A07 Engine Room] ENC_05 (Wren holds the line; Deacon Marrow)
-   → [A08 Mute Engine Chamber] ENC_06 FINALE "Restart" → CIN_M14_Abduction
+   → [A07 Engine Room] ENC_04 (Wren holds the line; Deacon Marrow)
+   → [A08 Mute Engine Chamber] ENC_05 FINALE "Restart" → CIN_M14_Abduction
 ```
 
 ### A01 — Hull Breach: Refugee Deck, ENC_M14_01
@@ -44,7 +44,7 @@ The player's home is under attack. A harmonized saboteur — **Deacon Marrow**, 
 
 ### A03 — Spine Corridor: Juno's Last Stand
 * **Space:** the ship's main corridor (10 m wide, 200 m long, black anechoic wedges on every wall — cracked and gilding), with bulkhead doors every 40 m.
-* **Script (`EVT_M14_Juno`):** over comms, **Juno Reyes** holds bulkhead 4 alone ("*I've got it, I've got it — go help Wren, I'm fine—*"). The player fights down the corridor (light combat) and reaches bulkhead 4 too late: Juno is dead, surrounded by dead Choir-forms; **her Static Collar is still playing music**. The player can interact (optional): the Unsung kneels and switches the collar off — no: **turns it up** (`GST`). The music swells briefly into the next arena's track.
+* **Script (`EVT_M14_Juno`):** over comms, **Juno Reyes** holds bulkhead 4 alone ("*I've got it, I've got it — go help Wren, I'm fine—*"). The player fights down the corridor (light combat) and reaches bulkhead 4 too late: Juno is dead, surrounded by dead Choir-forms; **her Static Collar is still playing music**. The player can interact (optional): the Unsung kneels and **turns the collar up** (`GST_VolumeUp`). The music swells briefly into the next arena's track.
 
 ### A04 — Listening Room & Effigy Gallery, ENC_M14_03
 * **Space:** Pops' record room (shelves of vinyl, the turntable, listening chairs) opening into the Effigy Gallery (display cases with the player's collected Effigies — **the cases hold whatever Effigies the player has actually collected**). Choir growth on the record shelves. Pops is barricaded in the booth (safe, alive; he cheers the Unsung: "*Mind the records!*").
@@ -58,11 +58,11 @@ The player's home is under attack. A harmonized saboteur — **Deacon Marrow**, 
 * **Maestro introduction:** Maestro Primus conducts the boarding from the crane gantry; prompt: `MAESTROS summon and revive — destroy the SCORE, kill it FIRST`.
 * At 25% HP it teleports away (a ring-gate closing). The bay's seals open.
 
-### A07 — Engine Room, ENC_M14_05
+### A07 — Engine Room, ENC_M14_04
 * **Space:** the fusion drive room (50 × 40 m, 25 m tall): two massive drive cores, coolant pipes, catwalks at 6 m and 12 m, Wren's barricade on the control deck. **Wren** fights with a welding torch and a Static Rifle (invulnerable ally).
 * **Deacon Marrow:** the saboteur appears on a catwalk — a human in medic's scrubs, half-gilded, singing, holding a Cantor lantern he ripped from a dead Cantor; he functions as a **named Cantor** (`ENM_Cantor` stats ×1.5 HP, human model) linking enemies. Killing him: Wren: "*...He did my stitches. Two weeks ago. He did my stitches.*"
 
-### A08 — Mute Engine Chamber, ENC_M14_06 (FINALE) "Restart"
+### A08 — Mute Engine Chamber, ENC_M14_05 (FINALE) "Restart"
 * **Space:** the Mute Engine: a 25 m black sphere suspended in a spherical chamber (50 m) by six massive struts; catwalk rings at the sphere's equator (floor level), and at ±10 m; three **breaker stations** (big lever panels) at 120° intervals on the rings.
 * **Objective:** throw the 3 breakers (each needs 3 s of interact; the player is vulnerable; enemies swarm). Each breaker thrown: the engine's hum rises and ambient sound dims a notch. After the third, the spin-up takes 30 s — survive.
 * `CIN_M14_Abduction`: Maestro Primus on the gantry with Lund; the Harrow strikes the closing gate; the Mute Engine reaches full spin; the Choir aboard crumbles to dust; Vire: "*Find him.*"
@@ -109,7 +109,7 @@ BOSS_MaestroPrimus  "Launch Bay"   Arena: A06   (10_Bosses.md §7) — ends at 2
 ```
 
 ```
-ENC_M14_05  "Engine Room"           Arena: A07 (50 x 40 m, 25 m; catwalks 6 & 12 m; drive cores)   Seals: 2
+ENC_M14_04  "Engine Room"           Arena: A07 (50 x 40 m, 25 m; catwalks 6 & 12 m; drive cores)   Seals: 2
   Music: MUS_M14_Combat_C            Reward: 1 Brass + loot fountain
   Allies: Wren (control deck)
   W1 OnStart:             Deacon Marrow (named Cantor), Bulwark x3 (linked), Thrall x8
@@ -120,7 +120,7 @@ ENC_M14_05  "Engine Room"           Arena: A07 (50 x 40 m, 25 m; catwalks 6 & 12
 ```
 
 ```
-ENC_M14_06  "Restart" (FINALE)      Arena: A08 (50 m spherical chamber; 3 catwalk rings; 3 breakers)   Seals: 3
+ENC_M14_05  "Restart" (FINALE)      Arena: A08 (50 m spherical chamber; 3 catwalk rings; 3 breakers)   Seals: 3
   Music: MUS_M14_Combat_C (finale)   Reward: 2 Brass + big loot fountain
   Objective: throw 3 breakers (3 s interact each), then survive 30 s spin-up
   Continuous (until objective done): Thrall x6 every 20 s; Chorister x3 every 30 s
@@ -182,7 +182,7 @@ ENC_M14_06  "Restart" (FINALE)      Arena: A08 (50 m spherical chamber; 3 catwal
 | `MUS_M14_Combat_A` — "**Intruders**" | ENC_01–02 | Plays thin and muffled (as if from a single broken speaker) and gets fuller as allies turn their speakers on during the fight |
 | `MUS_M14_Combat_B` — "**Wax**" | ENC_03 | Vinyl crackle intro, heavy |
 | `MUS_BOSS_Maestro` — "**Conductor**" | Mini-boss | Orchestral choir vs. band |
-| `MUS_M14_Combat_C` — "**Nobody Goes Quiet**" | ENC_05–06 | The biggest track of Act III; Vire's "*Nobody goes quiet on my ship!*" line is sampled into the breakdown |
+| `MUS_M14_Combat_C` — "**Nobody Goes Quiet**" | ENC_04–05 | The biggest track of Act III; Vire's "*Nobody goes quiet on my ship!*" line is sampled into the breakdown |
 | Juno's collar | A03 | A tinny punk song from the collar speaker — then it becomes the next arena's intro |
 
 ---

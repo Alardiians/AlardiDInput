@@ -19,7 +19,7 @@ The player steps onto the lunar surface. Big sky, black space, Earth wearing its
 
 **Experience goals:** the first big exterior spaces; the first taste of the full resource triangle (Distort arrives); the first gold note and first successful Counter; meeting Vire; ending with the Quietus's silent landing and the hub.
 
-**Low gravity? No.** The Relay complex has **artificial gravity plating** (Concord tech) — gameplay gravity is normal everywhere. Outside the plated zones (only cosmetic vistas) dust drifts slowly for flavor. The Unsung doesn't need air; human survivors wear suits.
+**Gravity: normal.** The Relay complex has **artificial gravity plating** (Concord tech) — gameplay gravity is normal everywhere. Outside the plated zones (only cosmetic vistas) dust drifts slowly for flavor. The Unsung doesn't need air; human survivors wear suits.
 
 ---
 
@@ -115,8 +115,8 @@ ENC_M02_03  "Mass Driver Yard"    Arena: A05 (50 x 30 m along the rail, rail 6 m
 ```
 ENC_M02_04  "Antenna Farm"        Arena: A07 (60 x 50 m dish field; dishes as cover and perches)   Seals: 3
   Music: MUS_M02_Combat_B                    Reward: 1 Brass + loot fountain
-  W0 OnStart (tutorial):  Chorister x1 on a dish, throws one slow gold note
-  W1 AliveBelow(0):       Chorister x3 (gold notes enabled), Thrall x6
+  W0 OnStart (tutorial):  Chorister x1 (tag `TutorialChorister`) on a dish, throws one slow gold note
+  W1 KilledTag(TutorialChorister) OR TimeElapsed(20s, W0): Chorister x3 (gold notes enabled), Thrall x6
   W2 AliveBelow(4):       Vesper x6, Trooper x2
   Final W3 AliveBelow(3): Chorister x3, Bulwark x2, Thrall x4
   Pickups: Health S x6, Plating M x1 (on a tall dish rim), Charge S x2, Rounds S x2
@@ -162,10 +162,10 @@ ENC_M02_06  "Crown Chamber" (FINALE)  Arena: A10 (circular, 40 m diameter; raise
 
 | # | Item | Location | Hint |
 |---|---|---|---|
-| S1 | **Mute Cell #1** | A02: inside a half-buried cargo container at the trench's end — Downbeat not yet unlocked, so: shoot the container's jammed lock (Riveter) | Violet light through the container door gap |
+| S1 | **Mute Cell #1** | A02: inside a half-buried cargo container at the trench's end — shoot the container's jammed lock (Riveter) | Violet light through the container door gap |
 | S2 | **Effigy: Tuned Trooper** | A03: on the dropship's broken tail fin (Harrow Anchor on the fin's tip) | Visible glint from the slope |
 | S3 | **Heart Shard #1** | A06: under Landing Pad 3 — drop from the pad's edge onto a maintenance platform; a short Grip Wall back up | Violet glow under the pad visible while Kick-Padding over it |
-| S4 | **Brass Cache #1** | A04: medical dome's supply closet (breakable plastic wall) | Violet tag "??" on the wall |
+| S4 | **Brass Cache #1** | A04: medical dome's supply closet (breakable plastic wall — melee or gunfire breaks it) | Violet tag "??" on the wall |
 | S5 | **Master: *"Low Orbit Lullaby"* by THE PERIGEE** | A07: a dish antenna whose bowl you can land in via Kick Pad from the bunker roof | Music audibly playing from the dish (a radio) |
 | S6 | **Reprise** | A08: behind the tallest Aurelia statue, a hidden stair into the plinth (Distort the statue — its porcelain crust shatters revealing a door; teaches "Distort breaks Choir crust") | Crust glowing faintly violet |
 | S7 | **Rig Core** | A09: halfway up the ascent, an off-path Harrow Anchor chain leading to a ring-antenna service pod | Violet light in the pod window |

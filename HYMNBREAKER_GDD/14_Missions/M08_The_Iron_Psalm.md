@@ -115,7 +115,7 @@ ENC_M08_04  "Knight's Court"       Arena: A06 (35 m circle + stands)   Seals: 2
 ENC_M08_05  "Rampart Walk"         Arena: A07 (60 x 15 m walkway section, 2 towers 10 m tall, bridges)   Seals: 2
   Music: MUS_M08_Combat_C           Reward: 1 Brass + loot fountain
   W1 OnStart:             Canon x2 (next tower top), Trooper x6, Thrall x6
-  W2 AliveBelow(5):       Seraph x2, Hymnal x1, Chorister x2
+  W2 AliveBelow(5):       Seraph x2, Hymnal x1, Chorister x2, Thrall x4
   W3 AliveBelow(4):       Requiem Knight x1, Bulwark x3, Thrall x6
   Final W4 AliveBelow(3): Bellwether x2, Ophan x1, Chorister x3, Thrall x6
   Pickups: Health M x2, Plating M x1, Ordnance L x1, Rounds L x1, Charge L x1, Harrow Spool x2

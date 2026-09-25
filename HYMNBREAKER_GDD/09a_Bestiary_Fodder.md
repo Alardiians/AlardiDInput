@@ -248,7 +248,7 @@ Each entry follows the same template so AI builders can create `DA_Enemy_<Name>`
 | | |
 |---|---|
 | **Tier / Faction** | T1 / The Consonance (harmonized human cultist) |
-| **First appears** | M07 (also M09, M19, M23–M24) |
+| **First appears** | M07 (also M09, M19, M23–M24, M26) |
 | **Role** | Coordinated human ranged enemy; voiced; grenadier |
 | **Size** | 180 cm |
 | **HP** | 100 · Falter 35% |

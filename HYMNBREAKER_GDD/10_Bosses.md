@@ -21,7 +21,7 @@
 | 4 | **Mixolydian, the Engine Hymn** | Archon (on foot + mech) | M11 | Assembly engine hall + yard |
 | 5 | **The Antiphon** | Mini-boss | M12 | Helios reactor atrium |
 | 6 | **Phrygian, the Burning Cantor** | Archon | M13 | Corona focal platform |
-| 7 | **Maestro Primus** | Mini-boss | M14 | Quietus cargo bay |
+| 7 | **Maestro Primus** | Mini-boss ×2 | M14, M19 | Quietus Launch Bay; Chancel Tuning Font |
 | 8 | **The Leviathan** | Mini-boss / chase | M16 | Europa tunnel junction |
 | 9 | **Aeolian, the Grieving Tide** | Archon | M16 | Reef Cathedral dome |
 | 10 | **Lydian, the Dreaming Choir** | Archon | M18 | Dream archipelago |
@@ -177,7 +177,7 @@
 | Phase | HP | Behavior |
 |---|---|---|
 | **1 — Pride** | 100–60% | Airborne; ranged fire; flies circuits around the platform |
-| **2 — Heliostat** | 60–30% | Phrygian seizes the mirrors: **Focus Beams** sweep the platform (solar exposure zones). **Player counterplay:** shoot a mirror's **motor** (8 motors, 300 HP, glowing) to swing it and **reflect a Focus Beam onto Phrygian** (2000 dmg + stagger). 2 Profundos join. |
+| **2 — Heliostat** | 60–30% | Phrygian seizes the mirrors: **Focus Beams** sweep the platform (solar exposure zones). **Player counterplay:** shoot a mirror's **motor** (12 motors, 300 HP, glowing) to swing it and **reflect a Focus Beam onto Phrygian** (2000 dmg + stagger). 2 Profundos join. |
 | **3 — Fury** | 30–0% | Lands; melee frenzy mirroring the Unsung (dashes, slams, a harpoon of fire); enters **"Fury Overdrive"** twice (10 s each: +50% speed; all melee strikes gold → parry chains) |
 
 **Attacks**
@@ -199,7 +199,7 @@
 ## 7. MAESTRO PRIMUS (M14) — Mini-boss
 
 **Concept:** The Maestro conducting the boarding of the Quietus. An enhanced Maestro (`ENM_Maestro` moveset) with **6000 HP**, a larger Score (800 HP), and a boarding-party summon (**Boarding Hymnfall**: 5 T1 + 1 T2 every 20 s).
-**Arena:** The Quietus **cargo bay** (the hub's drop-coffin launch bay, familiar to the player), with cargo containers as cover, a crane gantry, and the hub's Armory windows above.
+**Arena:** The Quietus **Launch Bay** (the hub's Drop Coffin bay, familiar to the player), with cargo containers as cover, a crane gantry, and the hub's Armory windows above.
 **Scripted end:** at 25% HP it teleports away (cannot be killed here). Resolved in `CIN_M14_Abduction`. (It returns in M19 as the Chancel's warden: final fight in the Tuning Font — 7000 HP, dies.)
 
 ---
@@ -241,7 +241,7 @@
 
 **Visual:** A graceful 5 m figure of translucent lilac porcelain whose head is a **spinning mobile of floating masks** (each mask a face Lydian has "dreamed"). Long ribbon-like limbs trailing stardust. Its body flickers between solid and transparent.
 
-**Arena:** The **Dream Archipelago**: 7 floating islands (15–25 m across) of fragments of Cytherea and remembered places (a Halcyon street corner, a Quietus corridor made of clouds, a church roof) in a lilac-gold cloudscape, connected by Kick Pads, Harrow Anchors and Note-Platforms.
+**Arena:** The **Dream Archipelago**: 7 floating islands (15–25 m across) of fragments of Cytherea and remembered places (a Halcyon street corner, a Quietus corridor made of clouds, a bell-tower roof) in a lilac-gold cloudscape, connected by Kick Pads, Harrow Anchors and Swing Poles.
 
 | Phase | HP | Behavior |
 |---|---|---|

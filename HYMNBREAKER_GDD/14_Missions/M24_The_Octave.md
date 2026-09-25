@@ -44,7 +44,7 @@ The ascent through Aurelia's grief. Each floor of the Cathedral is a **memory** 
 
 ### A03 — Memory: Clara's Room (no combat)
 * A child's bedroom, rendered entirely in gold: a bed, stuffed animals, drawings on the walls (drawings of the family — gold), a window with a gold view of the sea, **a music box** on the dresser. The level's music and the Hymn **cut out** entirely on entering. The music box plays a simple lullaby.
-* The Unsung stops. The player can move, but the Unsung's walk slows to 50% in this room (scripted). Interacting with the music box: the Unsung closes its lid gently (`GST`). Or leaves it playing. Either is fine.
+* The Unsung stops. The player can move, but the Unsung's walk slows to 50% in this room (scripted). Interacting with the music box: the Unsung closes its lid gently (`GST_LidClose`). Or leaves it playing. Either is fine.
 * Archive: `ARC_Char_Clara` — a child's drawing of "MOMMY LISTENING TO THE STARS."
 
 ### A04 — Memory: The Wedding Hall, ENC_M24_02
@@ -82,6 +82,7 @@ ENC_M24_02  "Wedding Hall"           Arena: A04 (60 x 40 m; tables; dance floor;
   W1 OnStart:             Fugue x3, Siren x2, Thrall x8 (gold-gilded "guests")
   W2 AliveBelow(5):       Gilded Profundo x1, Chorister x4
   W3 AliveBelow(4):       Maestro x1, Echo x2
+  W3b TimeElapsed(20s, W3): Thrall x6  [resource trickle]
   Final W4 AliveBelow(4): Gilded Canon x1, Gilded Crescendo x1, Zealot x6
   Pickups: Health M x2, Plating M x2, ammo L each, Grudge x1, Harrow Spool x3
   Power-up: TEMPO (on the band stage — "the band plays faster")
@@ -92,6 +93,7 @@ ENC_M24_03  "The Funeral Landing"    Arena: A05 (40 x 40 m landing; floating mem
   Music: MUS_M24_Combat_B             Reward: 1 Brass + loot fountain
   W1 OnStart:             Seraph x3, Ophan x2, Vesper x10
   W2 AliveBelow(5):       Requiem Knight x2
+  W2b TimeElapsed(20s, W2): Thrall x6  [resource trickle]
   Final W3 AliveBelow(4): Hymnal x2, Chorister x6
   Pickups: Health M x2, Plating M x1, Ordnance L x1, Charge L x1
 ```
@@ -108,7 +110,7 @@ ENC_M24_04  "The Congregation"       Arena: A06 (80 x 60 m amphitheater; tiers 1
   Power-up: AMP (altar)
 ```
 
-**Boss:** `BOSS_Aurelia_Octave` (`10_Bosses.md` §12). **Optional:** `CM_M24_01`.
+**Boss:** `BOSS_Octave` (`10_Bosses.md` §12). **Optional:** `CM_M24_01`.
 
 ---
 
@@ -177,4 +179,4 @@ ENC_M24_04  "The Congregation"       Arena: A06 (80 x 60 m amphitheater; tiers 1
 
 ## 9. New Assets Required (P1)
 
-`BOSS_Aurelia_Octave` (`SK_Octave`, 8 arms, gown of bodies, phase states), `MI_Gold_Memory` master material, Clara's room set, music box (animated), wedding hall set, Stair of Years shaft with floating rooms, Congregation amphitheater, summit arena with moving staff-line platforms (`BP_StaffLinePlatform`), Aureole-shatter sky sequence.
+`BOSS_Octave` (`SK_Octave`, 8 arms, gown of bodies, phase states), `MI_Gold_Memory` master material, Clara's room set, music box (animated), wedding hall set, Stair of Years shaft with floating rooms, Congregation amphitheater, summit arena with moving staff-line platforms (`BP_StaffLinePlatform`), Aureole-shatter sky sequence.

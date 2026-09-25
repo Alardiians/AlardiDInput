@@ -9,7 +9,7 @@
 | **Priority** | P1 |
 | **Story beats** | BEAT_M19_1 → BEAT_M19_5 |
 | **New** | Pedal slot 4 (after mission); freeing captives (optional objectives), **stretcher-drone escort**, the gold vision; **Maestro Primus** final fight (killed); crowd-rise spawns |
-| **Landmark** | **Earth** below through the ribbed "windows" of the Chancel — with only two Aureole bands left (plus the faint unfinished Octave arc) |
+| **Landmark** | **Earth** below through the ribbed "windows" of the Chancel — with only one Archon band left (Locrian's cracked grey) and a dark gap where the Octave has yet to sing |
 
 ---
 
@@ -29,7 +29,7 @@ The rescue mission. The Chancel is a place of industrial-scale horror made beaut
    → [A04 The Vision Wall] CIN_M19_Vision
    → [A05 Choir-Hall Beta] ENC_03 (crowd-rise; + optional Resonance Organs)   (+CM_M19_02)
    → [A06 The Tuning Font] MINI-BOSS: MAESTRO PRIMUS (final) → CIN_M19_Lund
-   → [A07 The Collapse (escape with Lund on a stretcher-drone)] ENC_05 FINALE → exit
+   → [A07 The Collapse (escape with Lund on a stretcher-drone)] ENC_04 FINALE → exit
 ```
 
 ### A01 — Waste Chute Entry
@@ -56,7 +56,7 @@ The rescue mission. The Chancel is a place of industrial-scale horror made beaut
 * **Fight:** **Maestro Primus** (returns from M14) — `ENM_Maestro` moveset, **7000 HP**, larger Score (800 HP), Boarding Hymnfall every 20 s. **It dies here**, dropping a big loot fountain.
 * `CIN_M19_Lund`: the column of light breaks; the Unsung catches Lund. Half-gilded, golden tears: "*Solace. The path to the heart of it... goes through Solace. You... you were born there. They're all— your people are all in there.*"
 
-### A07 — The Collapse, ENC_M19_05 (FINALE)
+### A07 — The Collapse, ENC_M19_04 (FINALE)
 * **Escape:** the Chancel starts tearing itself apart (the Font's death destabilizes it). Lund is placed on a **stretcher-drone** (a Static med-drone that followed the Unsung in; it follows the player at 2 m, hovers over obstacles, **cannot be damaged** — enemies ignore it; it's an emotional escort, not a failure condition).
 * **Route:** back through collapsing corridors and a final hangar-hall where the Quietus hovers outside a torn opening; the finale arena is the hangar while the Quietus's ramp lowers (timed: the ramp takes 90 s; survive and clear).
 * Exit: the Unsung carries Lund up the ramp as the Chancel breaks apart behind them.
@@ -70,6 +70,7 @@ ENC_M19_01  "Processing Tunnels"   Arena: A02 junction chamber (40 x 40 m; conve
   Music: MUS_M19_Combat_A           Reward: 1 Brass + loot fountain
   W1 OnStart:             Chorister x6, Cantor x1, Thrall x8
   W2 AliveBelow(5):       Fugue x2, Echo x1
+  W2b TimeElapsed(20s, W2): Thrall x6  [resource trickle]
   Final W3 AliveBelow(4): Gilded Bellwether x1, Siren x2, Chorister x3
   Pickups: Health S x8, Plating S x6, ammo L x1 (Charge, Rounds)
 ```
@@ -93,6 +94,7 @@ ENC_M19_03  "Choir-Hall Beta"      Arena: A05 (100 m circular; concentric captiv
   W1 OnStart:             Acolyte x8 (the Consonance's wardens), Zealot x4, Chorister x3
   W2 AliveBelow(5):       CROWD RISE — Thrall x16 (captive skin, from ring 3), Bloated Thrall x2
   W3 AliveBelow(6):       Maestro x1, Requiem Knight x1
+  W3b TimeElapsed(20s, W3): Thrall x6  [resource trickle]
   Final W4 AliveBelow(4): Carillon x1, Gilded Bellwether x1, Seraph x2, Chorister x4
   Pickups: Health M x3, Plating M x2, ammo L each, Harrow Spool x3
   Power-up: AMP (central dais)
@@ -106,7 +108,7 @@ BOSS_MaestroPrimus_Final  "The Tuning Font"   Arena: A06   (Maestro, 7000 HP, Sc
 ```
 
 ```
-ENC_M19_05  "The Collapse" (FINALE)  Arena: A07 hangar-hall (80 x 50 m; collapsing ribs; opening to space with the Quietus)   Seals: n/a   Timer: 90 s ramp
+ENC_M19_04  "The Collapse" (FINALE)  Arena: A07 hangar-hall (80 x 50 m; collapsing ribs; opening to space with the Quietus)   Seals: n/a   Timer: 90 s ramp
   Music: MUS_M19_Escape             Reward: loot fountain on the ramp
   Continuous: Hymnfall waves every 15 s (T1 x6 + one T2 rotating: Crescendo, Seraph, Siren, Bellwether)
   At T+60: Profundo x1 (Hymnfall at the hangar's far end)
@@ -170,7 +172,7 @@ ENC_M19_05  "The Collapse" (FINALE)  Arena: A07 hangar-hall (80 x 50 m; collapsi
 | `MUS_M19_Combat_A` — "**Intake**" | ENC_01 | 165 BPM |
 | `MUS_M19_Combat_B` — "**Liberation**" | ENC_02–03 | Anthemic; each destroyed Organ removes a choir layer and adds a guitar layer |
 | `MUS_BOSS_Maestro` — "**Final Movement**" | Mini-boss | Reprise, darker |
-| `MUS_M19_Escape` — "**Carry Him Home**" | ENC_05 | Urgent, emotional, 180 BPM |
+| `MUS_M19_Escape` — "**Carry Him Home**" | ENC_04 | Urgent, emotional, 180 BPM |
 | Aurelia VO | All | Close-miked, intimate, harmonized ×4 |
 | Vacuum | Spacewalk | Only the Unsung's breath, servos, and heartbeat |
 

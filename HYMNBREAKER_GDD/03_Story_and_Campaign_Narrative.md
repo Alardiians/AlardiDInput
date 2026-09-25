@@ -56,7 +56,7 @@ This document tells the whole story, act by act and mission by mission. Mission 
 * **BEAT_M03_4:** A climber car ride down to **Waystation Nine** (moving-arena set piece).
 * **BEAT_M03_5:** At Waystation Nine the Choir has grown a **Bridge** — an organ-bone structure clamped around the ribbon. Destroying it "detunes" the Tether. The Hymn over Halcyon falters for the first time in months: on the radio, faintly, the player hears **Radio Free Static** break through: "...is this thing — *hello?* Halcyon, the sky just went *quiet* — somebody up there is *fighting*!"
 * **BEAT_M03_6 (End):** Final descent in a damaged climber car through the atmosphere, fighting Vespers, Wailers and an Ophan on the car's roof; the brakes fail; the car slams into the ocean anchor platform off Halcyon. The Unsung stands up out of the wreckage and looks at the city — and the colossal gold Spire rising from its center.
-* **Post-mission hub:** Tamsin signs "Can you understand me?" The Unsung pauses, then signs a clumsy "Yes." (`GST_Sign`). Tamsin grins.
+* **Post-mission hub:** Tamsin signs "Can you understand me?" The Unsung pauses, then signs a clumsy "Yes." (`GST_Sign_Yes`). Tamsin grins.
 
 ### M04 — Rapture
 *Halcyon. The first Archon.*

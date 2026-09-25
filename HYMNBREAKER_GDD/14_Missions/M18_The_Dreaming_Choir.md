@@ -71,10 +71,10 @@ The player walks through a dream built from memories — a looping Halcyon stree
 ENC_M18_01  "The Loop"                Arena: A01 (120 m looping street, storefront interiors, bus shelter, barricade)   Seals: n/a (loop)
   Music: MUS_M18_Combat_A (the track itself loops a 4-bar phrase until the loop breaks)
   Reward: 1 Brass + loot fountain
-  Objective: destroy 3 Memory Anchors (600 HP each)
+  Objective: destroy 3 Memory Anchors (tag `MemoryAnchor`; 600 HP each)
   W1 OnStart:             Thrall x10 (Tuned commuters — dream versions), Trooper x4, illusions
   W2 AliveBelow(5):       Chorister x4, Bloated Thrall x2
-  Final W3 AnchorsDestroyed(3): Crescendo x2, Seraph x1, Thrall x8
+  Final W3 ObjectiveDestroyed(MemoryAnchor, 3): Crescendo x2, Seraph x1, Thrall x8
   Pickups: Health S x8, Plating S x6, ammo L x1 (Shells, Rounds)
 ```
 
@@ -82,7 +82,7 @@ ENC_M18_01  "The Loop"                Arena: A01 (120 m looping street, storefro
 ENC_M18_02  "Inverted Command Hall"   Arena: A03 (40 x 30 m; ceiling-floor; hanging desks as cover; exterior walkway loop with seams)   Seals: 2
   Music: MUS_M18_Combat_B             Reward: 1 Brass + loot fountain
   W1 OnStart:             Bulwark x4 + Trooper x6 (a dream phalanx), Thrall x6
-  W2 AliveBelow(5):       Requiem Knight x1, Marksman x2
+  W2 AliveBelow(5):       Requiem Knight x1, Marksman x2, Thrall x4
   Final W3 AliveBelow(4): Gilded Bellwether x1, Maestro x1, Chorister x4
   Pickups: Health M x1, Health S x6, Plating M x2, Charge L x1, Ordnance L x1
 ```
@@ -90,12 +90,11 @@ ENC_M18_02  "Inverted Command Hall"   Arena: A03 (40 x 30 m; ceiling-floor; hang
 ```
 ENC_M18_03  "Greatest Hits"           Arena: A06 (pitch island 90 x 60 m; floating stand-fragments 6-15 m; Kick Pads between)   Seals: n/a (island; void)
   Music: MUS_M18_Combat_C (quotes riffs from earlier missions' finale tracks)   Reward: 2 Brass + big loot fountain
-  W1 "Moon":        Chorister x6, Bulwark x2, Cantor x1, Thrall x8
-  W2 "Tether":      Ophan x2, Vesper x10, Wailer x6
-  W3 "Iron Psalm":  Bulwark x4 + Trooper x6 (phalanx), Requiem Knight x1
-  W4 "Forge":       Organ Grinder x2, Canon x1, Thrall x8
-  Final W5 "Now":   Carillon x1, Gilded Crescendo x1, Maestro x1, Chorister x4, Siren x2
-  (Each wave triggers at AliveBelow(4) of the previous.)
+  W1 OnStart:             Chorister x6, Bulwark x2, Cantor x1, Thrall x8                       ["Moon"]
+  W2 AliveBelow(4):       Ophan x2, Vesper x10, Wailer x6                                     ["Tether"]
+  W3 AliveBelow(4):       Bulwark x4 + Trooper x6 (phalanx), Requiem Knight x1                ["Iron Psalm"]
+  W4 AliveBelow(4):       Organ Grinder x2, Canon x1, Thrall x8                               ["Forge"]
+  Final W5 AliveBelow(4): Carillon x1, Gilded Crescendo x1, Maestro x1, Chorister x4, Siren x2  ["Now"]
   Pickups: Health M x3, Plating M x3, ammo L each, Null Cell x1, Harrow Spool x4
   Power-up: OVERDRIVE SURGE (on the stage-piano)
 ```

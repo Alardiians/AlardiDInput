@@ -12,7 +12,7 @@
 
 | # | ID | Name | Mission | Arena | Modifier | Waves (summary) |
 |---|---|---|---|---|---|---|
-| 1 | `RQG_01` | **The Sentinel's Toll** | M06 | A frozen ossuary chapel (40 × 40 m, 3 tiers) | **Tolling Bell:** every 20 s, a bell tolls and all enemies gain Anthem for 5 s | 4 waves; 2 Bellwethers + Crescendos + Marksmen |
+| 1 | `RQG_01` | **The Ossuary Toll** | M06 | A frozen ossuary chapel (40 × 40 m, 3 tiers) | **Tolling Bell:** every 20 s, a bell tolls and all enemies gain Anthem for 5 s | 4 waves; 2 Bellwethers + Crescendos + Marksmen |
 | 2 | `RQG_02` | **The March Eternal** | M08 | A bone parade ground (50 × 50 m) | **Lockstep:** phalanx formations every wave; the drum can't be destroyed | 5 waves; phalanxes + Requiem Knight + Hymnals |
 | 3 | `RQG_03` | **The Iron Choir** | M11 | A kiln hall (45 × 35 m) with pistons | **Assembly Line:** Organ Grinders assemble every 30 s until 4 are alive | 4 waves; Organ Grinders + Canons + Choristers |
 | 4 | `RQG_04` | **Sunward** | M13 | An open mirror platform (60 m) | **Full Exposure:** only 30% of the floor is shaded, and the shade moves | 4 waves; Profundos + Seraphs + Ophans |
@@ -175,7 +175,7 @@ Sliders (each 0.5×–2×): enemy damage, enemy health, player damage taken, res
 | 30 | **Rig Complete** | Buy every Rig upgrade |
 | 31 | **Crate Digger** | Collect all 27 Masters |
 | 32 | **Collector's Shelf** | Collect all 40 Effigies |
-| 33 | **Mixtape** | Collect all 12 Bootleg Tapes |
+| 33 | **Bootlegger** | Collect all 12 Bootleg Tapes |
 | 34 | **Cheat Sheet** | Collect all 12 Tabs |
 | 35 | **Requiem** | Complete all 7 Requiem Gates |
 | 36 | **Stolen Voice** | Assemble the Larynx |

@@ -64,8 +64,8 @@ Locris leads the Unsung through their domain, speaking in fragments as the playe
 ENC_M22_01  "Rotating Plaza"         Arena: A03 (70 m circle; 4 rotating quadrants 3-8 m; chord change every 30 s)   Seals: n/a (streets rotate shut)
   Music: MUS_M22_Combat_A (chord changes are the rotation telegraphs)   Reward: 2 Brass + loot fountain
   W1 OnStart:             Chorister x6, Bulwark x3, Thrall x8
-  W2 AliveBelow(5):       Gilded Canon x1, Cantor x1                                           [Gilded Canon intro]
-  W3 AliveBelow(4):       Fugue x2, Siren x2, Echo x1
+  W2 AliveBelow(5):       Gilded Canon x1, Thrall x8                                           [Gilded Canon intro]
+  W3 AliveBelow(4):       Fugue x2, Siren x2, Echo x1, Cantor x1
   W3b TimeElapsed(25s):   Thrall x8
   Final W4 AliveBelow(4): Gilded Profundo x1, Maestro x1, Chorister x4
   Pickups: Health M x2, Plating M x2, ammo L each, Grudge x1, Harrow Spool x3

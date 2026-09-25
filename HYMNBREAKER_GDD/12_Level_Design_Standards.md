@@ -62,19 +62,20 @@
 ### 2.1 Environment Kits
 | Kit ID | Name | Missions | Description |
 |---|---|---|---|
-| `BRU` | **Concord Brutalist** | M01, M02, M06, M09, M12, M15, M19* | Board-formed concrete, raw steel, stencil signage, sodium and fluorescent lighting |
+| `BRU` | **Concord Brutalist** | M01, M02, M03 (interiors), M05 (metro), M06, M08 (wreckage), M09, M12, M13, M15 | Board-formed concrete, raw steel, stencil signage, sodium and fluorescent lighting |
 | `CITY` | **Halcyon Megacity** | M04, M05, M23 | Megablock facades, highways, plazas, storefronts, stadium |
-| `IND` | **Forge-Belt Industrial** | M10, M11 | Foundry halls, conveyors, crucibles, catwalks, cranes |
-| `CULT` | **Consonance Sanctum** | M07, M24 | White marble, gold inlay, brutalist-gothic arches, reflecting pools |
-| `ORB` | **Orbital/Space** | M02 (exterior), M03, M13, M19 | Hull plating, trusses, pressure doors, space-elevator ribbon & climbers |
+| `IND` | **Forge-Belt Industrial** | M10, M11 | Foundry halls, conveyors, ladles, catwalks, cranes |
+| `CULT` | **Consonance Sanctum** | M07, M23 (Cathedral exterior), M24 | White marble, gold inlay, brutalist-gothic arches, reflecting pools |
+| `ORB` | **Orbital/Space** | M02 (exterior), M03, M12, M13, M19 | Hull plating, trusses, pressure doors, space-elevator ribbon & climbers |
 | `ICE` | **Europa** | M15, M16 | Ice caverns, drill equipment, pressure habitats, submarine domes |
 | `AERO` | **Cytherea Aerostat** | M17, M18 | Gasbag domes, gardens, filigree balconies, sulfur skies |
 | `OREN` | **Oreth Ruins (Aubade)** | M21, M22 | Pale stone, wind-instrument towers, glyph-staves, statues |
-| `HARM` | **Harmonium** | M20, M25–M27 | Bone, porcelain, gold, light architecture, staves, note-platforms |
-| `SHIP` | **The Quietus** | Hub, M14 | Brutalist warship interior with black anechoic wedge walls |
+| `HARM` | **Harmonium** | M20, M22 (through the gaps), M25–M27 | Bone, porcelain, gold, light architecture, staves, note-platforms |
+| `SHIP` | **The Quietus** | Hub, M14, M25–M26 (exterior hull) | Brutalist warship interior with black anechoic wedge walls; exterior hull, turrets and the ram prow for Act VI |
+| `CHOIR_ARCH` | **Choir Architecture** | M20, M25, M26 | Fully Choir-*built* structure (not an overlay): bone ribs and vaults, porcelain floors and walkways, pillar-choirs, rood screens, the Nave doors — same 50 cm grid as the other kits |
 | `CHOIR` | **Choir Growth Overlay** | All | Organ-pipe clusters, bone lattices, flesh-choir walls, bell blooms, gold filigree decals — applied **on top of** any kit to show corruption (density 0–100%) |
 
-*M19 (the Chancel) uses `CHOIR` + `ORB` heavily.*
+*M18 remixes pieces of every earlier kit (BRU, CITY, SHIP, IND, CULT, ICE). M19 (the Chancel) is 100% `CHOIR` grown over captured `ORB` station modules.*
 
 ---
 
@@ -125,7 +126,7 @@ Missions contain **6–10 arenas** (incl. optional), **1–2 Choir Masses**, **1
 2. **Every secret is hinted** by at least one of: violet light, violet Static tag, an out-of-place object (a pipe ending in a grille, a crack), a sound (Resonance Sense chime, a faint radio playing), a visible-but-unreachable item.
 3. **Secret types to mix per mission:** hidden room (breakable wall), vent crawl-alternative (big vents — the Unsung doesn't crawl; vents are 300 cm tall "service ducts"), look-up (anchor above a doorway), traversal challenge (optional expert gap), Downbeat-breakable floor, backtracking (return to an area via a new route), timed (a switch opens a door for 10 s), arena reward (clear a Choir Mass).
 4. **Map support:** the **Sounding Station** (`BP_SoundingStation` — a Static sonar rig: press interact, a sonar ping sweeps the level) reveals the full map and all collectible locations (as violet icons). Each mission has 1–2, usually off the main path.
-5. **Density:** 10–16 secret items per mission (roughly: 1 Master, 1–2 Effigies, 2 Brass Caches, 1 Rig Core, 0–1 Heart Shard, 0–1 Pedal, 0–1 Mute Cell/Tab/Tape, 0–1 Reprise, 0–1 Requiem Key, 3–5 Archive Stones).
+5. **Density:** 10–16 secret items per mission (roughly: 1 Master, 1–2 Effigies, 2 Brass Caches, 1 Rig Core, 0–1 Heart Shard, 0–1 Pedal, 0–1 Mute Cell/Tab/Tape, 0–1 Reprise, 0–1 Requiem Key, 3–6 Archive Stones — M21, the Oreth capital, has up to 8).
 6. **Mission Replay:** after completion, missions can be replayed from Mission Select; collected items appear as **ghost** icons (translucent violet) and do not count twice.
 
 ---

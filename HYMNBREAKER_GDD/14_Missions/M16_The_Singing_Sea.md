@@ -69,8 +69,10 @@ ENC_M16_01  "Thalassa"               Arena: A03 (60 m dome, 20 m; aquarium tank 
   Music: MUS_M16_Combat_A             Reward: 1 Brass + loot fountain
   W1 OnStart:             Maestro x1 (catwalk), Thrall x8, Chorister x4                       [standard Maestro]
   W2 KilledTag(Maestro) OR AliveBelow(4): Siren x2, Fugue x2
+  W2b TimeElapsed(20s, W2): Thrall x6  [resource trickle]
   W3 AliveBelow(4):       Gilded Bellwether x1, Hymnal x1, Thrall x6
   Final W4 AliveBelow(3): Canon x1, Seraph x2, Echo x1
+  W4b TimeElapsed(20s, W4): Thrall x6  [resource trickle]
   Pickups: Health M x2, Plating M x1, ammo L x1 (Charge, Ordnance), Harrow Spool x2
 ```
 
