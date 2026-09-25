@@ -165,7 +165,7 @@ Design note: Distort is deliberately usable on crowds. The best play is to Disto
 | Projectile Counter | The note is reflected at 2× speed toward its source (auto-aimed), dealing **3×** its original damage; T1/T2 sources are staggered (instant Falter for T1) |
 | Melee Counter | Attacker is thrown back; T1/T2 instantly Falter; T3 enters **Guard Break** (1.5 s, takes +50% damage) |
 | Reward | **+10 Plating**, **+6 Gain**, brief time-dilation (0.1 s at 20% speed) and a bright bell-crack "CLANG" |
-| Mistimed | Normal punch (30 dmg). No penalty. |
+| Mistimed | Normal punch (25 dmg — see §9.1). No penalty. |
 | Multiple notes | One press can reflect up to 3 notes arriving within the same window |
 
 ---
@@ -214,6 +214,12 @@ Overdrive cannot be activated during Breakdowns, cutscenes, or mech segments. Ga
 
 * **Power Chord:** melee while holding a charge = a massive shockwave punch. 600 dmg in a 300 cm frontal cone. Instantly breaks Bulwark shields, Harmony Walls, Gilded armor plates, and Hymn Pylons' cores. Staggers T2 (≤ 50% HP → Falter). Charges from Breakdowns.
 * **Downbeat:** from the air (≥ 250 cm above ground), press the Downbeat key to slam down. Shockwave radius scales with fall height (300–700 cm), 80–250 dmg, knocks T1 airborne, stuns T2 0.3 s. With a Power Chord charge held: **Power Downbeat** (consumes the charge) — 900 dmg in 800 cm, stagger T2.
+
+### 9.1 Basic Melee (Punch)
+* **Damage:** 25 (Melee). 3-hit alternating cycle (R, L, R) at 0.35 s per punch.
+* **Effects:** T1 flinch; small knockback (150 cm); +1 Gain per hit that lands on a Choir-form.
+* **Tuned for the tutorial:** 2 punches take a Thrall (60 HP) to 10 HP → Faltering (≤ 35%) → Breakdown. Designers must keep this relationship if Thrall HP or punch damage changes.
+* Punches are the fallback when weapons are dry — never the primary DPS (except with the *Fuzz* Pedal or during Overdrive).
 
 ---
 
