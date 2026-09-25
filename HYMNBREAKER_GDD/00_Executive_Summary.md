@@ -63,7 +63,7 @@ Sound is the theme, the story and a mechanic. The adaptive metal soundtrack foll
 * **Hour 5:** First Archon defeated in a stadium full of rapturous converts. The player owns 5 weapons and is weapon-switching mid-combo.
 * **Hour 15:** The player is running 8+ weapons, mods, Pedals and Overdrive; encounters are complex puzzles solved at speed; the player has learned the Choir came to Earth because of *them*.
 * **Hour 25:** The player walks through the dead city of the hero's own people. For once, the music stops.
-* **Hour 34:** Eight billion humans scream into the dark at once, and the player carries that scream into the heart of god.
+* **Hour 34:** Five billion humans scream into the dark at once, and the player carries that scream into the heart of the Unison.
 
 ---
 

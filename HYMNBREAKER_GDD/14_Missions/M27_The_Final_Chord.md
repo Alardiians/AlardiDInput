@@ -15,7 +15,7 @@
 
 ## 1. Overview
 
-The end. The Unsung — with Lund on his drone, humming — walks into the heart of god. The Unison speaks gently; it asks its lost sibling to rest; it fights with the weight of every world it has ever taken. And when it seems unbeatable, Harlan counts to three and **five billion people make noise at once**.
+The end. The Unsung — with Lund on his drone, humming — walks into the heart of the Unison. The Unison speaks gently; it asks its lost sibling to rest; it fights with the weight of every world it has ever taken. And when it seems unbeatable, Harlan counts to three and **five billion people make noise at once**.
 
 **Experience goals:** the most spectacular fight in the game, a boss that *talks back*, a finale where the player feels the whole of humanity behind them — then a quiet, earned ending.
 
@@ -53,7 +53,7 @@ The end. The Unsung — with Lund on his drone, humming — walks into the heart
 
 ### CIN_M27_Broadcast (in-play, no control loss except 2 s)
 * Silence. Then, faintly, through Lund — who stands up from the drone, gilded, glowing — **Harlan's voice**: `RAD_M27` ("*This is Radio Free Static. This is the Last Broadcast...*"). "*One. Two.*" — "***Make it loud.***"
-* **The Last Broadcast arrives:** a wall of human sound — thousands of distinct voices singing, screaming, laughing, cursing, crying; drums, pots, car horns, church bells (non-religious: generic bells), a kid's recorder, a thrash band in a garage, a choir of children singing a nursery rhyme badly, a stadium chant, an opera singer, a baby crying, someone just yelling "*GET UP!*" — everyone different. Lund is the antenna; it pours out of him into the Harmonium.
+* **The Last Broadcast arrives:** a wall of human sound — thousands of distinct voices singing, screaming, laughing, cursing, crying; drums, pots, car horns, big bronze bells, a kid's recorder, a thrash band in a garage, a choir of children singing a nursery rhyme badly, a stadium chant, an opera singer, a baby crying, someone just yelling "*GET UP!*" — everyone different. Lund is the antenna; it pours out of him into the Harmonium.
 * The Unsung's heartbeat **surges** — the HUD re-ignites, the Gain meter is replaced by the **BROADCAST** meter (full, pulsing with humanity's signal) — **LAST OVERDRIVE**.
 
 ### PHASE 3 — THE LAST BROADCAST

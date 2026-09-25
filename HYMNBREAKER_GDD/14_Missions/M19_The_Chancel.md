@@ -33,7 +33,7 @@ The rescue mission. The Chancel is a place of industrial-scale horror made beaut
 ```
 
 ### A01 — Waste Chute Entry
-* The Drop Coffin can't breach the Chancel's hull; Tamsin flies the Quietus close and the Unsung spacewalks (a short exterior traversal along the Chancel's ribs with Harrow Anchors, Earth vast below — silent, no Hymn in vacuum) to a **waste chute** (an organic sphincter-like opening of porcelain petals) — the Unsung forces it open and drops inside.
+* The Drop Coffin can't breach the Chancel's hull; Tamsin flies the Quietus close and the Unsung spacewalks (a short exterior traversal along the Chancel's ribs with Harrow Anchors, Earth vast below — no sound — only the Hymn, felt through the Rig) to a **waste chute** (an organic sphincter-like opening of porcelain petals) — the Unsung forces it open and drops inside.
 
 ### A02 — Processing Tunnels, ENC_M19_01
 * **Space:** organic-architectural tunnels: ribbed walls of porcelain and bone, floors of smooth gold-veined porcelain, conveyors of light carrying unconscious humans on floating biers (non-hostile, non-damageable) deeper into the facility. The Chancel's own "workers" — Choristers and Cantors — tend them.

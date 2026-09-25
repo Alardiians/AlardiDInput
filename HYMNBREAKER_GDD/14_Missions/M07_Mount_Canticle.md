@@ -49,7 +49,7 @@ The player assaults the heart of the human cult. For the first time, enemies are
 ### A04 — Scriptorium
 * **Space:** a three-level library with endless shelves of bound **Signal transcriptions** — musical notation copied by hand by devotees (millions of pages); reading desks; a central **Resonance Lectern** (a machine playing the Signal softly — the Unsung can destroy it: +1 Archive entry, the Hymn in the level drops in volume for the rest of the mission).
 * **Mod Crates:** Hammerfall — **Lock Salvo**; Arc Coil — **Storm Node**.
-* **Lore:** Archive Stones with Consonance scripture (the "Canticles"), Aurelia's early sermons, lists of converts' names being crossed out and re-written as musical notes.
+* **Lore:** Archive Stones with Consonance teachings (the "Canticles"), Aurelia's early sermons, lists of converts' names being crossed out and re-written as musical notes.
 * Light combat only (Acolyte patrols — can be ambushed; they're praying at desks when first seen).
 
 ### A05 — Resonance Cisterns, ENC_M07_03

@@ -192,6 +192,7 @@ I **First Noise** · II **The Tuned Earth** · III **Iron and Fire** · IV **Dee
 | 2094 | Terran Concord forms (after the Water Wars) |
 | 2121 | Silent Vault discovered; Tranquility Deep founded |
 | 2162 | Meridian Tether completed |
+| 2176 | The Salt Riots: Tomas and Clara Voss killed (Aurelia's grief begins — "twenty years" before the Signal) |
 | 2178 | Lund joins Tranquility Deep |
 | **9 Oct 2194** | **The Ringing** |
 | **14 Mar 2196** | **The Signal** first received (public 1 June 2196) |

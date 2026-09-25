@@ -105,7 +105,7 @@ White marble, gold inlay, perfect symmetry, reflecting pools, soft diffuse light
 ## 6. The Oreth — Design Language (`OREN`)
 
 * **Architecture:** pale warm-grey stone, tall slender towers shaped like wind and brass instruments (flutes, horns, pipes) riddled with sound-holes; arches like the bell of a horn; terraces; everything designed to be *played by the wind*.
-* **People (statues/Locris):** 2.2–2.6 m, slender, long-limbed, elongated skulls with layered crest-like "ear-fans," large dark eyes, four-fingered hands + thumb.
+* **People (statues/Locris):** 1.9–2.4 m (the Unsung, 205 cm in the Rig, is mid-range), slender, long-limbed, elongated skulls with layered crest-like "ear-fans," large dark eyes, four-fingered hands + thumb.
 * **Glyph style ("sung notation"):** curved glyphs written on **five-line staves**, flowing left to right like sheet music; each glyph is a looping curve with dots (think musical notation merged with calligraphy). Glyph texture atlas: `T_OrethGlyphs_Atlas` (64 glyphs).
 * **Shieldwarden armor:** layered plates of silver-grey metal with pale stone inlays — the Rig's oldest pieces (helmet core, left pauldron) match it (a subtle clue players can spot before M21).
 
@@ -172,4 +172,4 @@ Budget: see `20_Technical_Design_UE5.md` §9 (Niagara particle budgets, GPU sim 
 
 ## 11. Reference Keywords (for mood boards — do not copy any IP)
 
-Brutalist housing estates and concert halls · board-formed concrete · anechoic chambers (foam wedge walls) · pipe organs and carillons · church bells and bell foundries · porcelain dolls and kintsugi (gold-repaired ceramics) · "biblically accurate" ophanim wheels (as a *concept* of eyes-on-rings) · radio telescopes · space elevators (concept art) · steel foundries · Venus aerostat concepts · Europa ice-ocean concepts · mech/walker concept art · heavy metal album covers · gig posters · punk DIY aesthetics.
+Brutalist housing estates and concert halls · board-formed concrete · anechoic chambers (foam wedge walls) · pipe organs and carillons · bell towers and bell foundries · porcelain dolls and kintsugi (gold-repaired ceramics) · "biblically accurate" ophanim wheels (as a *concept* of eyes-on-rings) · radio telescopes · space elevators (concept art) · steel foundries · Venus aerostat concepts · Europa ice-ocean concepts · mech/walker concept art · heavy metal album covers · gig posters · punk DIY aesthetics.

@@ -20,7 +20,7 @@ This document tells the whole story, act by act and mission by mission. Mission 
 | V | **THE UNSUNG** | M20–M24 | Who is the Unsung, really? | 7 then 8 of 8 — Aureole shattered |
 | VI | **THE LAST BROADCAST** | M25–M27 | Can individuality defeat unity? | The Unison itself |
 
-**The Aureole as a progress bar:** the Aureole is an 8-band halo (7 Archon bands + 1 Octave band). Each defeated Archon permanently removes one colored band from the sky in all Earth and orbital missions and in the Quietus bridge window. Band colors, in order of removal: Ionian (pale gold), Dorian (steel white), Mixolydian (brass), Phrygian (solar white-orange), Aeolian (sea cyan), Lydian (lilac), Locrian (cracked grey), Octave (pure white).
+**The Aureole as a progress bar:** the Aureole is an 8-band ring (7 Archon bands + 1 Octave band). Each defeated Archon permanently removes one colored band from the sky in all Earth and orbital missions and in the Quietus bridge window. Band colors, in order of removal: Ionian (pale gold), Dorian (steel white), Mixolydian (brass), Phrygian (solar white-orange), Aeolian (sea cyan), Lydian (lilac), Locrian (cracked grey), Octave (pure white).
 
 ---
 
@@ -33,9 +33,9 @@ This document tells the whole story, act by act and mission by mission. Mission 
 * **BEAT_M01_2:** The Unsung breaks out of the Vault into its containment chamber. The Hymn floods in — faint, beautiful choir. The Unsung touches their visor (`GST_HelmetTouch`) — hearing *that song* again after four billion years — and slowly clenches a fist. Two Tuned researchers stagger in, singing. The player's first kills are bare-handed (tutorial: punch, Faltering, Breakdown).
 * **BEAT_M01_3:** Dr. Lund on the PA/radio: he's sealed in the Control Annex above; the base's 400 staff were tuned when the Selene Relay on the surface began to sing. He guides the Unsung upward. The Unsung takes a **Breacher** shotgun from a dead CDF guard.
 * **BEAT_M01_4:** The Rig's systems wake after aeons in stasis — the **Harrow** comes online (tutorial: Shred for ammo, grapple across the collapsed Containment Ring).
-* **BEAT_M01_5:** The labs: evidence of Lund's 70-year program (Archive entries). The first **Choristers** appear — true Choir-forms descending through Hymnfall — and the music goes full metal for the first time.
+* **BEAT_M01_5:** The labs: evidence of seventy years of failed Vault research and Lund's 26 years of notes (Archive entries). The first **Choristers** appear — true Choir-forms descending through Hymnfall — and the music goes full metal for the first time.
 * **BEAT_M01_6:** The **Riveter** from the CDF armory. A final arena in the pump hall under the surface lift.
-* **BEAT_M01_7 (End):** The Unsung rides the lift into the **Observation Dome**. Through the glass: Earth — wearing a luminous, half-complete halo of gold and white light. **The Aureole.** Every screen in the dome shows the same broadcast: Precentor Aurelia Voss, serene: "Children of Earth, do not be afraid. The pain is almost over." The Unsung punches the nearest screen (`GST_ScreenSmash`). Lund, quietly: "That's the Aureole. When it closes, there won't be anyone left to hear it."
+* **BEAT_M01_7 (End):** The Unsung rides the lift into the **Observation Dome**. Through the glass: Earth — wearing a luminous, half-complete ring of gold and white light. **The Aureole.** Every screen in the dome shows the same broadcast: Precentor Aurelia Voss, serene: "Children of Earth, do not be afraid. The pain is almost over." The Unsung punches the nearest screen (`GST_ScreenSmash`). Lund, quietly: "That's the Aureole. When it closes, there won't be anyone left to hear it."
 
 ### M02 — Selene Relay
 *Lunar surface. Meet the Static.*
@@ -158,7 +158,7 @@ This document tells the whole story, act by act and mission by mission. Mission 
 *The hub, invaded.*
 
 * **BEAT_M14_1:** A saboteur — **Deacon Marrow**, a harmonized Consonance agent hiding among the refugees as a medic — disabled the Mute Engine. Without its anechoic field, the Choir could hear the Quietus — and came.
-* **BEAT_M14_2:** The Unsung drop-pods back aboard. Every familiar hub space — the Armory, the Listening Room, the mess — is dark, overrun, and *quiet*. Crew fight with whatever makes noise.
+* **BEAT_M14_2:** The Unsung rides a Drop Coffin back aboard. Every familiar hub space — the Armory, the Listening Room, the mess — is dark, overrun, and *quiet*. Crew fight with whatever makes noise.
 * **BEAT_M14_3:** Private **Juno Reyes** dies holding a corridor; her collar is still playing music when the Unsung finds her.
 * **BEAT_M14_4:** The **Maestro** is introduced — conducting the boarding.
 * **BEAT_M14_5:** Wren holds the engine room; the Unsung restores the Mute Engine in a desperate defense.
@@ -184,14 +184,14 @@ This document tells the whole story, act by act and mission by mission. Mission 
 * **BEAT_M16_1:** Habitat domes on the ocean floor linked by pressure tunnels; flooded sections force detours (no swimming — flooded rooms are barriers or instant-recovery hazards).
 * **BEAT_M16_2 (Mini-boss / set piece):** **The Leviathan** — a Choir-whale the size of a building — attacks a tunnel; chase sequence through collapsing tubes.
 * **BEAT_M16_3 (Boss):** **AEOLIAN, THE GRIEVING TIDE**, in the drowned choir-reef. Aeolian mourns everything: "Every song ends. I am only trying to make the ending gentle." Arena floods and drains in phases.
-* **BEAT_M16_4 (End):** Fifth band dies. Wren's trace resolves — but there's nothing there; the location is being *hidden*. Lund: somewhere under a dream. The only Archon who can hide something from the whole solar system is **Lydian**, on Venus.
+* **BEAT_M16_4 (End):** Fifth band dies. Wren's trace resolves — but there's nothing there; the location is being *hidden*. Vire: "Something's hiding him." Wren: "A dream. Venus. The Lydian Spire." The only Archon who can hide something from the whole solar system is **Lydian**, on Venus.
 
 ### M17 — Cytherea
 *Venus. The city in the clouds.*
 
 * **BEAT_M17_1:** **Cytherea**, a floating aerostat city 55 km above Venus's surface: gasbag domes, hanging gardens, sulfur-yellow skies. Half a million survivors lived here. Tamsin docks the Quietus against a drifting district.
 * **BEAT_M17_2:** Lydian's dream is leaking into reality: **illusory enemies** (translucent, shimmering — harmless if ignored, dangerous only if you stand in their "song"), gardens growing impossibly, gravity leaning sideways in some rooms.
-* **BEAT_M17_3:** The Unsung reaches the city's central keel, where the dream is thickest, and falls asleep standing up — no: the Unsung *refuses* to sleep (the Arrhythm prevents it), so Lydian pulls the whole district into the dream instead.
+* **BEAT_M17_3:** The Unsung reaches the city's central keel, where the dream is thickest. Lydian tries to put the Unsung to sleep, but the Arrhythm won't allow it — so Lydian pulls the whole district into the dream instead.
 * **BEAT_M17_4 (End):** The sky turns inside out. The next mission takes place *inside* the dream.
 
 ### M18 — The Dreaming Choir
@@ -209,7 +209,7 @@ This document tells the whole story, act by act and mission by mission. Mission 
 * **BEAT_M19_2:** Aurelia's voice from the choir-walls, speaking gently and constantly. She offers **rest**. She shows the Unsung a vision (a short in-engine sequence rendered in gold): the **First Unison** on Solace — billions of Oreth singing — and one small, armored figure alone in a square, screaming. The Unsung stops walking.
 * **BEAT_M19_3:** The conversion halls: thousands of humans standing in rows, gilding. The player frees survivors by destroying the halls' **Resonance Organs** (optional objectives, big payoff: hundreds of humans collapse, freed).
 * **BEAT_M19_4:** Lund found in the central **Tuning Font** — half-gilded, golden tears, alive. He can *hear the Unison*. He grips the Unsung's gauntlet: "Solace. The path to the heart of it... goes through Solace. You... you were *born* there. They're all— your people are *all in there*."
-* **BEAT_M19_5 (End):** Escape as the Chancel tears itself apart. The Unsung carries Lund through the final arena (Lund slung over the shoulder — the player fights one-handed-flavored: in gameplay, Lund is placed on a stretcher-drone that follows; not a real one-handed mode).
+* **BEAT_M19_5 (End):** Escape as the Chancel tears itself apart. Lund follows the Unsung through the final arena on a stretcher-drone (an escort, not a carry — there is no one-handed mode).
 
 ---
 
@@ -282,7 +282,7 @@ This document tells the whole story, act by act and mission by mission. Mission 
 * **BEAT_M27_1:** The Unison speaks to the Unsung — its "Little Wrong Note", its **Sibling** — and asks them, gently, to finally rest.
 * **BEAT_M27_2 (Boss, Phase 1):** **THE VOICE** — the Unison's radiant sphere.
 * **BEAT_M27_3 (Boss, Phase 2):** **THE FIRST FACE** — the Unison takes the form of the Oreth as they were: millions of faces, one of them the Unsung's own mother (never stated — an Archive entry after the game implies it).
-* **BEAT_M27_4 (Boss, Phase 3):** **THE LAST BROADCAST.** Harlan: "This is Radio Free Static. This is the last song. *Make it loud.*" Five billion human voices — screaming, singing badly, laughing, crying, cursing, banging drums — flood into the Harmonium through Lund. The Unsung enters **Last Overdrive** (permanent Overdrive for the phase). The Unison's voices begin to **disagree**: its body fractures into factions, each singing a different note. "What— what is this? So many. They are all— *different*—"
+* **BEAT_M27_4 (Boss, Phase 3):** **THE LAST BROADCAST.** Harlan: "This is Radio Free Static. This is the Last Broadcast. *Make it loud.*" Five billion human voices — screaming, singing badly, laughing, crying, cursing, banging drums — flood into the Harmonium through Lund. The Unsung enters **Last Overdrive** (permanent Overdrive for the phase). The Unison's voices begin to **disagree**: its body fractures into factions, each singing a different note. "What— what is this? So many. They are all— *different*—"
 * **BEAT_M27_5 (Finale):** The final blow with the Axe into the Unison's heart. The Unison shatters into billions of individual voices — sparks of light drifting away in every direction, each singing its *own* note. For the first time in four and a half billion years, the Oreth are free to be themselves again — and free to end.
 * **BEAT_M27_6:** Lund, fading, smiling: "Listen. That's... *everyone*." He dies.
 

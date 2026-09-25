@@ -170,7 +170,7 @@ ENC_M23_04  "The Approach" (FINALE)   Arena: A08 (processional ramp 150 x 50 m; 
 | S12 | **Sounding Station #2** | A06 (tower base security booth) | — |
 | S13–S17 | **Archive Stones** | A01, A05, A06, A07, A08 | — |
 
-**Archive entries:** `ARC_Loc_CathedralFinalChord`, `ARC_Titan_ChoirColossus`, `ARC_Hist_LastStandOfHalcyon`, `ARC_Tech_AnvilMk2`, `ARC_Obj_LastBroadcast` (Harlan's first notes), `ARC_Obj_OctaveBand`.
+**Archive entries:** `ARC_Loc_CathedralFinalChord`, `ARC_Titan_ChoirColossus`, `ARC_Hist_LastStandOfHalcyon`, `ARC_Tech_AnvilMk2`, `ARC_Obj_LastBroadcast` (stub: Harlan's first notes — completed in M25), `ARC_Obj_OctaveBand`.
 
 ---
 

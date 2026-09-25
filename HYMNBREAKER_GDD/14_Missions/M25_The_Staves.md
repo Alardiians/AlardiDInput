@@ -162,7 +162,7 @@ ENC_M25_05  "Before the Clef" (FINALE)  Arena: A07 (200 x 150 m; spiral gate; br
 | S10 | **Sounding Station #2** | A06 | — |
 | S11–S15 | **Archive Stones** | A01, A04, A06 (×2), A07 | — |
 
-**Archive entries:** `ARC_Loc_Staves`, `ARC_Obj_NoteWorlds`, `ARC_Hist_TakenWorld_V` (the many-armed city), `ARC_Titan_Seraphim`, `ARC_Tech_QuietusSpeakerHull`, `ARC_Obj_LastBroadcast_Rehearsal`.
+**Archive entries:** `ARC_Loc_Staves`, `ARC_Obj_NoteWorlds`, `ARC_Hist_TakenWorld_V` (the many-armed city), `ARC_Titan_Seraphim`, `ARC_Tech_QuietusSpeakerHull`, `ARC_Obj_LastBroadcast` (full planning call — replaces the M23 stub), `ARC_Obj_LastBroadcast_Rehearsal`.
 
 ---
 

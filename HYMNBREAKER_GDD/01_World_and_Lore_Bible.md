@@ -91,7 +91,7 @@ The Locrian mode is "unstable" in music theory: it never resolves to its root. I
 
 Some **four and a half billion years ago**, before Earth had cooled, a civilization called the **Oreth** flourished on a world named **Solace**, in a young star cluster on the far side of the galaxy.
 
-The Oreth were tall (2.2–2.6 m), slender, long-limbed people with elongated skulls, layered crest-like "ear-fans" and large, dark eyes. They perceived sound with extraordinary sensitivity and their entire culture was built on music: their language was sung, their architecture was acoustic, their laws were recited as chorales. Their capital, **Aubade**, was a city of pale stone designed so that the wind itself played it like an instrument.
+The Oreth were tall (1.9–2.4 m), slender, long-limbed people with elongated skulls, layered crest-like "ear-fans" and large, dark eyes. They perceived sound with extraordinary sensitivity and their entire culture was built on music: their language was sung, their architecture was acoustic, their laws were recited as chorales. Their capital, **Aubade**, was a city of pale stone designed so that the wind itself played it like an instrument.
 
 The Oreth were brilliant and deeply unhappy. Their sensitivity meant they felt each other's pain, anger and grief like physical sounds. Their history was a long cacophony of wars, schisms and suffering. Their philosopher-musicians, the **Cantors**, dreamed of an end to it all.
 
@@ -148,13 +148,14 @@ The Axe was lost when the Unsung was captured; it was taken to Solace by Dorian 
 | 2121 | Helium-3 miners drilling beneath Mare Tranquillitatis hit an object made of unknown, perfectly black material that absorbs 100% of sound and most radiation. It is named **"the Silent Vault"** and the Concord builds **Tranquility Deep**, a secret research complex, around it. |
 | 2121–2190 | Seventy years of failed attempts to open, scan or even damage the Vault. |
 | 2162 | Construction of the **Meridian Tether** (space elevator) completes; anchored on an equatorial ocean platform, rising to **Apex Station**. |
+| 2176 | The **Salt Riots** — the last violent aftershock of the water crisis. Rioters storm a coastal desalination plant; hydrologist **Tomas Voss** and his seven-year-old daughter **Clara** are among the dead. His widow, astrophysicist **Aurelia Voss**, buries herself in work at the Listening Array. |
 | 2178 | Dr. **Kasimir Lund**, a young xenoacoustician, joins Tranquility Deep. |
 | 2194 | **The Ringing.** Lund's team strikes the Vault with a focused ultrasonic resonance array. For 0.8 seconds the Vault *rings* — and a faint, irregular pulse (the Unsung's heartbeat) escapes into space. Lund's team records it; the event is classified. |
-| 2196 | **The Signal.** Radio telescopes at the **Listening Array** in the high desert detect an impossibly beautiful signal from beyond the Kuiper Belt. Dr. **Aurelia Voss** leads the decoding. Listeners report euphoria. |
-| 2197 | The Signal is broadcast publicly as a scientific triumph. Millions listen. A fraction — the **First Listeners** — cannot stop. |
-| 2198 | Voss founds the **Consonance**, a movement (later a church) teaching that the Signal is the voice of a benevolent cosmic mind. Within three years it has 300 million members. |
+| 2196, March 14 | **The Signal.** Radio telescopes at the **Listening Array** in the high desert detect an impossibly beautiful signal from beyond the Kuiper Belt. Dr. **Aurelia Voss** leads the decoding. Listeners report euphoria. |
+| 2196, June 1 | The Signal is broadcast publicly as a scientific triumph. Millions listen. A fraction — the **First Listeners** — cannot stop. |
+| 2198 | Voss founds the **Consonance**, a movement teaching that the Signal is the voice of a benevolent cosmic mind. Within three years it has 300 million members. |
 | 2199–2202 | The Consonance, with enormous wealth and political influence, builds **Cantor Towers** (giant transmitters to "sing back") in dozens of cities and on the Moon (the **Selene Relay**). The Concord hesitates; many officials are members. |
-| 2202 | Dr. Lund, now director of Tranquility Deep, realizes the Signal arrived exactly 2 years after the Ringing, from the direction the pulse traveled. He warns the Concord the Signal is a **reply**. He is ignored and quietly discredited. |
+| 2202 | Dr. Lund, now director of Tranquility Deep, realizes the Signal arrived 17 months after the Ringing, from the direction the pulse traveled. He warns the Concord the Signal is a **reply**. He is ignored and quietly discredited. |
 | 2203, March 3 | **The Chorus Fall.** A Resonance Gate opens beyond Neptune. Within hours, Hymnfall begins on Earth: Choir-forms descend on pillars of light into the cities with the strongest Cantor Towers. Mass tuning begins. |
 | 2203, Mar–Dec | The **Concord Defense Force (CDF)** fights and collapses. Seven **Cantor Spires** are grown across the solar system by the Archons. Survivors discover noise protects them; the **Static** resistance forms. |
 | 2204, January | The **Aureole** begins to form around Earth. Estimated completion: ~200 days. |
@@ -218,7 +219,7 @@ The Axe was lost when the Unsung was captured; it was taken to Solace by Dorian 
 | **The Arrhythm** | The Unsung's heart, visible through the chest cage as an irregular, ember-orange pulse. | The "Heart" UI motif; Heart Shards upgrade it. |
 | **The Quietus** | A Concord-built **anechoic transport** (a "silent ship") originally designed to carry the Silent Vault to Earth, seized by the Static. Brutalist hull, interior lined with giant black anechoic wedges. The only place in the solar system where the Hymn cannot be heard. | Hub (see `15_Quietus_Hub.md`). |
 | **Anvil Siege Frame** | CDF 9-meter bipedal siege mech. | Mech set-pieces (M11, M23, M26). |
-| **The Silencer** | A Static/Lund super-weapon that projects a sphere of absolute anechoic silence. | BFG-class weapon (M09). |
+| **The Silencer** | A Static/Lund super-weapon that projects a sphere of absolute anechoic silence. | Super-weapon (M09). |
 | **The Axe** | The Unsung's ancient weapon; a massive, jagged blade that screams when swung. | Super melee weapon (M21). |
 | **The Larynx** | A living Choir organ-weapon, ripped from a Maestro and wired into a Static weapon frame. | Secret super-weapon (Requiem Gates). |
 | **Gate Fork** | Captured Choir tuning device; lets the Quietus open Resonance Gates. | Justifies mission travel. |
@@ -234,7 +235,7 @@ The Axe was lost when the Unsung was captured; it was taken to Solace by Dorian 
 | **The Meridian Tether** | M03 | Earth's space elevator: Apex Station (orbital), the tether ribbon, climber cars, mid-point "**Waystation Nine**", the ocean anchor platform. |
 | **Halcyon** | M04, M05, M23, M24 | A coastal megacity of 40 million: brutalist megablocks, elevated highways, arcologies, a vast stadium (**the Halcyon Bowl**). The Ionian Spire grows from the Bowl; later, the Cathedral of the Final Chord grows over the whole city center. **Radio Free Static** broadcasts from the old **Halcyon Broadcast Tower**. |
 | **Fort Obdurate** | M06 | CDF fortress carved into an alpine massif: bunkers, gun galleries, hangars, a funicular, snowfields. |
-| **Mount Canticle** | M07 | The Consonance's mountain seminary: white marble and brutalist concrete terraces, reflecting pools, a great amphitheater-church, the Precentor's sanctum. |
+| **Mount Canticle** | M07 | The Consonance's mountain seminary: white marble and brutalist concrete terraces, reflecting pools, the Great Auditorium, the Precentor's sanctum. |
 | **The Iron Psalm** | M08 | Dorian's war-cathedral grown on a plain from the wreckage of a CDF army: a fortress of bone ramparts, weapon-forests and parade grounds. |
 | **The Listening Array** | M09 | The high-desert radio observatory where the Signal was first heard; 60 dishes, many now grown into bone "ears". The Voss Institute labs. |
 | **The Kessler Forge-Belt** | M10, M11 | A continental industrial corridor of foundries, rolling mills and robotic assembly plants, tuned by Mixolydian into a machine-cathedral that births Instruments. **The Assembly** is its heart. |

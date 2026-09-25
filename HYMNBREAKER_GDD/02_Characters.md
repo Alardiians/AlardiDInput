@@ -9,7 +9,7 @@ Cast size is deliberately small. Every speaking character must be memorable from
 | | |
 |---|---|
 | **Names** | *The Unsung* (Choir), *the Hymnbreaker* (human legend), *the Wrong Note*, *the Heart Out of Time* (Choir records), *Breaker* (Static soldiers' slang). Real Oreth name: erased. Never revealed. |
-| **Species** | Oreth (revealed Act V). Appears as a heavily armored humanoid; face never shown. |
+| **Species** | Oreth (shown in M19, explained in M22). Appears as a heavily armored humanoid; face never shown. |
 | **Height** | 205 cm in the Rig (gameplay capsule 192 cm — see movement doc). |
 | **Voice** | **None. Ever.** Breathing and effort sounds only (grunts on heavy impacts, a sharp exhale after Breakdowns). No screams, no words. |
 | **Age** | ~4.5 billion years (most of it dormant or fighting). |
@@ -72,7 +72,7 @@ Cast size is deliberately small. Every speaking character must be memorable from
 | **Role** | Lore voice, guide (M01–M02 radio), scientist, tragic figure. |
 | **Age / Look** | 67. Thin, stooped, white beard, round wire glasses, cardigan under a lab coat under a Static Collar. Hands tremble. Carries a battered tuning fork he taps nervously. |
 | **Voice** | Soft, precise, slightly accented Scandinavian-West African English, a scholar's cadence. Speaks in full paragraphs; the Unsung routinely walks away mid-sentence. |
-| **Background** | Studied the Silent Vault for 26 years. In 2194 his experiment made the Vault ring — the pulse that drew the Choir to Earth. He has told no one except Vire. The guilt is eating him alive. |
+| **Background** | Studied the Silent Vault for 26 years. In 2194 his experiment made the Vault ring — the pulse that drew the Choir to Earth. He warned the Concord in 2202 (they laughed) and Aurelia (she didn't); aboard the Quietus, only Vire knows. The guilt is eating him alive. |
 | **Arc** | Frees the Unsung (M01), guides them (M01–M03), becomes the Static's lore expert on the Quietus (researches the Choir, the Oreth glyphs, the Silencer). In **M09** Aurelia exposes his secret on an open broadcast; he confesses to the crew. In **M14** a Maestro abducts him from the Quietus. In **M19** the Unsung rescues him — half-tuned, gilded, able to *hear the Unison's thoughts*. He deciphers the path to Solace. In **M25** he becomes the living antenna for the Last Broadcast, carrying humanity's noise into the Harmonium. He dies at the end of M27, smiling, as the Unison shatters. His last words are to the Unsung: "Listen. That's... *everyone*." |
 | **Relationship to the Unsung** | Awe, guilt, gratitude. He sees himself as both the Unsung's jailer-by-proxy and liberator. |
 
@@ -90,7 +90,7 @@ Cast size is deliberately small. Every speaking character must be memorable from
 | **Role** | Hub NPC: runs the Armory (weapon mods), builds the Silencer, comic relief, heart of the crew. |
 | **Age / Look** | 24. Short, wiry, shaved sides and a long dyed-orange mohawk tied back, welding goggles on her forehead, grease everywhere, arms covered in hand-poked tattoos of band logos and waveforms. Oversized mechanic's jumpsuit with the sleeves tied at the waist. Custom Static Collar made from a guitar pedal. |
 | **Voice** | Fast, loud, enthusiastic, profane. Talks over her own music. Quick-witted. Reference: excitable mechanic prodigy. |
-| **Background** | Grew up in the Halcyon undercity, fixed amps for underground clubs, then fixed CDF tanks. Joined the Static at 21. Built most of the Static's Kick Pads and designed the Static Collar v3. |
+| **Background** | Grew up in the Halcyon undercity, fixed amps for underground clubs, then fixed CDF tanks. Joined the Static at 23, the week it formed. Built most of the Static's Kick Pads and designed the Static Collar v3. |
 | **Arc** | Treats the Unsung like the best project she's ever been given ("Oh, you are *gorgeous*. Who did your welds? Four billion years? Yeah, it shows.") Builds the Silencer with Lund. In M14 she defends the engine room. In Act VI she rigs the Quietus's entire hull as a speaker for the Last Broadcast. Survives. |
 
 **Sample lines**
@@ -137,9 +137,9 @@ Cast size is deliberately small. Every speaking character must be memorable from
 | **Role** | Human face of the enemy; recurring antagonist; boss (M24). |
 | **Age / Look** | 58 but appears ageless. Tall, elegant, silver hair worn long. Pre-invasion: scientist's severe suits. Now: white and gold vestments with a projected halo-ring; the right half of her face and her right arm are gilded porcelain with gold seams glowing faintly. Her eyes are human, green, kind. |
 | **Voice** | Serene, maternal, beautiful mezzo-soprano speaking voice, layered with a faint harmonized choir that grows stronger as she becomes more tuned. Never angry until M24. Reference: charismatic spiritual leader, gentle therapist. |
-| **Background** | Brilliant astrophysicist, head of the Listening Array. Lost her husband and daughter in the Water Wars and never stopped grieving. When she decoded the Signal, she felt the pain lift for the first time in 20 years. She founded the Consonance to share the gift. She genuinely believes the Unison will end all human suffering, forever. |
-| **Motivation** | Mercy. "Eight billion people in pain. I can make it stop. Tell me why I shouldn't." |
-| **Arc** | Appears via broadcasts and holograms (M02, M04, M05). In **M07** the Unsung reaches her sanctum; she escapes, but reveals the Seven Voices and the Aureole's purpose. In **M09** she exposes Lund's secret — that humanity's doom began with the Vault — and tells the Unsung "They came here for *you*." In **M19** she speaks to the Unsung in the Chancel, offering to let them rest. In **M24**, she becomes **the Octave**, her body fully transfigured into a towering porcelain-and-light form, and is destroyed. In her final moment, the gilding cracks and she says, in her own unharmonized voice: "...It's so *loud*." Then, almost smiling: "I'd forgotten." |
+| **Background** | Brilliant astrophysicist, head of the Listening Array. Lost her husband and daughter in the Salt Riots of 2176 and never stopped grieving. When she decoded the Signal, she felt the pain lift for the first time in 20 years. She founded the Consonance to share the gift. She genuinely believes the Unison will end all human suffering, forever. |
+| **Motivation** | Mercy. "Nine billion people in pain. I can make it stop. Tell me why I shouldn't." |
+| **Arc** | Appears via broadcasts and holograms (M02, M04, M05). In **M07** the Unsung reaches her sanctum; she escapes, but reveals the Seven Voices and the Aureole's purpose. In **M09** she exposes Lund's secret — that the Choir came because the Vault rang — and tells the solar system: "They did not come for you, children. They came for *it*." In **M19** she speaks to the Unsung in the Chancel, offering to let them rest. In **M24**, she becomes **the Octave**, her body fully transfigured into a towering porcelain-and-light form, and is destroyed. In her final moment, the gilding cracks and she says, in her own unharmonized voice: "...It's so *loud*." Then, almost smiling: "I'd forgotten." |
 
 **Sample lines**
 * "I know you can't answer me. I don't think you've ever been *allowed* to. I'm offering you rest."
@@ -156,7 +156,7 @@ Cast size is deliberately small. Every speaking character must be memorable from
 | **Look** | An Oreth warrior-form 4 m tall, gilded but *cracked* — dark fissures run all over the porcelain, and the gold seams flicker irregularly, never settling. Wears the remains of an Oreth Shieldwarden's armor. Carries a broken shield grown into their left arm. Their halo is incomplete — a ring with a gap. |
 | **Voice** | Two voices: the Choir's harmony, and underneath it a single, hoarse, lonely voice that occasionally breaks through. Androgynous. Uses **they/them**. |
 | **Background** | Veyl stood beside the Unsung during the old wars. At the First Unison, Veyl hesitated, afraid — and then, seeing the Unsung left behind and alone, chose peace over grief. Veyl never fully resolved into the Unison. Across billions of years they have been the Choir's most brilliant and most troubled Archon. |
-| **Arc** | Watches the Unsung throughout Acts III–IV (glimpsed in the distance in M13, M16, M18 — a cracked figure with a broken halo). In **M21** speaks to the Unsung in Aubade. In **M22** they fight — the fight is the Unresolved: reality in their domain keeps shifting. Defeated, Veyl chooses dissonance: they break their own halo and give the Unsung the **Key of the Unresolved**, which opens the way to the Clef. In **M26** Veyl reappears to hold the Clef's gate against the Choir so the Unsung can pass. Veyl's final line: "Go on. Be loud for both of us." |
+| **Arc** | Watches the Unsung throughout Acts III–IV (glimpsed in the distance in M12, M16, M18 — a cracked figure with a broken halo). In **M21** speaks to the Unsung in Aubade. In **M22** they fight — the fight is the Unresolved: reality in their domain keeps shifting. Defeated, Veyl chooses dissonance: they break their own halo and give the Unsung the **Key of the Unresolved**, which opens the way to the Clef. In **M26** Veyl reappears to hold the Clef's gate against the Choir so the Unsung can pass. Veyl's final line: "Go on. Be loud for both of us." |
 
 ---
 
@@ -180,7 +180,7 @@ Cast size is deliberately small. Every speaking character must be memorable from
 | Character | Role | Notes |
 |---|---|---|
 | **Sergeant Bo Okafor** | Leader of the Halcyon Static cell (M05, M23). | Huge, cheerful, carries a Static machine gun with a boombox welded to it. Voice: booming bass. "Breaker! You are *exactly* as scary as advertised." |
-| **Private Juno Reyes** | Young Static soldier rescued in M01's epilogue radio; recurring voice on comms. | Nervous, brave. Dies in M14 defending the Quietus — her collar is later found; optional interaction. |
+| **Private Juno Reyes** | Young Static soldier found alive in a crashed dropship in M02; recurring voice on comms. | Nervous, brave. Dies in M14 defending the Quietus — her collar is later found; optional interaction. |
 | **Choirmaster Idris Thale** | Consonance military commander; pilots **the Tenebrae** war-machine (mini-boss M07, M09). | Formerly a CDF general who defected. Contemptuous of the Static. Voice: cold, aristocratic baritone, half-harmonized. |
 | **"Pops" Adebayo** | Quietus quartermaster (hub ambience, Listening Room). | 70s, ex-sound engineer, maintains the record collection. Tells stories about old bands (flavor lines when you place a Master on the turntable). |
 | **The Archons** | Bosses. | Ionian, Dorian, Mixolydian, Phrygian, Aeolian, Lydian speak through the Choir in layered voices; each has a distinct vocal "color". See `10_Bosses.md`. |

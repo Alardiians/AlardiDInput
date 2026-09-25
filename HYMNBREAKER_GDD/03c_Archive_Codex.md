@@ -12,7 +12,7 @@
 | **Lund's Notes** | Scholarly, tender, guilty, digressive | Handwritten on graph paper |
 | **Static Field Guide** | Wren's voice: blunt, funny, profane, practical ("How to fight") | Photocopied zine with doodles |
 | **Radio Free Static** | Harlan's on-air transcripts | Tape-label card |
-| **The Canticles** | Consonance scripture: serene, persuasive | White vellum, gold rule lines |
+| **The Canticles** | Consonance teachings: serene, persuasive | White vellum, gold rule lines |
 | **Choir Record** | Translated Choir glyph-stones: impersonal, plural, beautiful | Gold staff-lines |
 | **Oreth Glyph-Stone** | Translated Oreth song-script: ancient, grieving, lyrical | Pale stone rubbing |
 
@@ -34,7 +34,7 @@
 
 ### ARC_Tech_StaticCollar — *The Static Collar (v3)*
 **Source:** Static Field Guide
-> Neck rig + headset. Plays shaped noise into your skull and through your collarbones so the Hymn can't get its fingers into your rhythm. v3 has three noise modes (WHITE, PINK, and DOOM, which is just my band's demo tape on loop — it tests best). Battery lasts 30 hours. **Never let it die.** If the VU lights go dark, you have hours, not days. If you start humming along to anything pretty — anything — tell somebody. We will slap you. It's policy.
+> Neck rig + headset. Plays shaped noise into your skull and through your collarbones so the Hymn can't get its fingers into your rhythm. v3 has three noise modes (WHITE, PINK, and RIOT, which is just my band's demo tape on loop — it tests best). Battery lasts 30 hours. **Never let it die.** If the VU lights go dark, you have hours, not days. If you start humming along to anything pretty — anything — tell somebody. We will slap you. It's policy.
 > *— W.C.*
 
 ### ARC_Fac_Static — *The Static*
@@ -43,7 +43,7 @@
 
 ### ARC_Fac_Consonance — *The Consonance*
 **Source:** The Canticles, First Verse
-> *Before the Signal, we were alone. Each of us a single voice in a dark room, singing to no one. Our pain had no answer; our grief had no end. Then the sky sang to us, and we understood: we were never meant to sing alone. The Consonance is not a church. It is a choir that has not yet found all its voices. When the last voice joins, there will be no more loneliness, no more fear, no more loss. Take off your collar. Listen. You are forgiven.*
+> *Before the Signal, we were alone. Each of us a single voice in a dark room, singing to no one. Our pain had no answer; our grief had no end. Then the sky sang to us, and we understood: we were never meant to sing alone. The Consonance is a choir that has not yet found all its voices. When the last voice joins, there will be no more loneliness, no more fear, no more loss. Take off your collar. Listen. You are forgiven.*
 
 ### ARC_Obj_Aureole — *The Aureole*
 **Source:** Lund's Notes
@@ -85,7 +85,7 @@
 
 ### ARC_Obj_Shieldwarden — *"Shieldwarden"*
 **Source:** Lund's Notes
-> Dorian called it *Shieldwarden*. I know that word — or rather, I know that *glyph*. It's carved on the inside of the Vault's lid, four hundred times, in a spiral. For twenty-six years I assumed it was the name of the prison. A warning label. *Here lies the Shieldwarden* — or *Beware the Shieldwarden* — or *Shieldwarden: do not open*.
+> Dorian called it *Shieldwarden*. I know that word — or rather, I know that *glyph*. It's carved into the Vault's outer shell, four hundred times, in a spiral. For twenty-six years I assumed it was the name of the prison. A warning label. *Here lies the Shieldwarden* — or *Beware the Shieldwarden* — or *Shieldwarden: do not open*.
 > I think now it was a title. I think it was a rank. I think I've been reading a soldier's name off the inside of their coffin.
 
 ### ARC_Hist_TheSignal — *The Signal*
@@ -109,6 +109,7 @@
 
 ### ARC_Mem_PaleCity — *Fragment: The Pale City*
 **Source:** Lund's Notes (added in the med-bay, handwriting unsteady)
+**Unlock:** M18 as a stub ("*Unknown. Not a human memory.*"); this text replaces the stub after M19.
 > The dream showed it something that wasn't the dream's. Towers like flutes. Wind. A shield. I asked the Unsung, later, in the med-bay, if they remembered it. They didn't answer, of course. But they stayed. Two hours, just sitting by my bed. I think that's an answer.
 
 ### ARC_Hist_ConversionProcess — *How the Chancel Works*
@@ -147,10 +148,11 @@
 
 ### ARC_Char_Clara — *Clara Voss*
 **Source:** found in the Cathedral of the Final Chord — a child's drawing, gilded
-> *[A crayon drawing, now gold: a woman at a big white dish pointing at the sky full of stars; a little girl holding her hand. Caption in a child's handwriting: MOMMY LISTENING TO THE STARS. Underneath, in an adult's hand: Clara, age 6. 2179.]*
+> *[A crayon drawing, now gold: a woman at a big white dish pointing at the sky full of stars; a little girl holding her hand. Caption in a child's handwriting: MOMMY LISTENING TO THE STARS. Underneath, in an adult's hand: Clara, age 6. 2175.]*
 
 ### ARC_Obj_LastBroadcast — *The Last Broadcast*
 **Source:** Radio Free Static, transcript (the planning call)
+**Unlock:** M23 as a stub (Harlan's first notes); this transcript replaces it at M25.
 > "Here's the plan, and it's the dumbest plan in the history of plans, which is how you know it's ours. At the signal, everybody makes noise. Not a song — *your* noise. Scream at your ceiling. Bang a pot. Play the one guitar chord you know. Tell your dead dog you loved it. Everybody different. Five billion wrong notes. The Unison has never heard anybody disagree with it in four billion years. Let's be the first."
 
 ### ARC_Char_Locris_Gate — *The Last Warden*
@@ -184,9 +186,9 @@
 | ARC_Char_Ruiz | Sgt. D. Ruiz | Static Field Guide | M03 | Owner of the Gravedigger; tuned in March; "for emergencies" |
 | ARC_Char_Juno_Memorial | Pvt. Juno Reyes | Static Field Guide | M15 | (full text §2) |
 | ARC_Char_Aurelia | Precentor Aurelia Voss | The Canticles (hagiography) | M02 | The Consonance's official biography of its founder |
-| ARC_Char_Aurelia_Past | Dr. Aurelia Voss | Concord Record | M09 | Astrophysicist, head of the Listening Array; widowed; daughter lost in the Water Wars |
+| ARC_Char_Aurelia_Past | Dr. Aurelia Voss | Concord Record | M09 | Astrophysicist, head of the Listening Array; widowed; husband and daughter killed in the Salt Riots of 2176 |
 | ARC_Char_Aurelia_Full | The Herald | Lund's Notes | M24 | Lund's reflection on Aurelia: "She wasn't wrong about the pain. She was wrong about the price." |
-| ARC_Char_AureliaHusband | Tomas Voss | Concord Record | M24 | Hydrologist; died in the Water Wars defending a desalination plant |
+| ARC_Char_AureliaHusband | Tomas Voss | Concord Record | M24 | Hydrologist; died in 2176 defending a desalination plant during the Salt Riots |
 | ARC_Char_Clara | Clara Voss | Drawing | M24 | (full text §2) |
 | ARC_Char_Thale | Choirmaster Idris Thale | Concord Record | M07 | CDF general who defected to the Consonance; pilot of the Tenebrae |
 | ARC_Char_Thale_Death | "Noise" | Concord Record (Consonance intercept) | M09 | Thale's last transmission: "It's so — it's so loud out here—" |
@@ -201,7 +203,7 @@
 | ARC_Fac_Consonance | The Consonance | The Canticles | M02 | (full text §2) |
 | ARC_Fac_Consonance_Hierarchy | Choir of the Faithful | Concord Record | M07 | Precentor → Choirmasters → Deacons → Acolytes → Zealots → Congregants |
 | ARC_Fac_CDF | Concord Defense Force | Concord Record | M06 | Structure, doctrine, and collapse during the Chorus Fall |
-| ARC_Doc_Canticles_I | The Canticles I: The Sky Sang | The Canticles | M07 | Scripture of the Signal's arrival |
+| ARC_Doc_Canticles_I | The Canticles I: The Sky Sang | The Canticles | M07 | Teachings on the Signal's arrival |
 | ARC_Doc_Canticles_II | The Canticles II: Take Off Your Collar | The Canticles | M07 | On surrendering noise |
 | ARC_Doc_Canticles_III | The Canticles III: The Octave | The Canticles | M07 | Prophecy of the eighth voice |
 
@@ -228,7 +230,7 @@
 | ARC_Loc_Quietus_Full | The Quietus | Concord Record (declassified) | M14 | The anechoic transport's true purpose: carrying the Vault to Earth |
 | ARC_Loc_Europa | Europa | Concord Record | M15 | The ice moon and its ocean |
 | ARC_Loc_Cryobore | Cryobore Station | Concord Record | M15 | The 20 km borehole |
-| ARC_Loc_SingingSea | The Singing Sea | Lund's Notes (remote) | M16 | The ocean that learned to sing |
+| ARC_Loc_SingingSea | The Singing Sea | Static Field Guide | M16 | The ocean that learned to sing |
 | ARC_Loc_Venus_Cytherea | Cytherea | Radio Free Static | M17 | Harlan's honeymoon city |
 | ARC_Loc_TheDream | The Dream | — (untitled) | M18 | A page that changes text each time it's opened |
 | ARC_Loc_Chancel | The Chancel | Lund's Notes | M19 | The conversion facility in orbit |
@@ -257,7 +259,7 @@
 | ARC_Obj_Clef | The Clef (structure) | Lund's Notes | M20 | The spiral citadel glimpsed through the Nave's windows |
 | ARC_Obj_KeyOfUnresolved | The Key of the Unresolved | Oreth Glyph-Stone | M22 | The Clef was built to keep doubters out |
 | ARC_Obj_OctaveBand | The White Band | Radio Free Static | M23 | The Aureole's last band pulsing faster |
-| ARC_Obj_LastBroadcast | The Last Broadcast | Radio Free Static | M23 | (full text §2) |
+| ARC_Obj_LastBroadcast | The Last Broadcast | Radio Free Static | M23 (stub) → M25 (full) | Stub at M23: Harlan's first notes ("*Everybody. Loud. Different. Details TBD.*"); the full planning call (§2) replaces it at M25 |
 | ARC_Obj_LastBroadcast_Rehearsal | Rehearsal | Radio Free Static | M25 | Callers practicing their noise — comic and moving |
 
 ### 3.5 History, Documents, Logs, Memories
@@ -277,7 +279,7 @@
 | ARC_Hist_PhrygianAndTheUnsung | The Seven Petitions | Choir Record | M13 | Phrygian's obsession with the Wrong Note |
 | ARC_Hist_CryoboreCrew | The Cryobore Crew | Concord Record | M15 | 41 people at the bottom of the world |
 | ARC_Doc_CryoboreNames | The Names on the Wall | — (photograph) | M16 | The crew's names, written before they were tuned |
-| ARC_Hist_EuropanLife | Life Under the Ice | Lund's Notes | M16 | Europa had life — tiny, simple, now singing |
+| ARC_Hist_EuropanLife | Life Under the Ice | Static Field Guide | M16 | Europa had life — tiny, simple, now singing |
 | ARC_Hist_CythereaDreamers | The Dreamers of Cytherea | Radio Free Static | M17 | Half a million sleepers |
 | ARC_Hist_ConversionProcess | How the Chancel Works | Lund's Notes | M19 | (full text §2) |
 | ARC_Hist_TakenWorlds_I | Taken World: The Glass Hive | Choir Record | M20 | (full text §2) |
@@ -285,13 +287,13 @@
 | ARC_Hist_TakenWorlds_III | Taken World: The Clockwork | Choir Record | M20 | A machine civilization that was already almost a choir |
 | ARC_Hist_TakenWorlds_IV | Taken World: The Forest People | Choir Record | M20 | A people who spoke through trees |
 | ARC_Hist_TakenWorld_V | Taken World: The Many-Armed City | Choir Record | M25 | The Note-World the Unsung walks through |
-| ARC_Hist_WaterWars | The Water Wars | Concord Record | M24 | 2080s–2094; why the Concord formed; where Aurelia lost her family |
+| ARC_Hist_WaterWars | The Water Wars | Concord Record | M24 | 2080s–2094; why the Concord formed; its last aftershock, the Salt Riots of 2176, took Aurelia's family |
 | ARC_Hist_LastStandOfHalcyon | The Last Stand of Halcyon | Radio Free Static | M23 | Harlan's broadcast from the siege |
 | ARC_Hist_AureoleShattered | The Snow of Light | Radio Free Static | M24 | The night the Aureole broke |
 | ARC_Hist_TheRam | Nailed the Landing | Static Field Guide | M26 | Tamsin's flight log, one line long |
 | ARC_Doc_AureliaNote | A Note in a Drawer | Found document | M09 | (full text §2) |
 | ARC_Mem_FirstUnison | The Vision | — (gold page) | M19 | The First Unison as Aurelia showed it |
-| ARC_Mem_PaleCity | Fragment: The Pale City | Lund's Notes | M18 | (full text §2) |
+| ARC_Mem_PaleCity | Fragment: The Pale City | — (stub) → Lund's Notes | M18 (stub) → M19 (full) | Stub at M18: "*Unknown. Not a human memory.*"; Lund's text (§2) replaces it after his rescue |
 | ARC_Mem_EmptyPlinth | The Empty Plinth | Rubbing | M21 | (full text §2) |
 
 ### 3.6 The Oreth

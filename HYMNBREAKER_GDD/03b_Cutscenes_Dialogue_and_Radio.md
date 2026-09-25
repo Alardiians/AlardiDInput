@@ -7,7 +7,7 @@
 * **Skippable:** all cutscenes, after first view on any save or immediately on replay. Hold-to-skip (1.0 s).
 * **Implementation:** Level Sequences (`LS_CIN_Mxx_Name`). First-person cutscenes use the gameplay camera with animation-driven control (player input locked except look ±15° "soft look" where marked `[SOFT LOOK]`).
 * **Speaker tags:** VIRE, LUND, WREN, HARLAN, TAMSIN (signed; subtitle in italics with ✋ icon), AURELIA, LOCRIS, UNISON, OKAFOR, JUNO, THALE, POPS, and Archons by name.
-* **Radio intros** play over the mission loading screen and continue for up to 20 s into the mission's opening walk if unfinished. They are **never** mixed over combat music — if combat starts, the radio ducks to 20% and finishes under it or is cut.
+* **Radio intros** play over the mission loading screen and continue for up to 20 s into the mission's opening walk if unfinished. Exceptions: `RAD_M20` and `RAD_M26` play *after* their opening cutscenes (they describe those events), and `RAD_M27` plays live in the final boss's Phase 3. They are **never** mixed over combat music — if combat starts, the radio ducks to 20% and finishes under it or is cut.
 
 ---
 
@@ -99,8 +99,9 @@ LUND: Forgive me.
 ```
 [Observation Dome. Lunar surface visible. The lift doors open.]
 [SOFT LOOK enabled. Player walks forward automatically at 50% speed toward the glass.]
-[EARTH hangs in the black sky — and around it, a vast ring of light: gold, white,
- steel, brass, cyan, lilac, grey — seven bands, incomplete on one side. THE AUREOLE.]
+[EARTH hangs in the black sky — and around it, a vast ring of light: pale gold, steel
+ white, brass, white-orange, sea cyan, lilac, cracked grey — seven bands, incomplete
+ on one side. THE AUREOLE.]
 [The Hymn is louder here. Every monitor in the dome flickers on at once.]
 
 AURELIA (on every screen, gentle):
@@ -183,11 +184,11 @@ AURELIA (sadly): I know. I know you can't answer me.
  behind him — two bands dark. Everyone has heard the broadcast.]
 
 LUND: It's true.
-      Twenty-six years ago... no. Ten years ago. The Vault. I rang it.
+      Twenty-six years I studied it. Ten years ago... I rang it.
       I wanted to hear what was inside. For point-eight seconds, I did.
       (beat)
       Heartbeat. Irregular. *Beautiful.* I played it back a thousand times.
-      And two years later, the Signal came from the same direction.
+      Seventeen months later, the Signal came from the same direction.
       I told the Concord. They laughed. I told Aurelia. She didn't.
       (he turns to the Unsung)
       They came because they heard *you*. And they heard you because of *me*.
@@ -320,7 +321,7 @@ HARLAN: So we give it all of 'em.
 VIRE: Explain it to the room.
 HARLAN: Every radio, every phone, every speaker still working on Earth.
         Five billion people. At the same moment, we tell 'em: make noise.
-        Sing. Scream. Bang pots. Play your kid's recorder. Cuss out God.
+        Sing. Scream. Bang pots. Play your kid's recorder. Cuss out the sky.
         Whatever you've got, as loud as you've got it. Everybody different.
         Radio Free Static carries it. The Last Broadcast.
 WREN: And I turn the whole ship into a speaker.
@@ -377,7 +378,7 @@ Harlan "Dead Air" Price opens each mission. Delivery: warm, theatrical late-nigh
 > "Radio Free Static, still here, still loud. Big news, folks: the Selene Relay is *gone*. Dust. Rubble. And the Static's big black ship picked up a passenger — the soldiers are calling it 'the Breaker'. Seven feet of iron and bad attitude. Now, I've been around. I've heard every rumor. But I talked to a kid named Reyes who saw it pull a man-sized choir-thing apart like a Christmas cracker, and she wasn't lying. So here's to the Breaker. And to the Tether — which, word is, the Choir's been playing like a harp. Somebody go pull that string out. Here's something with strings you'll actually like."
 
 **RAD_M04 — Rapture**
-> "Good evening, Halcyon. Look up. For the first time in months, the Hymn over the city *flickered*. Something came down the Tether last night and landed hard in the harbor. I have a feeling it's heading for the Bowl. Now, I've got friends in that stadium. Friends who went to the Communion 'just to see'. They've been standing there three weeks, smiling. If there's anyone left in there who can hear me — hold on. Help's coming, and it's *really* loud. Sergeant Okafor, if you're out on the highways: give 'em hell, big man."
+> "Good evening, Halcyon. Look up. For the first time in months, the Hymn over the city *flickered*. Something came down the Tether last night and landed hard in the harbor. I have a feeling it's heading for the Bowl. Now, I've got friends in that stadium. Friends who went to the Communion 'just to see'. They've been standing there three weeks, smiling. If there's anyone left in there who can hear me — hold on. Help's coming, and it's *really* loud. Sergeant Okafor, if you're out on the highways: give 'em noise, big man."
 
 **RAD_M05 — Radio Free Static**
 > "Well, folks, this is awkward. The Choir's figured out where I am. Big pillars of light, lots of singing, very pretty, coming right for my tower. I've got four speakers, one shotgun, and six hundred records, and I'm not going anywhere. You know why? Because if this station goes quiet, a whole lot of you go quiet too. So I'm going to keep playing until they pull the plug out of my cold, dead hands. Breaker — if you can hear me — I'd *love* some company. This one's called 'Come and Get It'."
@@ -424,7 +425,7 @@ Harlan "Dead Air" Price opens each mission. Delivery: warm, theatrical late-nigh
 **RAD_M19 — The Chancel**
 > "They've found where they took Lund. It's a place called the Chancel, up in orbit, where they take people to be... tuned. Folks, I'm not going to describe it. I'm going to play you a song instead. It was the doc's favorite, according to his crew. He'd hum it in the lab. Off-key, apparently. Doc, if you can hear this: stay off-key. Stay *wrong*. We're coming."
 
-**RAD_M20 — The Nave**
+**RAD_M20 — The Nave** *(plays after `CIN_M20_Crossing`, over the A01 walk — not at load)*
 > "You're not gonna believe this. The Quietus just jumped *into* the Choir's home. Their dimension. The Harmonium. My signal can't reach them there, but I'm going to broadcast anyway, because I'm stubborn and because I have a feeling they can *hear* it somehow. Breaker: you're in their house now. Wipe your feet. Break everything."
 
 **RAD_M21 — Aubade** *(signal barely reaches; heavy interference)*
@@ -440,10 +441,10 @@ Harlan "Dead Air" Price opens each mission. Delivery: warm, theatrical late-nigh
 > "I knew Aurelia Voss. Did you know that? Years ago. She came on my old show to talk about the Signal. Brilliant woman. Kind. So sad you could feel it through the microphone. She told me, off air, that she hadn't slept a full night since her daughter died. And I think... I think all of this is just her trying to get one good night's sleep. I'm sorry, Aurelia. It can't be *everybody's* sleep. Breaker — end it. Gently if you can. But end it."
 
 **RAD_M25 — The Staves**
-> "This is Radio Free Static, and this is the most important thing I will ever say on the air. In a few hours, I'm going to ask every one of you to do something. When I give the word — you make noise. Everybody. The whole planet. Sing, shout, drum, cry, curse, play whatever you've got. Don't sing *together*. Sing *different*. That's the whole trick. That's the weapon. The Breaker's out there carrying Doc Lund to the heart of God, and we're going to give 'em something to deliver. Rehearsal's now. Warm up those throats."
+> "This is Radio Free Static, and this is the most important thing I will ever say on the air. In a few hours, I'm going to ask every one of you to do something. When I give the word — you make noise. Everybody. The whole planet. Sing, shout, drum, cry, curse, play whatever you've got. Don't sing *together*. Sing *different*. That's the whole trick. That's the weapon. The Breaker's out there carrying Doc Lund to the heart of the Unison, and we're going to give 'em something to deliver. Rehearsal's now. Warm up those throats."
 
-**RAD_M26 — The Clef**
-> "...Tamsin Hale just flew a four-hundred-meter ship into the side of God's house. On purpose. I've been told she's fine, she's grinning, and she'd like everyone to know she 'nailed the landing'. The Breaker's inside. Everyone stay near your radios. It's almost time. This one's called 'Almost Time', because I'm out of clever ideas and so are you."
+**RAD_M26 — The Clef** *(plays after `CIN_M26_Ram`, over the A01 walk — not at load)*
+> "...Tamsin Hale just flew a four-hundred-meter ship into the side of the Unison's house. On purpose. I've been told she's fine, she's grinning, and she'd like everyone to know she 'nailed the landing'. The Breaker's inside. Everyone stay near your radios. It's almost time. This one's called 'Almost Time', because I'm out of clever ideas and so are you."
 
 **RAD_M27 — The Final Chord**
 > "This is Radio Free Static. This is the Last Broadcast. Five billion of you are listening right now. I can hear you breathing. When I count to three, I want every one of you to make the loudest, ugliest, most *you* sound you have ever made. Not a song. Not together. *Yours.* For everyone they took. For everyone who's still here. For Juno. For the Doc. For the Breaker, who never asked for any of this.
@@ -489,7 +490,7 @@ Rules:
 * "Every one of them you break was someone's child once. Now they're no one's. Is that better?"
 * "I can hear your heart from here. It sounds like it's breaking. It's been breaking for a very long time."
 * "The Static tell their children that noise will save them. Noise has never saved anyone. It just keeps them from hearing how tired they are."
-* "Kasimir, if you're listening — I'm not angry. I'm grateful. You rang the bell."
+* *(M10+ only — after the M09 reveal)* "Kasimir, if you're listening — I'm not angry. I'm grateful. You rang the bell."
 
 ### 5.3 The Choir (non-verbal) — vocal signature table
 Every Choir enemy has a **signature chord** (its "voice"). Its idle hum, alert call, attack wind-up and death sound are variations of it. Players learn to identify threats by ear. (Full spec in `18_Audio_and_Dynamic_Music.md`.)

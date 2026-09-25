@@ -165,7 +165,7 @@ Each entry follows the same template so AI builders can create `DA_Enemy_<Name>`
 |---|---|
 | **Tier / Faction** | T1 / The Host (pure Choir-form) |
 | **First appears** | M01 (late), gold notes from M02 |
-| **Role** | Signature agile ranged fodder (the game's "imp"); teaches Counter |
+| **Role** | Signature agile ranged fodder (the classic agile fireball-thrower archetype); teaches Counter |
 | **Size** | 200 cm standing (often crouched at 140); capsule r 38 / hh 80 (crouched) |
 | **HP** | 140 · Falter 35% |
 | **Speed** | Run 500 · Leap up to 900 horizontal / 500 vertical · **Wall-climb** 350 |

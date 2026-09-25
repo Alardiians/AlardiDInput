@@ -15,7 +15,7 @@
 
 ## 1. Overview
 
-The player steps onto the lunar surface. Big sky, black space, Earth wearing its halo. The Relay tower dominates the horizon and *sings*. The mission's objective is simple and visible: destroy the Relay's **three resonator cores** so the Quietus can land.
+The player steps onto the lunar surface. Big sky, black space, Earth wearing the Aureole. The Relay tower dominates the horizon and *sings*. The mission's objective is simple and visible: destroy the Relay's **three resonator cores** so the Quietus can land.
 
 **Experience goals:** the first big exterior spaces; the first taste of the full resource triangle (Distort arrives); the first gold note and first successful Counter; meeting Vire; ending with the Quietus's silent landing and the hub.
 
