@@ -6,7 +6,7 @@
 | **Location** | **Halcyon**, coastal megacity: Harbor Bridge, the elevated highway interchange ("the Stack"), Tower 9 megablock, the Plaza of Communion, **the Halcyon Bowl** |
 | **Kit** | `CITY` + `CHOIR` 20% → 90% |
 | **Target duration** | 80 min |
-| **Priority** | **P0 — Vertical Slice finale** |
+| **Priority** | **P0 — Act I Alpha finale** |
 | **Story beats** | BEAT_M04_1 → BEAT_M04_5 |
 | **New** | Hammerfall, Power Chord, Arc Beam mod, Hymn Pylons, power-ups (Amp), allied Static soldiers; enemies Seraph, Canon; **Boss: Ionian, the Rapture** |
 | **Landmark** | **The Ionian Spire** — a 2 km spire of gold and white growing from the Halcyon Bowl, crowned with a sun-halo; beams of warm light sweep the city like searchlights |

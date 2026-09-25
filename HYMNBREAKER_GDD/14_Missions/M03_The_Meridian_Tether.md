@@ -6,7 +6,7 @@
 | **Location** | Earth's space elevator: **Apex Station** (orbital terminus), the ribbon, a climber car, **Waystation Nine**, the ocean anchor platform off Halcyon |
 | **Kit** | `ORB` (space station), `BRU` interiors, `CHOIR` 30–70% |
 | **Target duration** | 70 min |
-| **Priority** | **P0 — Vertical Slice** (the vertical slice ends at the end of M03 or M04 depending on scope — see roadmap) |
+| **Priority** | **P0 — Act I Alpha** (see `24_AI_Build_Roadmap.md` Milestone 4) |
 | **Story beats** | BEAT_M03_1 → BEAT_M03_6 |
 | **New** | Gravedigger, Hush Charge, Overdrive (+ Gain meter), Downbeat, Swing Poles, Choir Masses, moving arena; Tack Scope & Heat Burst mods; enemies Crescendo, Ophan, Wailer |
 | **Landmark** | **The ribbon** — a 1 m wide, impossibly long band of carbon-nanotube weave running from space down to Earth, pulsing with visible gold light-waves as the Choir plucks it |

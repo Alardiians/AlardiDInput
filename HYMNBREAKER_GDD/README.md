@@ -27,7 +27,7 @@ Target engine: **Unreal Engine 5** (built with AI agents using a **UE5 MCP** and
 3. **Units:** 1 Unreal Unit (uu) = 1 cm. All distances in this document are in **cm** unless marked `m`. Times in seconds. Angles in degrees.
 4. **Build greybox first, art second.** Every level must be fully playable in greybox (BSP/modeling-tool blockout or `SM_GRY_*` blocks) before any art pass. See `24_AI_Build_Roadmap.md`.
 5. **Tuning lives in data, not code.** Weapon damage, enemy HP, cooldowns, spawn waves etc. are defined in DataTables/DataAssets (schemas in `20_Technical_Design_UE5.md`, values in `data/`). Never hard-code a tuning number in a Blueprint graph or C++ function.
-6. **Priorities:** content is tagged **P0** (required for the vertical slice), **P1** (required for full release), **P2** (polish/stretch). Build P0 → P1 → P2.
+6. **Priorities:** content is tagged **P0** (required for the **Act I Alpha**: M01–M04 + hub States 1–2; the **Vertical Slice** milestone is its first half, M01–M02), **P1** (required for full release), **P2** (polish/stretch). Build P0 → P1 → P2 following `24_AI_Build_Roadmap.md`.
 7. **When something is unspecified**, follow the pillars in `00_Executive_Summary.md` and the nearest analogous spec. Log the decision in a `DECISIONS.md` file at the project root so later agents stay consistent.
 
 ---
