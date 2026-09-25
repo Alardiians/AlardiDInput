@@ -223,6 +223,18 @@ Applied automatically by the Director (designers author Amplified only):
 * **Morale (cultists only):** see Acolyte entry.
 * **Last Enemies highlight:** when ≤ 3 enemies remain in an arena and ≥ 20 s have passed without a kill, remaining enemies get a subtle orange outline and a compass ping (option: On/Off).
 
+### 7.1 Allied NPCs (`NPC_StaticSoldier`, named allies)
+* **Invulnerable** during scripted ally encounters (they duck behind their barricade when "hit", with a flinch bark). Named allies (Okafor, Vire in M23) are always invulnerable.
+* Stay within an **Ally Zone** volume (barricades, hold points); never block the player's path (soft collision, they step aside).
+* Deal **25%** of a Trooper's damage per shot; never damage Faltering enemies (so they never steal Breakdowns); never trigger Gain for the player.
+* Occupy **no attack tokens** (enemy tokens are about fairness to the player).
+* Bark constantly (see `03b` §5.1) — they are there for *mood and scale*, not DPS.
+* Enemies target allies only when the player is > 3000 cm away or out of sight for > 5 s (keeps pressure on the player).
+
+### 7.2 Passive Crowds (`NPC_TunedCivilian`)
+* Instanced, vertex-animated, non-damageable scenery (no collision with projectiles; soft capsule collision with the player).
+* Scripted transformations only (e.g., `SPN_CrowdRise` in M19) — never random.
+
 ---
 
 ## 8. Debug & Tooling (required for AI builders)

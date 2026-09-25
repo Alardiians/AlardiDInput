@@ -46,7 +46,7 @@ Optional content (Requiem Gates ~2 h, Pit Trials ~2.5 h, 100% secrets ~3 h, Enco
 | M01 | Breacher, Riveter | Surge, melee, **Breakdown**, **Harrow** (Shred, Grapple), Counter (passive) | Thrall, Trooper, Chorister | Harrow Anchors, Grip Walls, Fuse keys |
 | M02 | Static Rifle | **Distort**, **Frag Charge**, Counter tutorial | Bulwark, Vesper, Cantor | Kick Pads; gold notes; **Hub unlocked** after |
 | M03 | Gravedigger | **Hush Charge**, **Overdrive**, **Downbeat** | Crescendo, Ophan, Wailer | Swing Poles, moving arena, Choir Masses |
-| M04 | Hammerfall | **Power Chord** | Seraph, Canon | Power-ups (Amp); first boss |
+| M04 | Hammerfall | **Power Chord** | Seraph, Canon, Hymn Pylon (hazard) | Power-ups (Amp); allied Static soldiers; passive crowds; first boss |
 | M05 | Shredder | **Pedalboard** (2 slots) | Organ Grinder, Bloated Thrall | Tempo power-up |
 | M06 | Arc Coil | Requiem Gates | Bellwether, Marksman | Snow/ice slides (cosmetic), funicular |
 | M07 | — | — | Acolyte, Zealot, Siren | Mini-boss framework |
