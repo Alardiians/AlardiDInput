@@ -141,7 +141,7 @@ Each Pedal has a **Boutique** upgrade unlocked by a challenge (the pedal gets a 
 |---|---|---|---|---|
 | **Masters** (vinyl records) | `COL_Master_Mxx` | 27 (1/mission) | Secrets | Unlocks a soundtrack track + liner notes in the **Listening Room** turntable |
 | **Effigies** (carved figurines of enemies & characters) | `COL_Effigy_nn` | 40 | Secrets | Displayed in the Effigy Gallery; each has a 2-line description (and a joke) |
-| **Archive entries** | `ARC_*` | ~160 | Story progress (auto), Archive Stones (violet-glowing data slates / Oreth glyph-stones), enemy first encounters | Codex text |
+| **Archive entries** | `ARC_*` | ~190 | Story progress (auto), Archive Stones (violet-glowing data slates / Oreth glyph-stones), enemy first encounters | Codex text |
 | **Tabs** (cheat codes as guitar tablature sheets) | `COL_Tab_nn` | 12 | Secrets (M04, M06, M08, M10, M12, M14, M16, M18, M20, M22, M24, M26) | Cheat modifiers for replays (see `16_Optional_Content_and_Modes.md`) |
 | **Bootleg Tapes** (cassettes) | `COL_Tape_nn` | 12 | Secrets (odd missions M03–M25) | Unlock **Pit Trials** |
 | **Mute Cells** | `COL_MuteCell_n` | 9 | Secrets (M02, M05, M07, M10, M13, M15, M18, M21, M24) | Open Vault Deck doors |

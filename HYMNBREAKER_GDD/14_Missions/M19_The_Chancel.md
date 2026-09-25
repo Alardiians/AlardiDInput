@@ -53,7 +53,7 @@ The rescue mission. The Chancel is a place of industrial-scale horror made beaut
 
 ### A06 — The Tuning Font: MINI-BOSS MAESTRO PRIMUS (final)
 * **Space:** the Chancel's heart: a circular chamber (60 m) around a great **font** (a basin of liquid gold light, 20 m across) in which Lund is suspended upright in a column of light. Galleries at 10 m; four organ-pipe pillars; Harrow Anchors on the pillar crowns.
-* **Fight:** **Maestro Primus** (returns from M14) — `ENM_Maestro` moveset, **7000 HP**, larger Score (800 HP), Boarding Hymnfall every 20 s. **It dies here.** Its death drops a **Reliquary Shard**? — no (Reliquary Shards come from Requiem Gates only). It drops a big loot fountain.
+* **Fight:** **Maestro Primus** (returns from M14) — `ENM_Maestro` moveset, **7000 HP**, larger Score (800 HP), Boarding Hymnfall every 20 s. **It dies here**, dropping a big loot fountain.
 * `CIN_M19_Lund`: the column of light breaks; the Unsung catches Lund. Half-gilded, golden tears: "*Solace. The path to the heart of it... goes through Solace. You... you were born there. They're all— your people are all in there.*"
 
 ### A07 — The Collapse, ENC_M19_05 (FINALE)

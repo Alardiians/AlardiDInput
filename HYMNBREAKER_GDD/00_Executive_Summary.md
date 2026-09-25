@@ -91,12 +91,12 @@ Sound is the theme, the story and a mechanic. The adaptive metal soundtrack foll
 | Standard weapons | 9 (each with 2 mods + upgrade trees + mastery) |
 | Super / special weapons | 3 (Silencer, The Axe, The Larynx) |
 | Equipment & abilities | Harrow, Frag Charge, Hush Charge, Distort, Power Chord, Downbeat, Counter, Surge (dash), Overdrive |
-| Regular enemy types | 21 (+8 variants, 4 Gilded variants) |
+| Regular enemy types | 21 base types (+4 variants: Bloated Thrall, Bulwark, Marksman, Zealot; +4 Gilded variants; + Reverie illusion variants) |
 | Hazards / structures | 5 |
 | Mech-scale enemies | 4 |
 | Bosses | 9 major (7 Archons, the Herald, the Unison) + 4 mini-bosses |
 | Optional arenas | 7 Requiem Gates, ~35 Choir Masses, 12 Pit Trials |
-| Collectible types | Masters (27), Effigies (40), Archive entries (~160), Tabs (12), Bootleg Tapes (12), Mute Cells (9), Heart Shards (18), Rig Cores (30), Pedals (16), Requiem Keys (7) |
+| Collectible types | Masters (27), Effigies (40), Archive entries (~190), Tabs (12), Bootleg Tapes (12), Mute Cells (9), Heart Shards (18), Rig Cores (27 hidden; 63 obtainable in total), Pedals (16), Requiem Keys (7), Reprises (20) |
 | Difficulty modes | 6 (Lullaby, Unplugged, Amplified, Overdriven, Deafening, Unsung [permadeath]) + Custom |
 | Estimated playtime | ~34 h first run (Amplified), 40–50 h completionist |
 
