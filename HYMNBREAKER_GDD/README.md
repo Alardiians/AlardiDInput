@@ -83,7 +83,9 @@ Target engine: **Unreal Engine 5** (built with AI agents using a **UE5 MCP** and
 | [`23_Difficulty_Balance_Accessibility.md`](23_Difficulty_Balance_Accessibility.md) | Difficulty modes, balance targets, accessibility options |
 | [`24_AI_Build_Roadmap.md`](24_AI_Build_Roadmap.md) | Milestones, task order, acceptance criteria, QA/test plans |
 | [`25_Glossary_and_Canon.md`](25_Glossary_and_Canon.md) | Canonical names, spellings, IDs, terminology |
-| [`data/`](data/) | CSV tuning tables ready for UE5 DataTable import |
+| [`26_AI_Agent_Prompt_Pack.md`](26_AI_Agent_Prompt_Pack.md) | Copy-paste prompts for each AI builder role and milestone |
+| [`data/`](data/) | CSV tuning tables ready for UE5 DataTable import (see `data/README.md`) |
+| [`templates/`](templates/) | `DECISIONS.md`, `BALANCE_LOG.md`, `MILESTONE_REPORT.md`, `TASK.md`, `BUGS.md`, and an example layout-as-data JSON |
 
 ---
 

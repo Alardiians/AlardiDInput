@@ -1,0 +1,48 @@
+{
+  "_comment": "Example layout-as-data file for Tools/Layouts/. A spawner script reads this and places actors. Units: cm, degrees. Coordinates are relative to the area origin (south entrance center, floor level). See 20_Technical_Design_UE5.md §11 and 14_Missions/M01_Tranquility_Deep.md A08.",
+  "mission": "M01",
+  "area": "A_M01_08",
+  "name": "Pump Hall",
+  "bounds": { "size": [4000, 3500, 2000] },
+  "modules": [
+    { "asset": "SM_GRY_Block_400x400x50", "pattern": "grid", "from": [-2000, 0, -50], "count": [10, 9, 1], "step": [400, 400, 0], "note": "floor" },
+    { "asset": "SM_GRY_Block_400x50x800", "pattern": "line", "from": [-2000, 3500, 0], "count": [10, 1, 1], "step": [400, 0, 0], "note": "north wall (Choir-grown, Chorister perches)" },
+    { "asset": "SM_GRY_Block_800x800x400", "at": [-1200, 900, 0], "rot": [0, 0, 0], "tag": "Cover", "note": "pump housing" },
+    { "asset": "SM_GRY_Block_800x800x400", "at": [ 400, 900, 0], "tag": "Cover" },
+    { "asset": "SM_GRY_Block_800x800x400", "at": [-1200, 2100, 0], "tag": "Cover" },
+    { "asset": "SM_GRY_Block_800x800x400", "at": [ 400, 2100, 0], "tag": "Cover", "note": "central pump top holds PKP_Health_M" },
+    { "asset": "SM_GRY_Ring_Catwalk_Mid", "at": [-400, 1750, 600], "note": "mid catwalk ring, 6 m" },
+    { "asset": "SM_GRY_Bridge_400w", "at": [-2000, 800, 1200], "rot": [0, 0, 0], "length": 4000, "note": "upper bridge south" },
+    { "asset": "SM_GRY_Bridge_400w", "at": [-2000, 2700, 1200], "rot": [0, 0, 0], "length": 4000, "note": "upper bridge north" }
+  ],
+  "traversal": [
+    { "type": "BP_HarrowAnchor", "variant": "CraneHook", "at": [-1800, 1750, 1500], "id": "A1" },
+    { "type": "BP_HarrowAnchor", "variant": "CraneHook", "at": [ 1800, 1750, 1500], "id": "A2" },
+    { "type": "BP_HarrowAnchor", "variant": "CraneHook", "at": [ 0, 300, 1500], "id": "A3" },
+    { "type": "BP_GripWall", "at": [-1900, 3300, 0], "size": [300, 50, 1200], "id": "P1_Grip" },
+    { "type": "BP_GripWall", "at": [-1900, 200, 0], "size": [300, 50, 1200], "id": "P3_Grip" }
+  ],
+  "spawns": [
+    { "type": "BP_SpawnPoint", "at": [-1500, 600, 0], "methods": ["Emerge"], "tiers": ["T1"], "tags": ["Floor"] },
+    { "type": "BP_SpawnPoint", "at": [ 1500, 600, 0], "methods": ["Emerge"], "tiers": ["T1"], "tags": ["Floor"] },
+    { "type": "BP_SpawnPoint", "at": [-800, 800, 1200], "methods": ["Hymnfall"], "tiers": ["T1"], "tags": ["Bridge"] },
+    { "type": "BP_SpawnPoint", "at": [ 800, 2700, 1200], "methods": ["Hymnfall"], "tiers": ["T1"], "tags": ["Bridge"] },
+    { "type": "BP_SpawnPoint", "at": [-1000, 3400, 400], "methods": ["Emerge"], "tiers": ["T1"], "tags": ["NorthWall"] }
+  ],
+  "ai": {
+    "holdPoints": [ { "at": [-1600, 1750, 600], "tags": ["High"] }, { "at": [1600, 1750, 600], "tags": ["High"] }, { "at": [0, 2700, 1200], "tags": ["High","Sniper"] } ],
+    "perches": [ { "at": [-1200, 3450, 800], "normal": [0, -1, 0] }, { "at": [400, 3450, 1000], "normal": [0, -1, 0] }, { "at": [1400, 3450, 700], "normal": [0, -1, 0] } ]
+  },
+  "encounter": { "data": "DA_ENC_M01_05", "seals": [ { "at": [0, 0, 0], "size": [300, 400] }, { "at": [2000, 1750, 0], "size": [300, 400], "note": "east door to Surface Lift" } ] },
+  "pickups": [
+    { "type": "PKP_Health_M", "at": [800, 2500, 400] },
+    { "type": "PKP_Health_M", "at": [0, 2700, 1250] },
+    { "type": "PKP_Plating_M", "at": [-1200, 1750, 650] },
+    { "type": "PKP_Ammo_Shells_L", "at": [-1800, 400, 0] },
+    { "type": "PKP_Ammo_Shells_L", "at": [1800, 3100, 0] },
+    { "type": "PKP_Ammo_Rounds_L", "at": [0, 800, 1250] },
+    { "type": "PKP_HarrowSpool", "at": [-400, 1200, 0] },
+    { "type": "PKP_HarrowSpool", "at": [600, 2300, 0] }
+  ],
+  "checkpoints": [ { "at": [0, 150, 0], "id": "CP_M01_08_Start" } ]
+}
